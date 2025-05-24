@@ -1,0 +1,2534 @@
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"CapSense_P2_Tuner.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.CapSense_P2_TuInitialize,"ax",%progbits
+  20              		.align	2
+  21              		.global	CapSense_P2_TuInitialize
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	CapSense_P2_TuInitialize, %function
+  25              	CapSense_P2_TuInitialize:
+  26              	.LFB1:
+  27              		.file 1 "Generated_Source\\PSoC4\\CapSense_P2_Tuner.c"
+   1:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \file CapSense_P2_Tuner.c
+   3:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \version 7.0
+   4:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+   5:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \brief
+   6:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *   This file provides the source code for the Tuner module API of the Component.
+   7:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+   8:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \see CapSense_P2 v7.0 Datasheet
+   9:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+  10:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *//*****************************************************************************
+  11:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * Copyright (2016-2019), Cypress Semiconductor Corporation.
+  12:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** ********************************************************************************
+  13:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * This software is owned by Cypress Semiconductor Corporation (Cypress) and is
+  14:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * protected by and subject to worldwide patent protection (United States and
+  15:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * foreign), United States copyright laws and international treaty provisions.
+  16:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * Cypress hereby grants to licensee a personal, non-exclusive, non-transferable
+  17:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * license to copy, use, modify, create derivative works of, and compile the
+  18:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * Cypress Source Code and derivative works for the sole purpose of creating
+  19:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * custom software in support of licensee product to be used only in conjunction
+  20:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * with a Cypress integrated circuit as specified in the applicable agreement.
+  21:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * Any reproduction, modification, translation, compilation, or representation of
+  22:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * this software except as specified above is prohibited without the express
+  23:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * written permission of Cypress.
+  24:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+  25:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * Disclaimer: CYPRESS MAKES NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH
+  26:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * REGARD TO THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  27:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  28:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * Cypress reserves the right to make changes without further notice to the
+  29:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * materials described herein. Cypress does not assume any liability arising out
+  30:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * of the application or use of any product or circuit described herein. Cypress
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 2
+
+
+  31:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * does not authorize its products for use as critical components in life-support
+  32:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * systems where a malfunction or failure may reasonably be expected to result in
+  33:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * significant injury to the user. The inclusion of Cypress' product in a life-
+  34:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * support systems application implies that the manufacturer assumes all risk of
+  35:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * such use and in doing so indemnifies Cypress against all charges. Use may be
+  36:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * limited by and subject to the applicable Cypress software license agreement.
+  37:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *******************************************************************************/
+  38:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+  39:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #include "cytypes.h"
+  40:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #include "CyLib.h"
+  41:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #include "CapSense_P2_Structure.h"
+  42:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #include "CapSense_P2_Tuner.h"
+  43:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #include "CapSense_P2_Control.h"
+  44:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #include "CapSense_P2_Configuration.h"
+  45:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+  46:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** /* Tuner states definition */
+  47:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #define TU_FSM_RUNNING      (0u)
+  48:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #define TU_FSM_SUSPENDED    (1u)
+  49:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #define TU_FSM_SNR_TEST     (2u)
+  50:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** #define TU_FSM_ONE_SCAN     (3u)
+  51:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+  52:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** /* Tuner state variable */
+  53:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** static uint32 tunerFsm = TU_FSM_RUNNING;
+  54:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+  55:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+  56:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** /*******************************************************************************
+  57:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * Function Name: CapSense_P2_TuInitialize
+  58:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** ****************************************************************************//**
+  59:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+  60:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \brief
+  61:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *   This function initializes the communication interface with the Tuner GUI.
+  62:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+  63:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \details
+  64:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *   This API sets the tuner state machine to the default state. It is called by
+  65:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *   the CapSense_P2_Start() API.
+  66:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+  67:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *******************************************************************************/
+  68:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** void CapSense_P2_TuInitialize(void)
+  69:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** {
+  28              		.loc 1 69 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+  70:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     volatile CapSense_P2_RAM_STRUCT *ptrDsRam = &CapSense_P2_dsRam;
+  71:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+  72:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     ptrDsRam->tunerCmd = (uint16)CapSense_P2_TU_CMD_NONE_E;
+  34              		.loc 1 72 0
+  35 0000 0023     		movs	r3, #0
+  36 0002 024A     		ldr	r2, .L2
+  37 0004 D380     		strh	r3, [r2, #6]
+  73:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     tunerFsm = TU_FSM_RUNNING;
+  38              		.loc 1 73 0
+  39 0006 024A     		ldr	r2, .L2+4
+  40 0008 1360     		str	r3, [r2]
+  74:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** }
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 3
+
+
+  41              		.loc 1 74 0
+  42              		@ sp needed
+  43 000a 7047     		bx	lr
+  44              	.L3:
+  45              		.align	2
+  46              	.L2:
+  47 000c 00000000 		.word	CapSense_P2_dsRam
+  48 0010 00000000 		.word	.LANCHOR0
+  49              		.cfi_endproc
+  50              	.LFE1:
+  51              		.size	CapSense_P2_TuInitialize, .-CapSense_P2_TuInitialize
+  52              		.section	.text.CapSense_P2_RunTuner,"ax",%progbits
+  53              		.align	2
+  54              		.global	CapSense_P2_RunTuner
+  55              		.code	16
+  56              		.thumb_func
+  57              		.type	CapSense_P2_RunTuner, %function
+  58              	CapSense_P2_RunTuner:
+  59              	.LFB2:
+  75:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+  76:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** /*******************************************************************************
+  77:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * Function Name: CapSense_P2_RunTuner
+  78:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** ****************************************************************************//**
+  79:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+  80:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \brief
+  81:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  Establishes synchronized communication with the Tuner application.
+  82:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+  83:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \details
+  84:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  This function is used to establish synchronized communication between the
+  85:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  CapSense_P2 Component and Tuner application (or other host controllers).
+  86:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  This function is called periodically in the application program loop
+  87:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  to serve the Tuner application (or host controller) requests and commands.
+  88:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  In most cases, the best place to call this function is after processing and
+  89:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  before next scanning.
+  90:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+  91:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  If this function is absent in the application program, then communication is
+  92:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  asynchronous and the following disadvantages are applicable:
+  93:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *    - The raw counts displayed in the tuner may be filtered and/or unfiltered.
+  94:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *      As a result, noise and SNR measurements will not be accurate.
+  95:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *    - The Tuner tool may read the sensor data such as raw counts from a scan
+  96:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *      multiple times, as a result, noise and SNR measurement will not be
+  97:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *      accurate.
+  98:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *    - The Tuner tool and host controller should not change the Component parameters
+  99:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *      via the tuner interface. Changing the Component parameters via the tuner
+ 100:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *      interface in the async mode will result in Component abnormal behavior.
+ 101:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+ 102:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  Note that calling this function is not mandatory for the application, but
+ 103:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  required only to synchronize the communication with the host controller or
+ 104:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  tuner application.
+ 105:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+ 106:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** * \return
+ 107:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  In some cases, the application program may need to know if the Component was
+ 108:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *  re-initialized. The return indicates if a restart command was executed or not:
+ 109:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *    - CapSense_P2_STATUS_RESTART_DONE - Based on a received command, the
+ 110:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *      Component was restarted.
+ 111:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *    -  CapSense_P2_STATUS_RESTART_NONE - No restart was executed by this
+ 112:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *      function.
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 4
+
+
+ 113:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *
+ 114:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** *******************************************************************************/
+ 115:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** uint32 CapSense_P2_RunTuner(void)
+ 116:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** {
+  60              		.loc 1 116 0
+  61              		.cfi_startproc
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 0, uses_anonymous_args = 0
+  64 0000 70B5     		push	{r4, r5, r6, lr}
+  65              		.cfi_def_cfa_offset 16
+  66              		.cfi_offset 4, -16
+  67              		.cfi_offset 5, -12
+  68              		.cfi_offset 6, -8
+  69              		.cfi_offset 14, -4
+  70              	.LVL1:
+ 117:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     uint8 interruptState;
+ 118:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     uint32 widgetId;
+ 119:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     uint32 sensorId;
+ 120:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     uint32 updateFlag = 0Lu;
+ 121:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     CapSense_P2_TU_CMD_ENUM command;
+ 122:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     uint32 tunerStatus = CapSense_P2_STATUS_RESTART_NONE;
+  71              		.loc 1 122 0
+  72 0002 0025     		movs	r5, #0
+ 120:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     CapSense_P2_TU_CMD_ENUM command;
+  73              		.loc 1 120 0
+  74 0004 0026     		movs	r6, #0
+  75              	.LVL2:
+  76              	.L16:
+ 123:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 124:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     volatile CapSense_P2_RAM_STRUCT *ptrDsRam;
+ 125:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     volatile CapSense_P2_RAM_SNS_STRUCT *ptrSnsTmp;
+ 126:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 127:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     ptrDsRam = &CapSense_P2_dsRam;
+ 128:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 129:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     do
+ 130:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     {
+ 131:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         /* ONE_SCAN command could be interpreted as two commands:
+ 132:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         * RESUME till next call of this function and then
+ 133:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         * SUSPEND till next command receiving.
+ 134:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         */
+ 135:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         if (TU_FSM_ONE_SCAN == tunerFsm)
+  77              		.loc 1 135 0
+  78 0006 3E4B     		ldr	r3, .L18
+  79 0008 1B68     		ldr	r3, [r3]
+  80 000a 032B     		cmp	r3, #3
+  81 000c 06D1     		bne	.L5
+ 136:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         {
+ 137:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             interruptState = CyEnterCriticalSection();
+  82              		.loc 1 137 0
+  83 000e FFF7FEFF 		bl	CyEnterCriticalSection
+  84              	.LVL3:
+ 138:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             ptrDsRam->tunerCmd = (uint16)CapSense_P2_TU_CMD_SUSPEND_E;
+  85              		.loc 1 138 0
+  86 0012 0122     		movs	r2, #1
+  87 0014 3B4B     		ldr	r3, .L18+4
+  88 0016 DA80     		strh	r2, [r3, #6]
+ 139:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             CyExitCriticalSection(interruptState);
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 5
+
+
+  89              		.loc 1 139 0
+  90 0018 FFF7FEFF 		bl	CyExitCriticalSection
+  91              	.LVL4:
+  92              	.L5:
+ 140:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         }
+ 141:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         command = (CapSense_P2_TU_CMD_ENUM)ptrDsRam->tunerCmd;
+  93              		.loc 1 141 0
+  94 001c 394B     		ldr	r3, .L18+4
+  95 001e DC88     		ldrh	r4, [r3, #6]
+  96 0020 E4B2     		uxtb	r4, r4
+  97              	.LVL5:
+ 142:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 143:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         /* Check command register */
+ 144:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         switch (command)
+  98              		.loc 1 144 0
+  99 0022 062C     		cmp	r4, #6
+ 100 0024 23D8     		bhi	.L6
+ 101 0026 A300     		lsls	r3, r4, #2
+ 102 0028 374A     		ldr	r2, .L18+8
+ 103 002a D358     		ldr	r3, [r2, r3]
+ 104 002c 9F46     		mov	pc, r3
+ 105              		.section	.rodata
+ 106              		.align	2
+ 107              	.L8:
+ 108 0000 6E000000 		.word	.L6
+ 109 0004 2E000000 		.word	.L7
+ 110 0008 38000000 		.word	.L9
+ 111 000c 42000000 		.word	.L10
+ 112 0010 52000000 		.word	.L11
+ 113 0014 5C000000 		.word	.L12
+ 114 0018 66000000 		.word	.L13
+ 115              		.section	.text.CapSense_P2_RunTuner
+ 116              	.L7:
+ 145:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         {
+ 146:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         case CapSense_P2_TU_CMD_SUSPEND_E:
+ 147:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             tunerFsm = TU_FSM_SUSPENDED;
+ 117              		.loc 1 147 0
+ 118 002e 0122     		movs	r2, #1
+ 119 0030 334B     		ldr	r3, .L18
+ 120 0032 1A60     		str	r2, [r3]
+ 121              	.LVL6:
+ 148:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             updateFlag = 1Lu;
+ 122              		.loc 1 148 0
+ 123 0034 0126     		movs	r6, #1
+ 149:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             break;
+ 124              		.loc 1 149 0
+ 125 0036 1AE0     		b	.L6
+ 126              	.LVL7:
+ 127              	.L9:
+ 150:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 151:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         case CapSense_P2_TU_CMD_RESUME_E:
+ 152:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             tunerFsm = TU_FSM_RUNNING;
+ 128              		.loc 1 152 0
+ 129 0038 0022     		movs	r2, #0
+ 130 003a 314B     		ldr	r3, .L18
+ 131 003c 1A60     		str	r2, [r3]
+ 132              	.LVL8:
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 6
+
+
+ 153:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             updateFlag = 1Lu;
+ 133              		.loc 1 153 0
+ 134 003e 0126     		movs	r6, #1
+ 154:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             break;
+ 135              		.loc 1 154 0
+ 136 0040 15E0     		b	.L6
+ 137              	.LVL9:
+ 138              	.L10:
+ 155:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 156:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         case CapSense_P2_TU_CMD_RESTART_E:
+ 157:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             (void)CapSense_P2_Start();
+ 139              		.loc 1 157 0
+ 140 0042 FFF7FEFF 		bl	CapSense_P2_Start
+ 141              	.LVL10:
+ 158:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             tunerStatus = CapSense_P2_STATUS_RESTART_DONE;
+ 159:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             tunerFsm = TU_FSM_RUNNING;
+ 142              		.loc 1 159 0
+ 143 0046 0022     		movs	r2, #0
+ 144 0048 2D4B     		ldr	r3, .L18
+ 145 004a 1A60     		str	r2, [r3]
+ 146              	.LVL11:
+ 158:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             tunerStatus = CapSense_P2_STATUS_RESTART_DONE;
+ 147              		.loc 1 158 0
+ 148 004c 0125     		movs	r5, #1
+ 160:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             updateFlag = 1Lu;
+ 149              		.loc 1 160 0
+ 150 004e 0126     		movs	r6, #1
+ 161:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             break;
+ 151              		.loc 1 161 0
+ 152 0050 0DE0     		b	.L6
+ 153              	.LVL12:
+ 154              	.L11:
+ 162:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 163:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         case CapSense_P2_TU_CMD_RUN_SNR_TEST_E:
+ 164:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             tunerFsm = TU_FSM_SNR_TEST;
+ 155              		.loc 1 164 0
+ 156 0052 0222     		movs	r2, #2
+ 157 0054 2A4B     		ldr	r3, .L18
+ 158 0056 1A60     		str	r2, [r3]
+ 159              	.LVL13:
+ 165:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             updateFlag = 1Lu;
+ 160              		.loc 1 165 0
+ 161 0058 0126     		movs	r6, #1
+ 166:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             break;
+ 162              		.loc 1 166 0
+ 163 005a 08E0     		b	.L6
+ 164              	.LVL14:
+ 165              	.L12:
+ 167:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 168:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         case CapSense_P2_TU_CMD_PING_E:
+ 169:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             tunerFsm = TU_FSM_RUNNING;
+ 166              		.loc 1 169 0
+ 167 005c 0022     		movs	r2, #0
+ 168 005e 284B     		ldr	r3, .L18
+ 169 0060 1A60     		str	r2, [r3]
+ 170              	.LVL15:
+ 170:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             updateFlag = 1Lu;
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 7
+
+
+ 171              		.loc 1 170 0
+ 172 0062 0126     		movs	r6, #1
+ 171:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             break;
+ 173              		.loc 1 171 0
+ 174 0064 03E0     		b	.L6
+ 175              	.LVL16:
+ 176              	.L13:
+ 172:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 173:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         case CapSense_P2_TU_CMD_ONE_SCAN_E:
+ 174:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             tunerFsm = TU_FSM_ONE_SCAN;
+ 177              		.loc 1 174 0
+ 178 0066 0322     		movs	r2, #3
+ 179 0068 254B     		ldr	r3, .L18
+ 180 006a 1A60     		str	r2, [r3]
+ 181              	.LVL17:
+ 175:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             updateFlag = 0Lu;
+ 182              		.loc 1 175 0
+ 183 006c 0026     		movs	r6, #0
+ 184              	.LVL18:
+ 185              	.L6:
+ 176:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             break;
+ 177:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 178:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         default:
+ 179:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             break;
+ 180:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         }
+ 181:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 182:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         /* Set Complete flag in command register if needed */
+ 183:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         if (0Lu != updateFlag)
+ 186              		.loc 1 183 0
+ 187 006e 002E     		cmp	r6, #0
+ 188 0070 0FD0     		beq	.L14
+ 184:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         {
+ 185:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             interruptState = CyEnterCriticalSection();
+ 189              		.loc 1 185 0
+ 190 0072 FFF7FEFF 		bl	CyEnterCriticalSection
+ 191              	.LVL19:
+ 186:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 187:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             /* Check if command wasn't overwritten with new command */
+ 188:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             if (command == (CapSense_P2_TU_CMD_ENUM)ptrDsRam->tunerCmd)
+ 192              		.loc 1 188 0
+ 193 0076 234B     		ldr	r3, .L18+4
+ 194 0078 DB88     		ldrh	r3, [r3, #6]
+ 195 007a DBB2     		uxtb	r3, r3
+ 196 007c 9C42     		cmp	r4, r3
+ 197 007e 05D1     		bne	.L15
+ 189:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             {
+ 190:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****                 ptrDsRam->tunerCmd |= CapSense_P2_TU_CMD_COMPLETE_BIT;
+ 198              		.loc 1 190 0
+ 199 0080 204A     		ldr	r2, .L18+4
+ 200 0082 D188     		ldrh	r1, [r2, #6]
+ 201 0084 214B     		ldr	r3, .L18+12
+ 202 0086 0B43     		orrs	r3, r1
+ 203 0088 9BB2     		uxth	r3, r3
+ 204 008a D380     		strh	r3, [r2, #6]
+ 205              	.L15:
+ 191:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             }
+ 192:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             CyExitCriticalSection(interruptState);
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 8
+
+
+ 206              		.loc 1 192 0
+ 207 008c FFF7FEFF 		bl	CyExitCriticalSection
+ 208              	.LVL20:
+ 193:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 194:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             updateFlag = 0Lu;
+ 209              		.loc 1 194 0
+ 210 0090 0026     		movs	r6, #0
+ 211              	.LVL21:
+ 212              	.L14:
+ 195:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         }
+ 196:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     } while (TU_FSM_SUSPENDED == tunerFsm);
+ 213              		.loc 1 196 0
+ 214 0092 1B4B     		ldr	r3, .L18
+ 215 0094 1B68     		ldr	r3, [r3]
+ 216 0096 012B     		cmp	r3, #1
+ 217 0098 B5D0     		beq	.L16
+ 197:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 198:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     /* Check for SNR Test mode and do appropriate actions */
+ 199:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     if (TU_FSM_SNR_TEST == tunerFsm)
+ 218              		.loc 1 199 0
+ 219 009a 022B     		cmp	r3, #2
+ 220 009c 2DD1     		bne	.L17
+ 200:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     {
+ 201:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         widgetId = ptrDsRam->snrTestWidgetId;
+ 221              		.loc 1 201 0
+ 222 009e 194A     		ldr	r2, .L18+4
+ 223 00a0 6433     		adds	r3, r3, #100
+ 224 00a2 D35C     		ldrb	r3, [r2, r3]
+ 225 00a4 DBB2     		uxtb	r3, r3
+ 226              	.LVL22:
+ 202:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         sensorId = ptrDsRam->snrTestSensorId;
+ 227              		.loc 1 202 0
+ 228 00a6 6721     		movs	r1, #103
+ 229 00a8 525C     		ldrb	r2, [r2, r1]
+ 230 00aa D2B2     		uxtb	r2, r2
+ 231              	.LVL23:
+ 203:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 204:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         /* Check if widgetId and sensorId are in range,
+ 205:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****          * and data was updated in RAM (scan counter changed)
+ 206:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****          */
+ 207:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         if ((widgetId < CapSense_P2_TOTAL_WIDGETS)              &&
+ 232              		.loc 1 207 0
+ 233 00ac 002B     		cmp	r3, #0
+ 234 00ae 24D1     		bne	.L17
+ 208:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             (sensorId < CapSense_P2_GET_SENSOR_COUNT(widgetId)) &&
+ 235              		.loc 1 208 0 discriminator 1
+ 236 00b0 3B39     		subs	r1, r1, #59
+ 237 00b2 5943     		muls	r1, r3
+ 238 00b4 1648     		ldr	r0, .L18+16
+ 239 00b6 4118     		adds	r1, r0, r1
+ 240 00b8 098B     		ldrh	r1, [r1, #24]
+ 207:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             (sensorId < CapSense_P2_GET_SENSOR_COUNT(widgetId)) &&
+ 241              		.loc 1 207 0 discriminator 1
+ 242 00ba 8A42     		cmp	r2, r1
+ 243 00bc 1DD2     		bcs	.L17
+ 209:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             (ptrDsRam->scanCounter != ptrDsRam->snrTestScanCounter))
+ 244              		.loc 1 209 0
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 9
+
+
+ 245 00be 1149     		ldr	r1, .L18+4
+ 246 00c0 0889     		ldrh	r0, [r1, #8]
+ 247 00c2 80B2     		uxth	r0, r0
+ 248 00c4 6824     		movs	r4, #104
+ 249              	.LVL24:
+ 250 00c6 095B     		ldrh	r1, [r1, r4]
+ 251 00c8 89B2     		uxth	r1, r1
+ 208:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             (sensorId < CapSense_P2_GET_SENSOR_COUNT(widgetId)) &&
+ 252              		.loc 1 208 0
+ 253 00ca 8842     		cmp	r0, r1
+ 254 00cc 15D0     		beq	.L17
+ 210:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         {
+ 211:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             /* Get access to the Sensor Object */
+ 212:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             ptrSnsTmp = CapSense_P2_dsFlash.wdgtArray[widgetId].ptr2SnsRam;
+ 255              		.loc 1 212 0
+ 256 00ce 2C21     		movs	r1, #44
+ 257 00d0 4B43     		muls	r3, r1
+ 258              	.LVL25:
+ 259 00d2 0F49     		ldr	r1, .L18+16
+ 260 00d4 CB18     		adds	r3, r1, r3
+ 261 00d6 9C68     		ldr	r4, [r3, #8]
+ 262              	.LVL26:
+ 213:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             ptrSnsTmp += sensorId;
+ 263              		.loc 1 213 0
+ 264 00d8 9300     		lsls	r3, r2, #2
+ 265 00da 9A18     		adds	r2, r3, r2
+ 266              	.LVL27:
+ 267 00dc 5300     		lsls	r3, r2, #1
+ 268 00de E418     		adds	r4, r4, r3
+ 269              	.LVL28:
+ 214:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 215:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             /* Update data in SNR Test Object */
+ 216:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             interruptState = CyEnterCriticalSection();
+ 270              		.loc 1 216 0
+ 271 00e0 FFF7FEFF 		bl	CyEnterCriticalSection
+ 272              	.LVL29:
+ 217:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             ptrDsRam->snrTestScanCounter = ptrDsRam->scanCounter;
+ 273              		.loc 1 217 0
+ 274 00e4 074B     		ldr	r3, .L18+4
+ 275 00e6 1A89     		ldrh	r2, [r3, #8]
+ 276 00e8 92B2     		uxth	r2, r2
+ 277 00ea 6821     		movs	r1, #104
+ 278 00ec 5A52     		strh	r2, [r3, r1]
+ 218:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             ptrDsRam->snrTestRawCount[0u] = ptrSnsTmp->raw[0u];
+ 279              		.loc 1 218 0
+ 280 00ee 2288     		ldrh	r2, [r4]
+ 281 00f0 92B2     		uxth	r2, r2
+ 282 00f2 0231     		adds	r1, r1, #2
+ 283 00f4 5A52     		strh	r2, [r3, r1]
+ 219:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 220:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             #if (0u != CapSense_P2_MULTI_FREQ_SCAN_EN)
+ 221:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****                 ptrDsRam->snrTestRawCount[1u] = ptrSnsTmp->raw[1u];
+ 222:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****                 ptrDsRam->snrTestRawCount[2u] = ptrSnsTmp->raw[2u];
+ 223:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             #endif
+ 224:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** 
+ 225:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****             CyExitCriticalSection(interruptState);
+ 284              		.loc 1 225 0
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 10
+
+
+ 285 00f6 FFF7FEFF 		bl	CyExitCriticalSection
+ 286              	.LVL30:
+ 287              	.L17:
+ 226:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****         }
+ 227:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     }
+ 228:Generated_Source\PSoC4/CapSense_P2_Tuner.c ****     return tunerStatus;
+ 229:Generated_Source\PSoC4/CapSense_P2_Tuner.c **** }
+ 288              		.loc 1 229 0
+ 289 00fa 2800     		movs	r0, r5
+ 290              		@ sp needed
+ 291              	.LVL31:
+ 292              	.LVL32:
+ 293 00fc 70BD     		pop	{r4, r5, r6, pc}
+ 294              	.L19:
+ 295 00fe C046     		.align	2
+ 296              	.L18:
+ 297 0100 00000000 		.word	.LANCHOR0
+ 298 0104 00000000 		.word	CapSense_P2_dsRam
+ 299 0108 00000000 		.word	.L8
+ 300 010c 0080FFFF 		.word	-32768
+ 301 0110 00000000 		.word	CapSense_P2_dsFlash
+ 302              		.cfi_endproc
+ 303              	.LFE2:
+ 304              		.size	CapSense_P2_RunTuner, .-CapSense_P2_RunTuner
+ 305              		.bss
+ 306              		.align	2
+ 307              		.set	.LANCHOR0,. + 0
+ 308              		.type	tunerFsm, %object
+ 309              		.size	tunerFsm, 4
+ 310              	tunerFsm:
+ 311 0000 00000000 		.space	4
+ 312              		.text
+ 313              	.Letext0:
+ 314              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 315              		.file 3 "Generated_Source\\PSoC4\\CapSense_P2_Configuration.h"
+ 316              		.file 4 "Generated_Source\\PSoC4\\CapSense_P2_SmartSense_LL.h"
+ 317              		.file 5 "Generated_Source\\PSoC4\\CapSense_P2_Structure.h"
+ 318              		.file 6 "Generated_Source\\PSoC4\\CapSense_P2_Tuner.h"
+ 319              		.file 7 "Generated_Source\\PSoC4\\CyLib.h"
+ 320              		.file 8 "Generated_Source\\PSoC4\\CapSense_P2_Control.h"
+ 321              		.section	.debug_info,"",%progbits
+ 322              	.Ldebug_info0:
+ 323 0000 A8060000 		.4byte	0x6a8
+ 324 0004 0400     		.2byte	0x4
+ 325 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 326 000a 04       		.byte	0x4
+ 327 000b 01       		.uleb128 0x1
+ 328 000c E7000000 		.4byte	.LASF109
+ 329 0010 0C       		.byte	0xc
+ 330 0011 C6030000 		.4byte	.LASF110
+ 331 0015 DF060000 		.4byte	.LASF111
+ 332 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 333 001d 00000000 		.4byte	0
+ 334 0021 00000000 		.4byte	.Ldebug_line0
+ 335 0025 02       		.uleb128 0x2
+ 336 0026 01       		.byte	0x1
+ 337 0027 06       		.byte	0x6
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 11
+
+
+ 338 0028 2A040000 		.4byte	.LASF0
+ 339 002c 02       		.uleb128 0x2
+ 340 002d 01       		.byte	0x1
+ 341 002e 08       		.byte	0x8
+ 342 002f 2F030000 		.4byte	.LASF1
+ 343 0033 02       		.uleb128 0x2
+ 344 0034 02       		.byte	0x2
+ 345 0035 05       		.byte	0x5
+ 346 0036 C0000000 		.4byte	.LASF2
+ 347 003a 02       		.uleb128 0x2
+ 348 003b 02       		.byte	0x2
+ 349 003c 07       		.byte	0x7
+ 350 003d CE040000 		.4byte	.LASF3
+ 351 0041 02       		.uleb128 0x2
+ 352 0042 04       		.byte	0x4
+ 353 0043 05       		.byte	0x5
+ 354 0044 CE020000 		.4byte	.LASF4
+ 355 0048 02       		.uleb128 0x2
+ 356 0049 04       		.byte	0x4
+ 357 004a 07       		.byte	0x7
+ 358 004b 79040000 		.4byte	.LASF5
+ 359 004f 02       		.uleb128 0x2
+ 360 0050 08       		.byte	0x8
+ 361 0051 05       		.byte	0x5
+ 362 0052 A3010000 		.4byte	.LASF6
+ 363 0056 02       		.uleb128 0x2
+ 364 0057 08       		.byte	0x8
+ 365 0058 07       		.byte	0x7
+ 366 0059 36040000 		.4byte	.LASF7
+ 367 005d 03       		.uleb128 0x3
+ 368 005e 04       		.byte	0x4
+ 369 005f 05       		.byte	0x5
+ 370 0060 696E7400 		.ascii	"int\000"
+ 371 0064 02       		.uleb128 0x2
+ 372 0065 04       		.byte	0x4
+ 373 0066 07       		.byte	0x7
+ 374 0067 6C040000 		.4byte	.LASF8
+ 375 006b 04       		.uleb128 0x4
+ 376 006c 10020000 		.4byte	.LASF9
+ 377 0070 02       		.byte	0x2
+ 378 0071 FB01     		.2byte	0x1fb
+ 379 0073 2C000000 		.4byte	0x2c
+ 380 0077 04       		.uleb128 0x4
+ 381 0078 F9010000 		.4byte	.LASF10
+ 382 007c 02       		.byte	0x2
+ 383 007d FC01     		.2byte	0x1fc
+ 384 007f 3A000000 		.4byte	0x3a
+ 385 0083 04       		.uleb128 0x4
+ 386 0084 B8050000 		.4byte	.LASF11
+ 387 0088 02       		.byte	0x2
+ 388 0089 FD01     		.2byte	0x1fd
+ 389 008b 48000000 		.4byte	0x48
+ 390 008f 02       		.uleb128 0x2
+ 391 0090 04       		.byte	0x4
+ 392 0091 04       		.byte	0x4
+ 393 0092 78020000 		.4byte	.LASF12
+ 394 0096 02       		.uleb128 0x2
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 12
+
+
+ 395 0097 08       		.byte	0x8
+ 396 0098 04       		.byte	0x4
+ 397 0099 D3050000 		.4byte	.LASF13
+ 398 009d 02       		.uleb128 0x2
+ 399 009e 01       		.byte	0x1
+ 400 009f 08       		.byte	0x8
+ 401 00a0 C9020000 		.4byte	.LASF14
+ 402 00a4 05       		.uleb128 0x5
+ 403 00a5 83000000 		.4byte	0x83
+ 404 00a9 02       		.uleb128 0x2
+ 405 00aa 08       		.byte	0x8
+ 406 00ab 04       		.byte	0x4
+ 407 00ac 51030000 		.4byte	.LASF15
+ 408 00b0 02       		.uleb128 0x2
+ 409 00b1 04       		.byte	0x4
+ 410 00b2 07       		.byte	0x7
+ 411 00b3 D5000000 		.4byte	.LASF16
+ 412 00b7 06       		.uleb128 0x6
+ 413 00b8 04       		.byte	0x4
+ 414 00b9 04       		.uleb128 0x4
+ 415 00ba 0F040000 		.4byte	.LASF17
+ 416 00be 03       		.byte	0x3
+ 417 00bf 2201     		.2byte	0x122
+ 418 00c1 77000000 		.4byte	0x77
+ 419 00c5 04       		.uleb128 0x4
+ 420 00c6 F1030000 		.4byte	.LASF18
+ 421 00ca 03       		.byte	0x3
+ 422 00cb 2601     		.2byte	0x126
+ 423 00cd 6B000000 		.4byte	0x6b
+ 424 00d1 07       		.uleb128 0x7
+ 425 00d2 0C       		.byte	0xc
+ 426 00d3 04       		.byte	0x4
+ 427 00d4 75       		.byte	0x75
+ 428 00d5 2E010000 		.4byte	0x12e
+ 429 00d9 08       		.uleb128 0x8
+ 430 00da B1010000 		.4byte	.LASF19
+ 431 00de 04       		.byte	0x4
+ 432 00df 7A       		.byte	0x7a
+ 433 00e0 77000000 		.4byte	0x77
+ 434 00e4 00       		.byte	0
+ 435 00e5 08       		.uleb128 0x8
+ 436 00e6 B3040000 		.4byte	.LASF20
+ 437 00ea 04       		.byte	0x4
+ 438 00eb 7E       		.byte	0x7e
+ 439 00ec 77000000 		.4byte	0x77
+ 440 00f0 02       		.byte	0x2
+ 441 00f1 08       		.uleb128 0x8
+ 442 00f2 C5010000 		.4byte	.LASF21
+ 443 00f6 04       		.byte	0x4
+ 444 00f7 82       		.byte	0x82
+ 445 00f8 77000000 		.4byte	0x77
+ 446 00fc 04       		.byte	0x4
+ 447 00fd 08       		.uleb128 0x8
+ 448 00fe CC010000 		.4byte	.LASF22
+ 449 0102 04       		.byte	0x4
+ 450 0103 86       		.byte	0x86
+ 451 0104 77000000 		.4byte	0x77
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 13
+
+
+ 452 0108 06       		.byte	0x6
+ 453 0109 08       		.uleb128 0x8
+ 454 010a D3010000 		.4byte	.LASF23
+ 455 010e 04       		.byte	0x4
+ 456 010f 8A       		.byte	0x8a
+ 457 0110 77000000 		.4byte	0x77
+ 458 0114 08       		.byte	0x8
+ 459 0115 08       		.uleb128 0x8
+ 460 0116 DA010000 		.4byte	.LASF24
+ 461 011a 04       		.byte	0x4
+ 462 011b 8E       		.byte	0x8e
+ 463 011c 6B000000 		.4byte	0x6b
+ 464 0120 0A       		.byte	0xa
+ 465 0121 08       		.uleb128 0x8
+ 466 0122 E1010000 		.4byte	.LASF25
+ 467 0126 04       		.byte	0x4
+ 468 0127 92       		.byte	0x92
+ 469 0128 6B000000 		.4byte	0x6b
+ 470 012c 0B       		.byte	0xb
+ 471 012d 00       		.byte	0
+ 472 012e 09       		.uleb128 0x9
+ 473 012f 9C060000 		.4byte	.LASF26
+ 474 0133 04       		.byte	0x4
+ 475 0134 93       		.byte	0x93
+ 476 0135 D1000000 		.4byte	0xd1
+ 477 0139 0A       		.uleb128 0xa
+ 478 013a 6B000000 		.4byte	0x6b
+ 479 013e 49010000 		.4byte	0x149
+ 480 0142 0B       		.uleb128 0xb
+ 481 0143 B0000000 		.4byte	0xb0
+ 482 0147 00       		.byte	0
+ 483 0148 00       		.byte	0
+ 484 0149 07       		.uleb128 0x7
+ 485 014a 16       		.byte	0x16
+ 486 014b 05       		.byte	0x5
+ 487 014c FE       		.byte	0xfe
+ 488 014d 08020000 		.4byte	0x208
+ 489 0151 0C       		.uleb128 0xc
+ 490 0152 43050000 		.4byte	.LASF27
+ 491 0156 05       		.byte	0x5
+ 492 0157 0301     		.2byte	0x103
+ 493 0159 77000000 		.4byte	0x77
+ 494 015d 00       		.byte	0
+ 495 015e 0C       		.uleb128 0xc
+ 496 015f E0020000 		.4byte	.LASF28
+ 497 0163 05       		.byte	0x5
+ 498 0164 0801     		.2byte	0x108
+ 499 0166 B9000000 		.4byte	0xb9
+ 500 016a 02       		.byte	0x2
+ 501 016b 0C       		.uleb128 0xc
+ 502 016c E8010000 		.4byte	.LASF29
+ 503 0170 05       		.byte	0x5
+ 504 0171 0D01     		.2byte	0x10d
+ 505 0173 6B000000 		.4byte	0x6b
+ 506 0177 04       		.byte	0x4
+ 507 0178 0C       		.uleb128 0xc
+ 508 0179 7E050000 		.4byte	.LASF30
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 14
+
+
+ 509 017d 05       		.byte	0x5
+ 510 017e 1201     		.2byte	0x112
+ 511 0180 6B000000 		.4byte	0x6b
+ 512 0184 05       		.byte	0x5
+ 513 0185 0C       		.uleb128 0xc
+ 514 0186 3D030000 		.4byte	.LASF31
+ 515 018a 05       		.byte	0x5
+ 516 018b 1801     		.2byte	0x118
+ 517 018d 6B000000 		.4byte	0x6b
+ 518 0191 06       		.byte	0x6
+ 519 0192 0C       		.uleb128 0xc
+ 520 0193 CA000000 		.4byte	.LASF32
+ 521 0197 05       		.byte	0x5
+ 522 0198 1E01     		.2byte	0x11e
+ 523 019a 6B000000 		.4byte	0x6b
+ 524 019e 07       		.byte	0x7
+ 525 019f 0C       		.uleb128 0xc
+ 526 01a0 5E000000 		.4byte	.LASF33
+ 527 01a4 05       		.byte	0x5
+ 528 01a5 2501     		.2byte	0x125
+ 529 01a7 C5000000 		.4byte	0xc5
+ 530 01ab 08       		.byte	0x8
+ 531 01ac 0C       		.uleb128 0xc
+ 532 01ad A9000000 		.4byte	.LASF34
+ 533 01b1 05       		.byte	0x5
+ 534 01b2 2C01     		.2byte	0x12c
+ 535 01b4 39010000 		.4byte	0x139
+ 536 01b8 09       		.byte	0x9
+ 537 01b9 0C       		.uleb128 0xc
+ 538 01ba 36000000 		.4byte	.LASF35
+ 539 01be 05       		.byte	0x5
+ 540 01bf 3101     		.2byte	0x131
+ 541 01c1 6B000000 		.4byte	0x6b
+ 542 01c5 0A       		.byte	0xa
+ 543 01c6 0C       		.uleb128 0xc
+ 544 01c7 32020000 		.4byte	.LASF36
+ 545 01cb 05       		.byte	0x5
+ 546 01cc 3901     		.2byte	0x139
+ 547 01ce 77000000 		.4byte	0x77
+ 548 01d2 0C       		.byte	0xc
+ 549 01d3 0C       		.uleb128 0xc
+ 550 01d4 B8010000 		.4byte	.LASF37
+ 551 01d8 05       		.byte	0x5
+ 552 01d9 3E01     		.2byte	0x13e
+ 553 01db 6B000000 		.4byte	0x6b
+ 554 01df 0E       		.byte	0xe
+ 555 01e0 0C       		.uleb128 0xc
+ 556 01e1 57060000 		.4byte	.LASF38
+ 557 01e5 05       		.byte	0x5
+ 558 01e6 4401     		.2byte	0x144
+ 559 01e8 77000000 		.4byte	0x77
+ 560 01ec 10       		.byte	0x10
+ 561 01ed 0C       		.uleb128 0xc
+ 562 01ee B1050000 		.4byte	.LASF39
+ 563 01f2 05       		.byte	0x5
+ 564 01f3 4901     		.2byte	0x149
+ 565 01f5 77000000 		.4byte	0x77
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 15
+
+
+ 566 01f9 12       		.byte	0x12
+ 567 01fa 0C       		.uleb128 0xc
+ 568 01fb 6F060000 		.4byte	.LASF40
+ 569 01ff 05       		.byte	0x5
+ 570 0200 4E01     		.2byte	0x14e
+ 571 0202 08020000 		.4byte	0x208
+ 572 0206 14       		.byte	0x14
+ 573 0207 00       		.byte	0
+ 574 0208 0A       		.uleb128 0xa
+ 575 0209 77000000 		.4byte	0x77
+ 576 020d 18020000 		.4byte	0x218
+ 577 0211 0B       		.uleb128 0xb
+ 578 0212 B0000000 		.4byte	0xb0
+ 579 0216 00       		.byte	0
+ 580 0217 00       		.byte	0
+ 581 0218 04       		.uleb128 0x4
+ 582 0219 A5030000 		.4byte	.LASF41
+ 583 021d 05       		.byte	0x5
+ 584 021e 4F01     		.2byte	0x14f
+ 585 0220 49010000 		.4byte	0x149
+ 586 0224 0D       		.uleb128 0xd
+ 587 0225 16       		.byte	0x16
+ 588 0226 05       		.byte	0x5
+ 589 0227 5501     		.2byte	0x155
+ 590 0229 3B020000 		.4byte	0x23b
+ 591 022d 0C       		.uleb128 0xc
+ 592 022e 61060000 		.4byte	.LASF42
+ 593 0232 05       		.byte	0x5
+ 594 0233 5A01     		.2byte	0x15a
+ 595 0235 18020000 		.4byte	0x218
+ 596 0239 00       		.byte	0
+ 597 023a 00       		.byte	0
+ 598 023b 04       		.uleb128 0x4
+ 599 023c 79010000 		.4byte	.LASF43
+ 600 0240 05       		.byte	0x5
+ 601 0241 5B01     		.2byte	0x15b
+ 602 0243 24020000 		.4byte	0x224
+ 603 0247 0D       		.uleb128 0xd
+ 604 0248 0A       		.byte	0xa
+ 605 0249 05       		.byte	0x5
+ 606 024a 6101     		.2byte	0x161
+ 607 024c 9F020000 		.4byte	0x29f
+ 608 0250 0E       		.uleb128 0xe
+ 609 0251 72617700 		.ascii	"raw\000"
+ 610 0255 05       		.byte	0x5
+ 611 0256 6601     		.2byte	0x166
+ 612 0258 08020000 		.4byte	0x208
+ 613 025c 00       		.byte	0
+ 614 025d 0C       		.uleb128 0xc
+ 615 025e 28000000 		.4byte	.LASF44
+ 616 0262 05       		.byte	0x5
+ 617 0263 6B01     		.2byte	0x16b
+ 618 0265 08020000 		.4byte	0x208
+ 619 0269 02       		.byte	0x2
+ 620 026a 0C       		.uleb128 0xc
+ 621 026b DA050000 		.4byte	.LASF45
+ 622 026f 05       		.byte	0x5
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 16
+
+
+ 623 0270 7101     		.2byte	0x171
+ 624 0272 39010000 		.4byte	0x139
+ 625 0276 04       		.byte	0x4
+ 626 0277 0C       		.uleb128 0xc
+ 627 0278 21070000 		.4byte	.LASF46
+ 628 027c 05       		.byte	0x5
+ 629 027d 7601     		.2byte	0x176
+ 630 027f B9000000 		.4byte	0xb9
+ 631 0283 06       		.byte	0x6
+ 632 0284 0C       		.uleb128 0xc
+ 633 0285 EB050000 		.4byte	.LASF47
+ 634 0289 05       		.byte	0x5
+ 635 028a 7B01     		.2byte	0x17b
+ 636 028c 9F020000 		.4byte	0x29f
+ 637 0290 08       		.byte	0x8
+ 638 0291 0C       		.uleb128 0xc
+ 639 0292 3A050000 		.4byte	.LASF48
+ 640 0296 05       		.byte	0x5
+ 641 0297 8001     		.2byte	0x180
+ 642 0299 39010000 		.4byte	0x139
+ 643 029d 09       		.byte	0x9
+ 644 029e 00       		.byte	0
+ 645 029f 0A       		.uleb128 0xa
+ 646 02a0 C5000000 		.4byte	0xc5
+ 647 02a4 AF020000 		.4byte	0x2af
+ 648 02a8 0B       		.uleb128 0xb
+ 649 02a9 B0000000 		.4byte	0xb0
+ 650 02ad 00       		.byte	0
+ 651 02ae 00       		.byte	0
+ 652 02af 04       		.uleb128 0x4
+ 653 02b0 96050000 		.4byte	.LASF49
+ 654 02b4 05       		.byte	0x5
+ 655 02b5 8101     		.2byte	0x181
+ 656 02b7 47020000 		.4byte	0x247
+ 657 02bb 0D       		.uleb128 0xd
+ 658 02bc 32       		.byte	0x32
+ 659 02bd 05       		.byte	0x5
+ 660 02be 8701     		.2byte	0x187
+ 661 02c0 D2020000 		.4byte	0x2d2
+ 662 02c4 0C       		.uleb128 0xc
+ 663 02c5 61060000 		.4byte	.LASF42
+ 664 02c9 05       		.byte	0x5
+ 665 02ca 8C01     		.2byte	0x18c
+ 666 02cc D2020000 		.4byte	0x2d2
+ 667 02d0 00       		.byte	0
+ 668 02d1 00       		.byte	0
+ 669 02d2 0A       		.uleb128 0xa
+ 670 02d3 AF020000 		.4byte	0x2af
+ 671 02d7 E2020000 		.4byte	0x2e2
+ 672 02db 0B       		.uleb128 0xb
+ 673 02dc B0000000 		.4byte	0xb0
+ 674 02e0 04       		.byte	0x4
+ 675 02e1 00       		.byte	0
+ 676 02e2 04       		.uleb128 0x4
+ 677 02e3 07050000 		.4byte	.LASF50
+ 678 02e7 05       		.byte	0x5
+ 679 02e8 8D01     		.2byte	0x18d
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 17
+
+
+ 680 02ea BB020000 		.4byte	0x2bb
+ 681 02ee 0D       		.uleb128 0xd
+ 682 02ef 70       		.byte	0x70
+ 683 02f0 05       		.byte	0x5
+ 684 02f1 9301     		.2byte	0x193
+ 685 02f3 EF030000 		.4byte	0x3ef
+ 686 02f7 0C       		.uleb128 0xc
+ 687 02f8 DE000000 		.4byte	.LASF51
+ 688 02fc 05       		.byte	0x5
+ 689 02fd 9A01     		.2byte	0x19a
+ 690 02ff 77000000 		.4byte	0x77
+ 691 0303 00       		.byte	0
+ 692 0304 0C       		.uleb128 0xc
+ 693 0305 F0010000 		.4byte	.LASF52
+ 694 0309 05       		.byte	0x5
+ 695 030a 9F01     		.2byte	0x19f
+ 696 030c 77000000 		.4byte	0x77
+ 697 0310 02       		.byte	0x2
+ 698 0311 0C       		.uleb128 0xc
+ 699 0312 E8040000 		.4byte	.LASF53
+ 700 0316 05       		.byte	0x5
+ 701 0317 A401     		.2byte	0x1a4
+ 702 0319 77000000 		.4byte	0x77
+ 703 031d 04       		.byte	0x4
+ 704 031e 0C       		.uleb128 0xc
+ 705 031f 48030000 		.4byte	.LASF54
+ 706 0323 05       		.byte	0x5
+ 707 0324 AA01     		.2byte	0x1aa
+ 708 0326 77000000 		.4byte	0x77
+ 709 032a 06       		.byte	0x6
+ 710 032b 0C       		.uleb128 0xc
+ 711 032c 72050000 		.4byte	.LASF55
+ 712 0330 05       		.byte	0x5
+ 713 0331 AF01     		.2byte	0x1af
+ 714 0333 77000000 		.4byte	0x77
+ 715 0337 08       		.byte	0x8
+ 716 0338 0C       		.uleb128 0xc
+ 717 0339 E1040000 		.4byte	.LASF56
+ 718 033d 05       		.byte	0x5
+ 719 033e B401     		.2byte	0x1b4
+ 720 0340 A4000000 		.4byte	0xa4
+ 721 0344 0C       		.byte	0xc
+ 722 0345 0C       		.uleb128 0xc
+ 723 0346 A8040000 		.4byte	.LASF57
+ 724 034a 05       		.byte	0x5
+ 725 034b BA01     		.2byte	0x1ba
+ 726 034d EF030000 		.4byte	0x3ef
+ 727 0351 10       		.byte	0x10
+ 728 0352 0C       		.uleb128 0xc
+ 729 0353 79030000 		.4byte	.LASF58
+ 730 0357 05       		.byte	0x5
+ 731 0358 C101     		.2byte	0x1c1
+ 732 035a EF030000 		.4byte	0x3ef
+ 733 035e 14       		.byte	0x14
+ 734 035f 0C       		.uleb128 0xc
+ 735 0360 CD060000 		.4byte	.LASF59
+ 736 0364 05       		.byte	0x5
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 18
+
+
+ 737 0365 D101     		.2byte	0x1d1
+ 738 0367 39010000 		.4byte	0x139
+ 739 036b 18       		.byte	0x18
+ 740 036c 0C       		.uleb128 0xc
+ 741 036d 98010000 		.4byte	.LASF60
+ 742 0371 05       		.byte	0x5
+ 743 0372 D701     		.2byte	0x1d7
+ 744 0374 77000000 		.4byte	0x77
+ 745 0378 1A       		.byte	0x1a
+ 746 0379 0C       		.uleb128 0xc
+ 747 037a 68050000 		.4byte	.LASF61
+ 748 037e 05       		.byte	0x5
+ 749 037f DC01     		.2byte	0x1dc
+ 750 0381 6B000000 		.4byte	0x6b
+ 751 0385 1C       		.byte	0x1c
+ 752 0386 0C       		.uleb128 0xc
+ 753 0387 00000000 		.4byte	.LASF62
+ 754 038b 05       		.byte	0x5
+ 755 038c E101     		.2byte	0x1e1
+ 756 038e 3B020000 		.4byte	0x23b
+ 757 0392 1E       		.byte	0x1e
+ 758 0393 0C       		.uleb128 0xc
+ 759 0394 60050000 		.4byte	.LASF63
+ 760 0398 05       		.byte	0x5
+ 761 0399 E601     		.2byte	0x1e6
+ 762 039b E2020000 		.4byte	0x2e2
+ 763 039f 34       		.byte	0x34
+ 764 03a0 0C       		.uleb128 0xc
+ 765 03a1 8C060000 		.4byte	.LASF64
+ 766 03a5 05       		.byte	0x5
+ 767 03a6 EB01     		.2byte	0x1eb
+ 768 03a8 6B000000 		.4byte	0x6b
+ 769 03ac 66       		.byte	0x66
+ 770 03ad 0C       		.uleb128 0xc
+ 771 03ae 97020000 		.4byte	.LASF65
+ 772 03b2 05       		.byte	0x5
+ 773 03b3 F001     		.2byte	0x1f0
+ 774 03b5 6B000000 		.4byte	0x6b
+ 775 03b9 67       		.byte	0x67
+ 776 03ba 0C       		.uleb128 0xc
+ 777 03bb 27050000 		.4byte	.LASF66
+ 778 03bf 05       		.byte	0x5
+ 779 03c0 F501     		.2byte	0x1f5
+ 780 03c2 77000000 		.4byte	0x77
+ 781 03c6 68       		.byte	0x68
+ 782 03c7 0C       		.uleb128 0xc
+ 783 03c8 09000000 		.4byte	.LASF67
+ 784 03cc 05       		.byte	0x5
+ 785 03cd FA01     		.2byte	0x1fa
+ 786 03cf 08020000 		.4byte	0x208
+ 787 03d3 6A       		.byte	0x6a
+ 788 03d4 0C       		.uleb128 0xc
+ 789 03d5 BF050000 		.4byte	.LASF68
+ 790 03d9 05       		.byte	0x5
+ 791 03da FF01     		.2byte	0x1ff
+ 792 03dc 6B000000 		.4byte	0x6b
+ 793 03e0 6C       		.byte	0x6c
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 19
+
+
+ 794 03e1 0C       		.uleb128 0xc
+ 795 03e2 19000000 		.4byte	.LASF69
+ 796 03e6 05       		.byte	0x5
+ 797 03e7 0402     		.2byte	0x204
+ 798 03e9 6B000000 		.4byte	0x6b
+ 799 03ed 6D       		.byte	0x6d
+ 800 03ee 00       		.byte	0
+ 801 03ef 0A       		.uleb128 0xa
+ 802 03f0 83000000 		.4byte	0x83
+ 803 03f4 FF030000 		.4byte	0x3ff
+ 804 03f8 0B       		.uleb128 0xb
+ 805 03f9 B0000000 		.4byte	0xb0
+ 806 03fd 00       		.byte	0
+ 807 03fe 00       		.byte	0
+ 808 03ff 04       		.uleb128 0x4
+ 809 0400 F0040000 		.4byte	.LASF70
+ 810 0404 05       		.byte	0x5
+ 811 0405 0502     		.2byte	0x205
+ 812 0407 EE020000 		.4byte	0x2ee
+ 813 040b 0D       		.uleb128 0xd
+ 814 040c 2C       		.byte	0x2c
+ 815 040d 05       		.byte	0x5
+ 816 040e 6C02     		.2byte	0x26c
+ 817 0410 BE040000 		.4byte	0x4be
+ 818 0414 0C       		.uleb128 0xc
+ 819 0415 1B060000 		.4byte	.LASF71
+ 820 0419 05       		.byte	0x5
+ 821 041a 7502     		.2byte	0x275
+ 822 041c BE040000 		.4byte	0x4be
+ 823 0420 00       		.byte	0
+ 824 0421 0C       		.uleb128 0xc
+ 825 0422 01030000 		.4byte	.LASF72
+ 826 0426 05       		.byte	0x5
+ 827 0427 7C02     		.2byte	0x27c
+ 828 0429 B7000000 		.4byte	0xb7
+ 829 042d 04       		.byte	0x4
+ 830 042e 0C       		.uleb128 0xc
+ 831 042f 10060000 		.4byte	.LASF73
+ 832 0433 05       		.byte	0x5
+ 833 0434 8202     		.2byte	0x282
+ 834 0436 C5040000 		.4byte	0x4c5
+ 835 043a 08       		.byte	0x8
+ 836 043b 0C       		.uleb128 0xc
+ 837 043c 3D060000 		.4byte	.LASF74
+ 838 0440 05       		.byte	0x5
+ 839 0441 8802     		.2byte	0x288
+ 840 0443 B7000000 		.4byte	0xb7
+ 841 0447 0C       		.byte	0xc
+ 842 0448 0C       		.uleb128 0xc
+ 843 0449 00020000 		.4byte	.LASF75
+ 844 044d 05       		.byte	0x5
+ 845 044e 8F02     		.2byte	0x28f
+ 846 0450 CB040000 		.4byte	0x4cb
+ 847 0454 10       		.byte	0x10
+ 848 0455 0C       		.uleb128 0xc
+ 849 0456 5F040000 		.4byte	.LASF76
+ 850 045a 05       		.byte	0x5
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 20
+
+
+ 851 045b 9402     		.2byte	0x294
+ 852 045d 83000000 		.4byte	0x83
+ 853 0461 14       		.byte	0x14
+ 854 0462 0C       		.uleb128 0xc
+ 855 0463 7F000000 		.4byte	.LASF77
+ 856 0467 05       		.byte	0x5
+ 857 0468 9B02     		.2byte	0x29b
+ 858 046a 77000000 		.4byte	0x77
+ 859 046e 18       		.byte	0x18
+ 860 046f 0C       		.uleb128 0xc
+ 861 0470 D7020000 		.4byte	.LASF78
+ 862 0474 05       		.byte	0x5
+ 863 0475 A202     		.2byte	0x2a2
+ 864 0477 6B000000 		.4byte	0x6b
+ 865 047b 1A       		.byte	0x1a
+ 866 047c 0C       		.uleb128 0xc
+ 867 047d 27030000 		.4byte	.LASF79
+ 868 0481 05       		.byte	0x5
+ 869 0482 AC02     		.2byte	0x2ac
+ 870 0484 6B000000 		.4byte	0x6b
+ 871 0488 1B       		.byte	0x1b
+ 872 0489 0C       		.uleb128 0xc
+ 873 048a 04060000 		.4byte	.LASF80
+ 874 048e 05       		.byte	0x5
+ 875 048f B102     		.2byte	0x2b1
+ 876 0491 77000000 		.4byte	0x77
+ 877 0495 1C       		.byte	0x1c
+ 878 0496 0C       		.uleb128 0xc
+ 879 0497 BA040000 		.4byte	.LASF81
+ 880 049b 05       		.byte	0x5
+ 881 049c BA02     		.2byte	0x2ba
+ 882 049e 83000000 		.4byte	0x83
+ 883 04a2 20       		.byte	0x20
+ 884 04a3 0C       		.uleb128 0xc
+ 885 04a4 26070000 		.4byte	.LASF82
+ 886 04a8 05       		.byte	0x5
+ 887 04a9 C202     		.2byte	0x2c2
+ 888 04ab D1040000 		.4byte	0x4d1
+ 889 04af 24       		.byte	0x24
+ 890 04b0 0C       		.uleb128 0xc
+ 891 04b1 B1000000 		.4byte	.LASF83
+ 892 04b5 05       		.byte	0x5
+ 893 04b6 C702     		.2byte	0x2c7
+ 894 04b8 6B000000 		.4byte	0x6b
+ 895 04bc 28       		.byte	0x28
+ 896 04bd 00       		.byte	0
+ 897 04be 0F       		.uleb128 0xf
+ 898 04bf 04       		.byte	0x4
+ 899 04c0 C4040000 		.4byte	0x4c4
+ 900 04c4 10       		.uleb128 0x10
+ 901 04c5 0F       		.uleb128 0xf
+ 902 04c6 04       		.byte	0x4
+ 903 04c7 AF020000 		.4byte	0x2af
+ 904 04cb 0F       		.uleb128 0xf
+ 905 04cc 04       		.byte	0x4
+ 906 04cd 6B000000 		.4byte	0x6b
+ 907 04d1 0F       		.uleb128 0xf
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 21
+
+
+ 908 04d2 04       		.byte	0x4
+ 909 04d3 2E010000 		.4byte	0x12e
+ 910 04d7 04       		.uleb128 0x4
+ 911 04d8 16020000 		.4byte	.LASF84
+ 912 04dc 05       		.byte	0x5
+ 913 04dd C802     		.2byte	0x2c8
+ 914 04df 0B040000 		.4byte	0x40b
+ 915 04e3 0D       		.uleb128 0xd
+ 916 04e4 2C       		.byte	0x2c
+ 917 04e5 05       		.byte	0x5
+ 918 04e6 CE02     		.2byte	0x2ce
+ 919 04e8 FA040000 		.4byte	0x4fa
+ 920 04ec 0C       		.uleb128 0xc
+ 921 04ed 4D060000 		.4byte	.LASF85
+ 922 04f1 05       		.byte	0x5
+ 923 04f2 D302     		.2byte	0x2d3
+ 924 04f4 FA040000 		.4byte	0x4fa
+ 925 04f8 00       		.byte	0
+ 926 04f9 00       		.byte	0
+ 927 04fa 0A       		.uleb128 0xa
+ 928 04fb D7040000 		.4byte	0x4d7
+ 929 04ff 0A050000 		.4byte	0x50a
+ 930 0503 0B       		.uleb128 0xb
+ 931 0504 B0000000 		.4byte	0xb0
+ 932 0508 00       		.byte	0
+ 933 0509 00       		.byte	0
+ 934 050a 04       		.uleb128 0x4
+ 935 050b 5F020000 		.4byte	.LASF86
+ 936 050f 05       		.byte	0x5
+ 937 0510 D402     		.2byte	0x2d4
+ 938 0512 E3040000 		.4byte	0x4e3
+ 939 0516 11       		.uleb128 0x11
+ 940 0517 01       		.byte	0x1
+ 941 0518 2C000000 		.4byte	0x2c
+ 942 051c 06       		.byte	0x6
+ 943 051d 2E       		.byte	0x2e
+ 944 051e 4D050000 		.4byte	0x54d
+ 945 0522 12       		.uleb128 0x12
+ 946 0523 0D030000 		.4byte	.LASF87
+ 947 0527 00       		.byte	0
+ 948 0528 12       		.uleb128 0x12
+ 949 0529 8B040000 		.4byte	.LASF88
+ 950 052d 01       		.byte	0x1
+ 951 052e 12       		.uleb128 0x12
+ 952 052f 5D030000 		.4byte	.LASF89
+ 953 0533 02       		.byte	0x2
+ 954 0534 12       		.uleb128 0x12
+ 955 0535 39020000 		.4byte	.LASF90
+ 956 0539 03       		.byte	0x3
+ 957 053a 12       		.uleb128 0x12
+ 958 053b A7020000 		.4byte	.LASF91
+ 959 053f 04       		.byte	0x4
+ 960 0540 12       		.uleb128 0x12
+ 961 0541 44000000 		.4byte	.LASF92
+ 962 0545 05       		.byte	0x5
+ 963 0546 12       		.uleb128 0x12
+ 964 0547 8B000000 		.4byte	.LASF93
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 22
+
+
+ 965 054b 06       		.byte	0x6
+ 966 054c 00       		.byte	0
+ 967 054d 09       		.uleb128 0x9
+ 968 054e E9020000 		.4byte	.LASF94
+ 969 0552 06       		.byte	0x6
+ 970 0553 36       		.byte	0x36
+ 971 0554 16050000 		.4byte	0x516
+ 972 0558 13       		.uleb128 0x13
+ 973 0559 7E020000 		.4byte	.LASF112
+ 974 055d 01       		.byte	0x1
+ 975 055e 44       		.byte	0x44
+ 976 055f 00000000 		.4byte	.LFB1
+ 977 0563 14000000 		.4byte	.LFE1-.LFB1
+ 978 0567 01       		.uleb128 0x1
+ 979 0568 9C       		.byte	0x9c
+ 980 0569 79050000 		.4byte	0x579
+ 981 056d 14       		.uleb128 0x14
+ 982 056e E2050000 		.4byte	.LASF101
+ 983 0572 01       		.byte	0x1
+ 984 0573 46       		.byte	0x46
+ 985 0574 79050000 		.4byte	0x579
+ 986 0578 00       		.byte	0
+ 987 0579 0F       		.uleb128 0xf
+ 988 057a 04       		.byte	0x4
+ 989 057b 7F050000 		.4byte	0x57f
+ 990 057f 05       		.uleb128 0x5
+ 991 0580 FF030000 		.4byte	0x3ff
+ 992 0584 15       		.uleb128 0x15
+ 993 0585 28060000 		.4byte	.LASF113
+ 994 0589 01       		.byte	0x1
+ 995 058a 73       		.byte	0x73
+ 996 058b 83000000 		.4byte	0x83
+ 997 058f 00000000 		.4byte	.LFB2
+ 998 0593 14010000 		.4byte	.LFE2-.LFB2
+ 999 0597 01       		.uleb128 0x1
+ 1000 0598 9C       		.byte	0x9c
+ 1001 0599 51060000 		.4byte	0x651
+ 1002 059d 16       		.uleb128 0x16
+ 1003 059e 87050000 		.4byte	.LASF95
+ 1004 05a2 01       		.byte	0x1
+ 1005 05a3 75       		.byte	0x75
+ 1006 05a4 6B000000 		.4byte	0x6b
+ 1007 05a8 00000000 		.4byte	.LLST0
+ 1008 05ac 16       		.uleb128 0x16
+ 1009 05ad 56020000 		.4byte	.LASF96
+ 1010 05b1 01       		.byte	0x1
+ 1011 05b2 76       		.byte	0x76
+ 1012 05b3 83000000 		.4byte	0x83
+ 1013 05b7 29000000 		.4byte	.LLST1
+ 1014 05bb 16       		.uleb128 0x16
+ 1015 05bc 2D000000 		.4byte	.LASF97
+ 1016 05c0 01       		.byte	0x1
+ 1017 05c1 77       		.byte	0x77
+ 1018 05c2 83000000 		.4byte	0x83
+ 1019 05c6 3C000000 		.4byte	.LLST2
+ 1020 05ca 16       		.uleb128 0x16
+ 1021 05cb F9050000 		.4byte	.LASF98
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 23
+
+
+ 1022 05cf 01       		.byte	0x1
+ 1023 05d0 78       		.byte	0x78
+ 1024 05d1 83000000 		.4byte	0x83
+ 1025 05d5 4F000000 		.4byte	.LLST3
+ 1026 05d9 16       		.uleb128 0x16
+ 1027 05da D7060000 		.4byte	.LASF99
+ 1028 05de 01       		.byte	0x1
+ 1029 05df 79       		.byte	0x79
+ 1030 05e0 4D050000 		.4byte	0x54d
+ 1031 05e4 0F010000 		.4byte	.LLST4
+ 1032 05e8 16       		.uleb128 0x16
+ 1033 05e9 C1060000 		.4byte	.LASF100
+ 1034 05ed 01       		.byte	0x1
+ 1035 05ee 7A       		.byte	0x7a
+ 1036 05ef 83000000 		.4byte	0x83
+ 1037 05f3 22010000 		.4byte	.LLST5
+ 1038 05f7 14       		.uleb128 0x14
+ 1039 05f8 E2050000 		.4byte	.LASF101
+ 1040 05fc 01       		.byte	0x1
+ 1041 05fd 7C       		.byte	0x7c
+ 1042 05fe 79050000 		.4byte	0x579
+ 1043 0602 16       		.uleb128 0x16
+ 1044 0603 84030000 		.4byte	.LASF102
+ 1045 0607 01       		.byte	0x1
+ 1046 0608 7D       		.byte	0x7d
+ 1047 0609 51060000 		.4byte	0x651
+ 1048 060d 63010000 		.4byte	.LLST6
+ 1049 0611 17       		.uleb128 0x17
+ 1050 0612 12000000 		.4byte	.LVL3
+ 1051 0616 8A060000 		.4byte	0x68a
+ 1052 061a 17       		.uleb128 0x17
+ 1053 061b 1C000000 		.4byte	.LVL4
+ 1054 061f 95060000 		.4byte	0x695
+ 1055 0623 17       		.uleb128 0x17
+ 1056 0624 46000000 		.4byte	.LVL10
+ 1057 0628 A0060000 		.4byte	0x6a0
+ 1058 062c 17       		.uleb128 0x17
+ 1059 062d 76000000 		.4byte	.LVL19
+ 1060 0631 8A060000 		.4byte	0x68a
+ 1061 0635 17       		.uleb128 0x17
+ 1062 0636 90000000 		.4byte	.LVL20
+ 1063 063a 95060000 		.4byte	0x695
+ 1064 063e 17       		.uleb128 0x17
+ 1065 063f E4000000 		.4byte	.LVL29
+ 1066 0643 8A060000 		.4byte	0x68a
+ 1067 0647 17       		.uleb128 0x17
+ 1068 0648 FA000000 		.4byte	.LVL30
+ 1069 064c 95060000 		.4byte	0x695
+ 1070 0650 00       		.byte	0
+ 1071 0651 0F       		.uleb128 0xf
+ 1072 0652 04       		.byte	0x4
+ 1073 0653 57060000 		.4byte	0x657
+ 1074 0657 05       		.uleb128 0x5
+ 1075 0658 AF020000 		.4byte	0x2af
+ 1076 065c 18       		.uleb128 0x18
+ 1077 065d CA050000 		.4byte	.LASF103
+ 1078 0661 01       		.byte	0x1
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 24
+
+
+ 1079 0662 35       		.byte	0x35
+ 1080 0663 83000000 		.4byte	0x83
+ 1081 0667 05       		.uleb128 0x5
+ 1082 0668 03       		.byte	0x3
+ 1083 0669 00000000 		.4byte	tunerFsm
+ 1084 066d 19       		.uleb128 0x19
+ 1085 066e 4D040000 		.4byte	.LASF104
+ 1086 0672 05       		.byte	0x5
+ 1087 0673 6804     		.2byte	0x468
+ 1088 0675 FF030000 		.4byte	0x3ff
+ 1089 0679 19       		.uleb128 0x19
+ 1090 067a 78060000 		.4byte	.LASF105
+ 1091 067e 05       		.byte	0x5
+ 1092 067f 6904     		.2byte	0x469
+ 1093 0681 85060000 		.4byte	0x685
+ 1094 0685 1A       		.uleb128 0x1a
+ 1095 0686 0A050000 		.4byte	0x50a
+ 1096 068a 1B       		.uleb128 0x1b
+ 1097 068b 8E030000 		.4byte	.LASF106
+ 1098 068f 8E030000 		.4byte	.LASF106
+ 1099 0693 07       		.byte	0x7
+ 1100 0694 F8       		.byte	0xf8
+ 1101 0695 1B       		.uleb128 0x1b
+ 1102 0696 69000000 		.4byte	.LASF107
+ 1103 069a 69000000 		.4byte	.LASF107
+ 1104 069e 07       		.byte	0x7
+ 1105 069f F9       		.byte	0xf9
+ 1106 06a0 1B       		.uleb128 0x1b
+ 1107 06a1 4E050000 		.4byte	.LASF108
+ 1108 06a5 4E050000 		.4byte	.LASF108
+ 1109 06a9 08       		.byte	0x8
+ 1110 06aa 3B       		.byte	0x3b
+ 1111 06ab 00       		.byte	0
+ 1112              		.section	.debug_abbrev,"",%progbits
+ 1113              	.Ldebug_abbrev0:
+ 1114 0000 01       		.uleb128 0x1
+ 1115 0001 11       		.uleb128 0x11
+ 1116 0002 01       		.byte	0x1
+ 1117 0003 25       		.uleb128 0x25
+ 1118 0004 0E       		.uleb128 0xe
+ 1119 0005 13       		.uleb128 0x13
+ 1120 0006 0B       		.uleb128 0xb
+ 1121 0007 03       		.uleb128 0x3
+ 1122 0008 0E       		.uleb128 0xe
+ 1123 0009 1B       		.uleb128 0x1b
+ 1124 000a 0E       		.uleb128 0xe
+ 1125 000b 55       		.uleb128 0x55
+ 1126 000c 17       		.uleb128 0x17
+ 1127 000d 11       		.uleb128 0x11
+ 1128 000e 01       		.uleb128 0x1
+ 1129 000f 10       		.uleb128 0x10
+ 1130 0010 17       		.uleb128 0x17
+ 1131 0011 00       		.byte	0
+ 1132 0012 00       		.byte	0
+ 1133 0013 02       		.uleb128 0x2
+ 1134 0014 24       		.uleb128 0x24
+ 1135 0015 00       		.byte	0
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 25
+
+
+ 1136 0016 0B       		.uleb128 0xb
+ 1137 0017 0B       		.uleb128 0xb
+ 1138 0018 3E       		.uleb128 0x3e
+ 1139 0019 0B       		.uleb128 0xb
+ 1140 001a 03       		.uleb128 0x3
+ 1141 001b 0E       		.uleb128 0xe
+ 1142 001c 00       		.byte	0
+ 1143 001d 00       		.byte	0
+ 1144 001e 03       		.uleb128 0x3
+ 1145 001f 24       		.uleb128 0x24
+ 1146 0020 00       		.byte	0
+ 1147 0021 0B       		.uleb128 0xb
+ 1148 0022 0B       		.uleb128 0xb
+ 1149 0023 3E       		.uleb128 0x3e
+ 1150 0024 0B       		.uleb128 0xb
+ 1151 0025 03       		.uleb128 0x3
+ 1152 0026 08       		.uleb128 0x8
+ 1153 0027 00       		.byte	0
+ 1154 0028 00       		.byte	0
+ 1155 0029 04       		.uleb128 0x4
+ 1156 002a 16       		.uleb128 0x16
+ 1157 002b 00       		.byte	0
+ 1158 002c 03       		.uleb128 0x3
+ 1159 002d 0E       		.uleb128 0xe
+ 1160 002e 3A       		.uleb128 0x3a
+ 1161 002f 0B       		.uleb128 0xb
+ 1162 0030 3B       		.uleb128 0x3b
+ 1163 0031 05       		.uleb128 0x5
+ 1164 0032 49       		.uleb128 0x49
+ 1165 0033 13       		.uleb128 0x13
+ 1166 0034 00       		.byte	0
+ 1167 0035 00       		.byte	0
+ 1168 0036 05       		.uleb128 0x5
+ 1169 0037 35       		.uleb128 0x35
+ 1170 0038 00       		.byte	0
+ 1171 0039 49       		.uleb128 0x49
+ 1172 003a 13       		.uleb128 0x13
+ 1173 003b 00       		.byte	0
+ 1174 003c 00       		.byte	0
+ 1175 003d 06       		.uleb128 0x6
+ 1176 003e 0F       		.uleb128 0xf
+ 1177 003f 00       		.byte	0
+ 1178 0040 0B       		.uleb128 0xb
+ 1179 0041 0B       		.uleb128 0xb
+ 1180 0042 00       		.byte	0
+ 1181 0043 00       		.byte	0
+ 1182 0044 07       		.uleb128 0x7
+ 1183 0045 13       		.uleb128 0x13
+ 1184 0046 01       		.byte	0x1
+ 1185 0047 0B       		.uleb128 0xb
+ 1186 0048 0B       		.uleb128 0xb
+ 1187 0049 3A       		.uleb128 0x3a
+ 1188 004a 0B       		.uleb128 0xb
+ 1189 004b 3B       		.uleb128 0x3b
+ 1190 004c 0B       		.uleb128 0xb
+ 1191 004d 01       		.uleb128 0x1
+ 1192 004e 13       		.uleb128 0x13
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 26
+
+
+ 1193 004f 00       		.byte	0
+ 1194 0050 00       		.byte	0
+ 1195 0051 08       		.uleb128 0x8
+ 1196 0052 0D       		.uleb128 0xd
+ 1197 0053 00       		.byte	0
+ 1198 0054 03       		.uleb128 0x3
+ 1199 0055 0E       		.uleb128 0xe
+ 1200 0056 3A       		.uleb128 0x3a
+ 1201 0057 0B       		.uleb128 0xb
+ 1202 0058 3B       		.uleb128 0x3b
+ 1203 0059 0B       		.uleb128 0xb
+ 1204 005a 49       		.uleb128 0x49
+ 1205 005b 13       		.uleb128 0x13
+ 1206 005c 38       		.uleb128 0x38
+ 1207 005d 0B       		.uleb128 0xb
+ 1208 005e 00       		.byte	0
+ 1209 005f 00       		.byte	0
+ 1210 0060 09       		.uleb128 0x9
+ 1211 0061 16       		.uleb128 0x16
+ 1212 0062 00       		.byte	0
+ 1213 0063 03       		.uleb128 0x3
+ 1214 0064 0E       		.uleb128 0xe
+ 1215 0065 3A       		.uleb128 0x3a
+ 1216 0066 0B       		.uleb128 0xb
+ 1217 0067 3B       		.uleb128 0x3b
+ 1218 0068 0B       		.uleb128 0xb
+ 1219 0069 49       		.uleb128 0x49
+ 1220 006a 13       		.uleb128 0x13
+ 1221 006b 00       		.byte	0
+ 1222 006c 00       		.byte	0
+ 1223 006d 0A       		.uleb128 0xa
+ 1224 006e 01       		.uleb128 0x1
+ 1225 006f 01       		.byte	0x1
+ 1226 0070 49       		.uleb128 0x49
+ 1227 0071 13       		.uleb128 0x13
+ 1228 0072 01       		.uleb128 0x1
+ 1229 0073 13       		.uleb128 0x13
+ 1230 0074 00       		.byte	0
+ 1231 0075 00       		.byte	0
+ 1232 0076 0B       		.uleb128 0xb
+ 1233 0077 21       		.uleb128 0x21
+ 1234 0078 00       		.byte	0
+ 1235 0079 49       		.uleb128 0x49
+ 1236 007a 13       		.uleb128 0x13
+ 1237 007b 2F       		.uleb128 0x2f
+ 1238 007c 0B       		.uleb128 0xb
+ 1239 007d 00       		.byte	0
+ 1240 007e 00       		.byte	0
+ 1241 007f 0C       		.uleb128 0xc
+ 1242 0080 0D       		.uleb128 0xd
+ 1243 0081 00       		.byte	0
+ 1244 0082 03       		.uleb128 0x3
+ 1245 0083 0E       		.uleb128 0xe
+ 1246 0084 3A       		.uleb128 0x3a
+ 1247 0085 0B       		.uleb128 0xb
+ 1248 0086 3B       		.uleb128 0x3b
+ 1249 0087 05       		.uleb128 0x5
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 27
+
+
+ 1250 0088 49       		.uleb128 0x49
+ 1251 0089 13       		.uleb128 0x13
+ 1252 008a 38       		.uleb128 0x38
+ 1253 008b 0B       		.uleb128 0xb
+ 1254 008c 00       		.byte	0
+ 1255 008d 00       		.byte	0
+ 1256 008e 0D       		.uleb128 0xd
+ 1257 008f 13       		.uleb128 0x13
+ 1258 0090 01       		.byte	0x1
+ 1259 0091 0B       		.uleb128 0xb
+ 1260 0092 0B       		.uleb128 0xb
+ 1261 0093 3A       		.uleb128 0x3a
+ 1262 0094 0B       		.uleb128 0xb
+ 1263 0095 3B       		.uleb128 0x3b
+ 1264 0096 05       		.uleb128 0x5
+ 1265 0097 01       		.uleb128 0x1
+ 1266 0098 13       		.uleb128 0x13
+ 1267 0099 00       		.byte	0
+ 1268 009a 00       		.byte	0
+ 1269 009b 0E       		.uleb128 0xe
+ 1270 009c 0D       		.uleb128 0xd
+ 1271 009d 00       		.byte	0
+ 1272 009e 03       		.uleb128 0x3
+ 1273 009f 08       		.uleb128 0x8
+ 1274 00a0 3A       		.uleb128 0x3a
+ 1275 00a1 0B       		.uleb128 0xb
+ 1276 00a2 3B       		.uleb128 0x3b
+ 1277 00a3 05       		.uleb128 0x5
+ 1278 00a4 49       		.uleb128 0x49
+ 1279 00a5 13       		.uleb128 0x13
+ 1280 00a6 38       		.uleb128 0x38
+ 1281 00a7 0B       		.uleb128 0xb
+ 1282 00a8 00       		.byte	0
+ 1283 00a9 00       		.byte	0
+ 1284 00aa 0F       		.uleb128 0xf
+ 1285 00ab 0F       		.uleb128 0xf
+ 1286 00ac 00       		.byte	0
+ 1287 00ad 0B       		.uleb128 0xb
+ 1288 00ae 0B       		.uleb128 0xb
+ 1289 00af 49       		.uleb128 0x49
+ 1290 00b0 13       		.uleb128 0x13
+ 1291 00b1 00       		.byte	0
+ 1292 00b2 00       		.byte	0
+ 1293 00b3 10       		.uleb128 0x10
+ 1294 00b4 26       		.uleb128 0x26
+ 1295 00b5 00       		.byte	0
+ 1296 00b6 00       		.byte	0
+ 1297 00b7 00       		.byte	0
+ 1298 00b8 11       		.uleb128 0x11
+ 1299 00b9 04       		.uleb128 0x4
+ 1300 00ba 01       		.byte	0x1
+ 1301 00bb 0B       		.uleb128 0xb
+ 1302 00bc 0B       		.uleb128 0xb
+ 1303 00bd 49       		.uleb128 0x49
+ 1304 00be 13       		.uleb128 0x13
+ 1305 00bf 3A       		.uleb128 0x3a
+ 1306 00c0 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 28
+
+
+ 1307 00c1 3B       		.uleb128 0x3b
+ 1308 00c2 0B       		.uleb128 0xb
+ 1309 00c3 01       		.uleb128 0x1
+ 1310 00c4 13       		.uleb128 0x13
+ 1311 00c5 00       		.byte	0
+ 1312 00c6 00       		.byte	0
+ 1313 00c7 12       		.uleb128 0x12
+ 1314 00c8 28       		.uleb128 0x28
+ 1315 00c9 00       		.byte	0
+ 1316 00ca 03       		.uleb128 0x3
+ 1317 00cb 0E       		.uleb128 0xe
+ 1318 00cc 1C       		.uleb128 0x1c
+ 1319 00cd 0B       		.uleb128 0xb
+ 1320 00ce 00       		.byte	0
+ 1321 00cf 00       		.byte	0
+ 1322 00d0 13       		.uleb128 0x13
+ 1323 00d1 2E       		.uleb128 0x2e
+ 1324 00d2 01       		.byte	0x1
+ 1325 00d3 3F       		.uleb128 0x3f
+ 1326 00d4 19       		.uleb128 0x19
+ 1327 00d5 03       		.uleb128 0x3
+ 1328 00d6 0E       		.uleb128 0xe
+ 1329 00d7 3A       		.uleb128 0x3a
+ 1330 00d8 0B       		.uleb128 0xb
+ 1331 00d9 3B       		.uleb128 0x3b
+ 1332 00da 0B       		.uleb128 0xb
+ 1333 00db 27       		.uleb128 0x27
+ 1334 00dc 19       		.uleb128 0x19
+ 1335 00dd 11       		.uleb128 0x11
+ 1336 00de 01       		.uleb128 0x1
+ 1337 00df 12       		.uleb128 0x12
+ 1338 00e0 06       		.uleb128 0x6
+ 1339 00e1 40       		.uleb128 0x40
+ 1340 00e2 18       		.uleb128 0x18
+ 1341 00e3 9742     		.uleb128 0x2117
+ 1342 00e5 19       		.uleb128 0x19
+ 1343 00e6 01       		.uleb128 0x1
+ 1344 00e7 13       		.uleb128 0x13
+ 1345 00e8 00       		.byte	0
+ 1346 00e9 00       		.byte	0
+ 1347 00ea 14       		.uleb128 0x14
+ 1348 00eb 34       		.uleb128 0x34
+ 1349 00ec 00       		.byte	0
+ 1350 00ed 03       		.uleb128 0x3
+ 1351 00ee 0E       		.uleb128 0xe
+ 1352 00ef 3A       		.uleb128 0x3a
+ 1353 00f0 0B       		.uleb128 0xb
+ 1354 00f1 3B       		.uleb128 0x3b
+ 1355 00f2 0B       		.uleb128 0xb
+ 1356 00f3 49       		.uleb128 0x49
+ 1357 00f4 13       		.uleb128 0x13
+ 1358 00f5 00       		.byte	0
+ 1359 00f6 00       		.byte	0
+ 1360 00f7 15       		.uleb128 0x15
+ 1361 00f8 2E       		.uleb128 0x2e
+ 1362 00f9 01       		.byte	0x1
+ 1363 00fa 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 29
+
+
+ 1364 00fb 19       		.uleb128 0x19
+ 1365 00fc 03       		.uleb128 0x3
+ 1366 00fd 0E       		.uleb128 0xe
+ 1367 00fe 3A       		.uleb128 0x3a
+ 1368 00ff 0B       		.uleb128 0xb
+ 1369 0100 3B       		.uleb128 0x3b
+ 1370 0101 0B       		.uleb128 0xb
+ 1371 0102 27       		.uleb128 0x27
+ 1372 0103 19       		.uleb128 0x19
+ 1373 0104 49       		.uleb128 0x49
+ 1374 0105 13       		.uleb128 0x13
+ 1375 0106 11       		.uleb128 0x11
+ 1376 0107 01       		.uleb128 0x1
+ 1377 0108 12       		.uleb128 0x12
+ 1378 0109 06       		.uleb128 0x6
+ 1379 010a 40       		.uleb128 0x40
+ 1380 010b 18       		.uleb128 0x18
+ 1381 010c 9742     		.uleb128 0x2117
+ 1382 010e 19       		.uleb128 0x19
+ 1383 010f 01       		.uleb128 0x1
+ 1384 0110 13       		.uleb128 0x13
+ 1385 0111 00       		.byte	0
+ 1386 0112 00       		.byte	0
+ 1387 0113 16       		.uleb128 0x16
+ 1388 0114 34       		.uleb128 0x34
+ 1389 0115 00       		.byte	0
+ 1390 0116 03       		.uleb128 0x3
+ 1391 0117 0E       		.uleb128 0xe
+ 1392 0118 3A       		.uleb128 0x3a
+ 1393 0119 0B       		.uleb128 0xb
+ 1394 011a 3B       		.uleb128 0x3b
+ 1395 011b 0B       		.uleb128 0xb
+ 1396 011c 49       		.uleb128 0x49
+ 1397 011d 13       		.uleb128 0x13
+ 1398 011e 02       		.uleb128 0x2
+ 1399 011f 17       		.uleb128 0x17
+ 1400 0120 00       		.byte	0
+ 1401 0121 00       		.byte	0
+ 1402 0122 17       		.uleb128 0x17
+ 1403 0123 898201   		.uleb128 0x4109
+ 1404 0126 00       		.byte	0
+ 1405 0127 11       		.uleb128 0x11
+ 1406 0128 01       		.uleb128 0x1
+ 1407 0129 31       		.uleb128 0x31
+ 1408 012a 13       		.uleb128 0x13
+ 1409 012b 00       		.byte	0
+ 1410 012c 00       		.byte	0
+ 1411 012d 18       		.uleb128 0x18
+ 1412 012e 34       		.uleb128 0x34
+ 1413 012f 00       		.byte	0
+ 1414 0130 03       		.uleb128 0x3
+ 1415 0131 0E       		.uleb128 0xe
+ 1416 0132 3A       		.uleb128 0x3a
+ 1417 0133 0B       		.uleb128 0xb
+ 1418 0134 3B       		.uleb128 0x3b
+ 1419 0135 0B       		.uleb128 0xb
+ 1420 0136 49       		.uleb128 0x49
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 30
+
+
+ 1421 0137 13       		.uleb128 0x13
+ 1422 0138 02       		.uleb128 0x2
+ 1423 0139 18       		.uleb128 0x18
+ 1424 013a 00       		.byte	0
+ 1425 013b 00       		.byte	0
+ 1426 013c 19       		.uleb128 0x19
+ 1427 013d 34       		.uleb128 0x34
+ 1428 013e 00       		.byte	0
+ 1429 013f 03       		.uleb128 0x3
+ 1430 0140 0E       		.uleb128 0xe
+ 1431 0141 3A       		.uleb128 0x3a
+ 1432 0142 0B       		.uleb128 0xb
+ 1433 0143 3B       		.uleb128 0x3b
+ 1434 0144 05       		.uleb128 0x5
+ 1435 0145 49       		.uleb128 0x49
+ 1436 0146 13       		.uleb128 0x13
+ 1437 0147 3F       		.uleb128 0x3f
+ 1438 0148 19       		.uleb128 0x19
+ 1439 0149 3C       		.uleb128 0x3c
+ 1440 014a 19       		.uleb128 0x19
+ 1441 014b 00       		.byte	0
+ 1442 014c 00       		.byte	0
+ 1443 014d 1A       		.uleb128 0x1a
+ 1444 014e 26       		.uleb128 0x26
+ 1445 014f 00       		.byte	0
+ 1446 0150 49       		.uleb128 0x49
+ 1447 0151 13       		.uleb128 0x13
+ 1448 0152 00       		.byte	0
+ 1449 0153 00       		.byte	0
+ 1450 0154 1B       		.uleb128 0x1b
+ 1451 0155 2E       		.uleb128 0x2e
+ 1452 0156 00       		.byte	0
+ 1453 0157 3F       		.uleb128 0x3f
+ 1454 0158 19       		.uleb128 0x19
+ 1455 0159 3C       		.uleb128 0x3c
+ 1456 015a 19       		.uleb128 0x19
+ 1457 015b 6E       		.uleb128 0x6e
+ 1458 015c 0E       		.uleb128 0xe
+ 1459 015d 03       		.uleb128 0x3
+ 1460 015e 0E       		.uleb128 0xe
+ 1461 015f 3A       		.uleb128 0x3a
+ 1462 0160 0B       		.uleb128 0xb
+ 1463 0161 3B       		.uleb128 0x3b
+ 1464 0162 0B       		.uleb128 0xb
+ 1465 0163 00       		.byte	0
+ 1466 0164 00       		.byte	0
+ 1467 0165 00       		.byte	0
+ 1468              		.section	.debug_loc,"",%progbits
+ 1469              	.Ldebug_loc0:
+ 1470              	.LLST0:
+ 1471 0000 12000000 		.4byte	.LVL3
+ 1472 0004 1B000000 		.4byte	.LVL4-1
+ 1473 0008 0100     		.2byte	0x1
+ 1474 000a 50       		.byte	0x50
+ 1475 000b 76000000 		.4byte	.LVL19
+ 1476 000f 8F000000 		.4byte	.LVL20-1
+ 1477 0013 0100     		.2byte	0x1
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 31
+
+
+ 1478 0015 50       		.byte	0x50
+ 1479 0016 E4000000 		.4byte	.LVL29
+ 1480 001a F9000000 		.4byte	.LVL30-1
+ 1481 001e 0100     		.2byte	0x1
+ 1482 0020 50       		.byte	0x50
+ 1483 0021 00000000 		.4byte	0
+ 1484 0025 00000000 		.4byte	0
+ 1485              	.LLST1:
+ 1486 0029 A6000000 		.4byte	.LVL22
+ 1487 002d D2000000 		.4byte	.LVL25
+ 1488 0031 0100     		.2byte	0x1
+ 1489 0033 53       		.byte	0x53
+ 1490 0034 00000000 		.4byte	0
+ 1491 0038 00000000 		.4byte	0
+ 1492              	.LLST2:
+ 1493 003c AC000000 		.4byte	.LVL23
+ 1494 0040 DC000000 		.4byte	.LVL27
+ 1495 0044 0100     		.2byte	0x1
+ 1496 0046 52       		.byte	0x52
+ 1497 0047 00000000 		.4byte	0
+ 1498 004b 00000000 		.4byte	0
+ 1499              	.LLST3:
+ 1500 004f 02000000 		.4byte	.LVL1
+ 1501 0053 06000000 		.4byte	.LVL2
+ 1502 0057 0200     		.2byte	0x2
+ 1503 0059 30       		.byte	0x30
+ 1504 005a 9F       		.byte	0x9f
+ 1505 005b 06000000 		.4byte	.LVL2
+ 1506 005f 34000000 		.4byte	.LVL6
+ 1507 0063 0100     		.2byte	0x1
+ 1508 0065 56       		.byte	0x56
+ 1509 0066 34000000 		.4byte	.LVL6
+ 1510 006a 38000000 		.4byte	.LVL7
+ 1511 006e 0200     		.2byte	0x2
+ 1512 0070 31       		.byte	0x31
+ 1513 0071 9F       		.byte	0x9f
+ 1514 0072 38000000 		.4byte	.LVL7
+ 1515 0076 3E000000 		.4byte	.LVL8
+ 1516 007a 0100     		.2byte	0x1
+ 1517 007c 56       		.byte	0x56
+ 1518 007d 3E000000 		.4byte	.LVL8
+ 1519 0081 42000000 		.4byte	.LVL9
+ 1520 0085 0200     		.2byte	0x2
+ 1521 0087 31       		.byte	0x31
+ 1522 0088 9F       		.byte	0x9f
+ 1523 0089 42000000 		.4byte	.LVL9
+ 1524 008d 4C000000 		.4byte	.LVL11
+ 1525 0091 0100     		.2byte	0x1
+ 1526 0093 56       		.byte	0x56
+ 1527 0094 4C000000 		.4byte	.LVL11
+ 1528 0098 52000000 		.4byte	.LVL12
+ 1529 009c 0200     		.2byte	0x2
+ 1530 009e 31       		.byte	0x31
+ 1531 009f 9F       		.byte	0x9f
+ 1532 00a0 52000000 		.4byte	.LVL12
+ 1533 00a4 58000000 		.4byte	.LVL13
+ 1534 00a8 0100     		.2byte	0x1
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 32
+
+
+ 1535 00aa 56       		.byte	0x56
+ 1536 00ab 58000000 		.4byte	.LVL13
+ 1537 00af 5C000000 		.4byte	.LVL14
+ 1538 00b3 0200     		.2byte	0x2
+ 1539 00b5 31       		.byte	0x31
+ 1540 00b6 9F       		.byte	0x9f
+ 1541 00b7 5C000000 		.4byte	.LVL14
+ 1542 00bb 62000000 		.4byte	.LVL15
+ 1543 00bf 0100     		.2byte	0x1
+ 1544 00c1 56       		.byte	0x56
+ 1545 00c2 62000000 		.4byte	.LVL15
+ 1546 00c6 66000000 		.4byte	.LVL16
+ 1547 00ca 0200     		.2byte	0x2
+ 1548 00cc 31       		.byte	0x31
+ 1549 00cd 9F       		.byte	0x9f
+ 1550 00ce 66000000 		.4byte	.LVL16
+ 1551 00d2 6C000000 		.4byte	.LVL17
+ 1552 00d6 0100     		.2byte	0x1
+ 1553 00d8 56       		.byte	0x56
+ 1554 00d9 6C000000 		.4byte	.LVL17
+ 1555 00dd 6E000000 		.4byte	.LVL18
+ 1556 00e1 0200     		.2byte	0x2
+ 1557 00e3 30       		.byte	0x30
+ 1558 00e4 9F       		.byte	0x9f
+ 1559 00e5 6E000000 		.4byte	.LVL18
+ 1560 00e9 90000000 		.4byte	.LVL20
+ 1561 00ed 0100     		.2byte	0x1
+ 1562 00ef 56       		.byte	0x56
+ 1563 00f0 90000000 		.4byte	.LVL20
+ 1564 00f4 92000000 		.4byte	.LVL21
+ 1565 00f8 0200     		.2byte	0x2
+ 1566 00fa 30       		.byte	0x30
+ 1567 00fb 9F       		.byte	0x9f
+ 1568 00fc 92000000 		.4byte	.LVL21
+ 1569 0100 FC000000 		.4byte	.LVL32
+ 1570 0104 0100     		.2byte	0x1
+ 1571 0106 56       		.byte	0x56
+ 1572 0107 00000000 		.4byte	0
+ 1573 010b 00000000 		.4byte	0
+ 1574              	.LLST4:
+ 1575 010f 22000000 		.4byte	.LVL5
+ 1576 0113 C6000000 		.4byte	.LVL24
+ 1577 0117 0100     		.2byte	0x1
+ 1578 0119 54       		.byte	0x54
+ 1579 011a 00000000 		.4byte	0
+ 1580 011e 00000000 		.4byte	0
+ 1581              	.LLST5:
+ 1582 0122 02000000 		.4byte	.LVL1
+ 1583 0126 06000000 		.4byte	.LVL2
+ 1584 012a 0200     		.2byte	0x2
+ 1585 012c 30       		.byte	0x30
+ 1586 012d 9F       		.byte	0x9f
+ 1587 012e 06000000 		.4byte	.LVL2
+ 1588 0132 46000000 		.4byte	.LVL10
+ 1589 0136 0100     		.2byte	0x1
+ 1590 0138 55       		.byte	0x55
+ 1591 0139 46000000 		.4byte	.LVL10
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 33
+
+
+ 1592 013d 52000000 		.4byte	.LVL12
+ 1593 0141 0200     		.2byte	0x2
+ 1594 0143 31       		.byte	0x31
+ 1595 0144 9F       		.byte	0x9f
+ 1596 0145 52000000 		.4byte	.LVL12
+ 1597 0149 FC000000 		.4byte	.LVL31
+ 1598 014d 0100     		.2byte	0x1
+ 1599 014f 55       		.byte	0x55
+ 1600 0150 FC000000 		.4byte	.LVL31
+ 1601 0154 14010000 		.4byte	.LFE2
+ 1602 0158 0100     		.2byte	0x1
+ 1603 015a 50       		.byte	0x50
+ 1604 015b 00000000 		.4byte	0
+ 1605 015f 00000000 		.4byte	0
+ 1606              	.LLST6:
+ 1607 0163 D8000000 		.4byte	.LVL26
+ 1608 0167 FA000000 		.4byte	.LVL30
+ 1609 016b 0100     		.2byte	0x1
+ 1610 016d 54       		.byte	0x54
+ 1611 016e 00000000 		.4byte	0
+ 1612 0172 00000000 		.4byte	0
+ 1613              		.section	.debug_aranges,"",%progbits
+ 1614 0000 24000000 		.4byte	0x24
+ 1615 0004 0200     		.2byte	0x2
+ 1616 0006 00000000 		.4byte	.Ldebug_info0
+ 1617 000a 04       		.byte	0x4
+ 1618 000b 00       		.byte	0
+ 1619 000c 0000     		.2byte	0
+ 1620 000e 0000     		.2byte	0
+ 1621 0010 00000000 		.4byte	.LFB1
+ 1622 0014 14000000 		.4byte	.LFE1-.LFB1
+ 1623 0018 00000000 		.4byte	.LFB2
+ 1624 001c 14010000 		.4byte	.LFE2-.LFB2
+ 1625 0020 00000000 		.4byte	0
+ 1626 0024 00000000 		.4byte	0
+ 1627              		.section	.debug_ranges,"",%progbits
+ 1628              	.Ldebug_ranges0:
+ 1629 0000 00000000 		.4byte	.LFB1
+ 1630 0004 14000000 		.4byte	.LFE1
+ 1631 0008 00000000 		.4byte	.LFB2
+ 1632 000c 14010000 		.4byte	.LFE2
+ 1633 0010 00000000 		.4byte	0
+ 1634 0014 00000000 		.4byte	0
+ 1635              		.section	.debug_line,"",%progbits
+ 1636              	.Ldebug_line0:
+ 1637 0000 46010000 		.section	.debug_str,"MS",%progbits,1
+ 1637      0200E200 
+ 1637      00000201 
+ 1637      FB0E0D00 
+ 1637      01010101 
+ 1638              	.LASF62:
+ 1639 0000 77646774 		.ascii	"wdgtList\000"
+ 1639      4C697374 
+ 1639      00
+ 1640              	.LASF67:
+ 1641 0009 736E7254 		.ascii	"snrTestRawCount\000"
+ 1641      65737452 
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 34
+
+
+ 1641      6177436F 
+ 1641      756E7400 
+ 1642              	.LASF69:
+ 1643 0019 7363616E 		.ascii	"scanCurrentISC\000"
+ 1643      43757272 
+ 1643      656E7449 
+ 1643      534300
+ 1644              	.LASF44:
+ 1645 0028 62736C6E 		.ascii	"bsln\000"
+ 1645      00
+ 1646              	.LASF97:
+ 1647 002d 73656E73 		.ascii	"sensorId\000"
+ 1647      6F724964 
+ 1647      00
+ 1648              	.LASF35:
+ 1649 0036 69646163 		.ascii	"idacGainIndex\000"
+ 1649      4761696E 
+ 1649      496E6465 
+ 1649      7800
+ 1650              	.LASF92:
+ 1651 0044 43617053 		.ascii	"CapSense_P2_TU_CMD_PING_E\000"
+ 1651      656E7365 
+ 1651      5F50325F 
+ 1651      54555F43 
+ 1651      4D445F50 
+ 1652              	.LASF33:
+ 1653 005e 6C6F7742 		.ascii	"lowBslnRst\000"
+ 1653      736C6E52 
+ 1653      737400
+ 1654              	.LASF107:
+ 1655 0069 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1655      69744372 
+ 1655      69746963 
+ 1655      616C5365 
+ 1655      6374696F 
+ 1656              	.LASF77:
+ 1657 007f 746F7461 		.ascii	"totalNumSns\000"
+ 1657      6C4E756D 
+ 1657      536E7300 
+ 1658              	.LASF93:
+ 1659 008b 43617053 		.ascii	"CapSense_P2_TU_CMD_ONE_SCAN_E\000"
+ 1659      656E7365 
+ 1659      5F50325F 
+ 1659      54555F43 
+ 1659      4D445F4F 
+ 1660              	.LASF34:
+ 1661 00a9 69646163 		.ascii	"idacMod\000"
+ 1661      4D6F6400 
+ 1662              	.LASF83:
+ 1663 00b1 69697246 		.ascii	"iirFilterCoeff\000"
+ 1663      696C7465 
+ 1663      72436F65 
+ 1663      666600
+ 1664              	.LASF2:
+ 1665 00c0 73686F72 		.ascii	"short int\000"
+ 1665      7420696E 
+ 1665      7400
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 35
+
+
+ 1666              	.LASF32:
+ 1667 00ca 6F6E4465 		.ascii	"onDebounce\000"
+ 1667      626F756E 
+ 1667      636500
+ 1668              	.LASF16:
+ 1669 00d5 73697A65 		.ascii	"sizetype\000"
+ 1669      74797065 
+ 1669      00
+ 1670              	.LASF51:
+ 1671 00de 636F6E66 		.ascii	"configId\000"
+ 1671      69674964 
+ 1671      00
+ 1672              	.LASF109:
+ 1673 00e7 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1673      43313120 
+ 1673      352E342E 
+ 1673      31203230 
+ 1673      31363036 
+ 1674 011a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 1674      20726576 
+ 1674      6973696F 
+ 1674      6E203233 
+ 1674      37373135 
+ 1675 014d 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 1675      67202D66 
+ 1675      66756E63 
+ 1675      74696F6E 
+ 1675      2D736563 
+ 1676              	.LASF43:
+ 1677 0179 43617053 		.ascii	"CapSense_P2_RAM_WD_LIST_STRUCT\000"
+ 1677      656E7365 
+ 1677      5F50325F 
+ 1677      52414D5F 
+ 1677      57445F4C 
+ 1678              	.LASF60:
+ 1679 0198 63736430 		.ascii	"csd0Config\000"
+ 1679      436F6E66 
+ 1679      696700
+ 1680              	.LASF6:
+ 1681 01a3 6C6F6E67 		.ascii	"long long int\000"
+ 1681      206C6F6E 
+ 1681      6720696E 
+ 1681      7400
+ 1682              	.LASF19:
+ 1683 01b1 70617261 		.ascii	"param0\000"
+ 1683      6D3000
+ 1684              	.LASF37:
+ 1685 01b8 736E7343 		.ascii	"snsClkSource\000"
+ 1685      6C6B536F 
+ 1685      75726365 
+ 1685      00
+ 1686              	.LASF21:
+ 1687 01c5 70617261 		.ascii	"param2\000"
+ 1687      6D3200
+ 1688              	.LASF22:
+ 1689 01cc 70617261 		.ascii	"param3\000"
+ 1689      6D3300
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 36
+
+
+ 1690              	.LASF23:
+ 1691 01d3 70617261 		.ascii	"param4\000"
+ 1691      6D3400
+ 1692              	.LASF24:
+ 1693 01da 70617261 		.ascii	"param5\000"
+ 1693      6D3500
+ 1694              	.LASF25:
+ 1695 01e1 70617261 		.ascii	"param6\000"
+ 1695      6D3600
+ 1696              	.LASF29:
+ 1697 01e8 6E6F6973 		.ascii	"noiseTh\000"
+ 1697      65546800 
+ 1698              	.LASF52:
+ 1699 01f0 64657669 		.ascii	"deviceId\000"
+ 1699      63654964 
+ 1699      00
+ 1700              	.LASF10:
+ 1701 01f9 75696E74 		.ascii	"uint16\000"
+ 1701      313600
+ 1702              	.LASF75:
+ 1703 0200 70747232 		.ascii	"ptr2DebounceArr\000"
+ 1703      4465626F 
+ 1703      756E6365 
+ 1703      41727200 
+ 1704              	.LASF9:
+ 1705 0210 75696E74 		.ascii	"uint8\000"
+ 1705      3800
+ 1706              	.LASF84:
+ 1707 0216 43617053 		.ascii	"CapSense_P2_FLASH_WD_STRUCT\000"
+ 1707      656E7365 
+ 1707      5F50325F 
+ 1707      464C4153 
+ 1707      485F5744 
+ 1708              	.LASF36:
+ 1709 0232 736E7343 		.ascii	"snsClk\000"
+ 1709      6C6B00
+ 1710              	.LASF90:
+ 1711 0239 43617053 		.ascii	"CapSense_P2_TU_CMD_RESTART_E\000"
+ 1711      656E7365 
+ 1711      5F50325F 
+ 1711      54555F43 
+ 1711      4D445F52 
+ 1712              	.LASF96:
+ 1713 0256 77696467 		.ascii	"widgetId\000"
+ 1713      65744964 
+ 1713      00
+ 1714              	.LASF86:
+ 1715 025f 43617053 		.ascii	"CapSense_P2_FLASH_STRUCT\000"
+ 1715      656E7365 
+ 1715      5F50325F 
+ 1715      464C4153 
+ 1715      485F5354 
+ 1716              	.LASF12:
+ 1717 0278 666C6F61 		.ascii	"float\000"
+ 1717      7400
+ 1718              	.LASF112:
+ 1719 027e 43617053 		.ascii	"CapSense_P2_TuInitialize\000"
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 37
+
+
+ 1719      656E7365 
+ 1719      5F50325F 
+ 1719      5475496E 
+ 1719      69746961 
+ 1720              	.LASF65:
+ 1721 0297 736E7254 		.ascii	"snrTestSensorId\000"
+ 1721      65737453 
+ 1721      656E736F 
+ 1721      72496400 
+ 1722              	.LASF91:
+ 1723 02a7 43617053 		.ascii	"CapSense_P2_TU_CMD_RUN_SNR_TEST_E\000"
+ 1723      656E7365 
+ 1723      5F50325F 
+ 1723      54555F43 
+ 1723      4D445F52 
+ 1724              	.LASF14:
+ 1725 02c9 63686172 		.ascii	"char\000"
+ 1725      00
+ 1726              	.LASF4:
+ 1727 02ce 6C6F6E67 		.ascii	"long int\000"
+ 1727      20696E74 
+ 1727      00
+ 1728              	.LASF78:
+ 1729 02d7 77646774 		.ascii	"wdgtType\000"
+ 1729      54797065 
+ 1729      00
+ 1730              	.LASF28:
+ 1731 02e0 66696E67 		.ascii	"fingerTh\000"
+ 1731      65725468 
+ 1731      00
+ 1732              	.LASF94:
+ 1733 02e9 43617053 		.ascii	"CapSense_P2_TU_CMD_ENUM\000"
+ 1733      656E7365 
+ 1733      5F50325F 
+ 1733      54555F43 
+ 1733      4D445F45 
+ 1734              	.LASF72:
+ 1735 0301 70747232 		.ascii	"ptr2WdgtRam\000"
+ 1735      57646774 
+ 1735      52616D00 
+ 1736              	.LASF87:
+ 1737 030d 43617053 		.ascii	"CapSense_P2_TU_CMD_NONE_E\000"
+ 1737      656E7365 
+ 1737      5F50325F 
+ 1737      54555F43 
+ 1737      4D445F4E 
+ 1738              	.LASF79:
+ 1739 0327 6E756D43 		.ascii	"numCols\000"
+ 1739      6F6C7300 
+ 1740              	.LASF1:
+ 1741 032f 756E7369 		.ascii	"unsigned char\000"
+ 1741      676E6564 
+ 1741      20636861 
+ 1741      7200
+ 1742              	.LASF31:
+ 1743 033d 68797374 		.ascii	"hysteresis\000"
+ 1743      65726573 
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 38
+
+
+ 1743      697300
+ 1744              	.LASF54:
+ 1745 0348 74756E65 		.ascii	"tunerCmd\000"
+ 1745      72436D64 
+ 1745      00
+ 1746              	.LASF15:
+ 1747 0351 6C6F6E67 		.ascii	"long double\000"
+ 1747      20646F75 
+ 1747      626C6500 
+ 1748              	.LASF89:
+ 1749 035d 43617053 		.ascii	"CapSense_P2_TU_CMD_RESUME_E\000"
+ 1749      656E7365 
+ 1749      5F50325F 
+ 1749      54555F43 
+ 1749      4D445F52 
+ 1750              	.LASF58:
+ 1751 0379 77646774 		.ascii	"wdgtStatus\000"
+ 1751      53746174 
+ 1751      757300
+ 1752              	.LASF102:
+ 1753 0384 70747253 		.ascii	"ptrSnsTmp\000"
+ 1753      6E73546D 
+ 1753      7000
+ 1754              	.LASF106:
+ 1755 038e 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1755      74657243 
+ 1755      72697469 
+ 1755      63616C53 
+ 1755      65637469 
+ 1756              	.LASF41:
+ 1757 03a5 43617053 		.ascii	"CapSense_P2_RAM_WD_SLIDER_STRUCT\000"
+ 1757      656E7365 
+ 1757      5F50325F 
+ 1757      52414D5F 
+ 1757      57445F53 
+ 1758              	.LASF110:
+ 1759 03c6 47656E65 		.ascii	"Generated_Source\\PSoC4\\CapSense_P2_Tuner.c\000"
+ 1759      72617465 
+ 1759      645F536F 
+ 1759      75726365 
+ 1759      5C50536F 
+ 1760              	.LASF18:
+ 1761 03f1 43617053 		.ascii	"CapSense_P2_LOW_BSLN_RST_TYPE\000"
+ 1761      656E7365 
+ 1761      5F50325F 
+ 1761      4C4F575F 
+ 1761      42534C4E 
+ 1762              	.LASF17:
+ 1763 040f 43617053 		.ascii	"CapSense_P2_THRESHOLD_TYPE\000"
+ 1763      656E7365 
+ 1763      5F50325F 
+ 1763      54485245 
+ 1763      53484F4C 
+ 1764              	.LASF0:
+ 1765 042a 7369676E 		.ascii	"signed char\000"
+ 1765      65642063 
+ 1765      68617200 
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 39
+
+
+ 1766              	.LASF7:
+ 1767 0436 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1767      206C6F6E 
+ 1767      6720756E 
+ 1767      7369676E 
+ 1767      65642069 
+ 1768              	.LASF104:
+ 1769 044d 43617053 		.ascii	"CapSense_P2_dsRam\000"
+ 1769      656E7365 
+ 1769      5F50325F 
+ 1769      64735261 
+ 1769      6D00
+ 1770              	.LASF76:
+ 1771 045f 73746174 		.ascii	"staticConfig\000"
+ 1771      6963436F 
+ 1771      6E666967 
+ 1771      00
+ 1772              	.LASF8:
+ 1773 046c 756E7369 		.ascii	"unsigned int\000"
+ 1773      676E6564 
+ 1773      20696E74 
+ 1773      00
+ 1774              	.LASF5:
+ 1775 0479 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1775      20756E73 
+ 1775      69676E65 
+ 1775      6420696E 
+ 1775      7400
+ 1776              	.LASF88:
+ 1777 048b 43617053 		.ascii	"CapSense_P2_TU_CMD_SUSPEND_E\000"
+ 1777      656E7365 
+ 1777      5F50325F 
+ 1777      54555F43 
+ 1777      4D445F53 
+ 1778              	.LASF57:
+ 1779 04a8 77646774 		.ascii	"wdgtEnable\000"
+ 1779      456E6162 
+ 1779      6C6500
+ 1780              	.LASF20:
+ 1781 04b3 70617261 		.ascii	"param1\000"
+ 1781      6D3100
+ 1782              	.LASF81:
+ 1783 04ba 7843656E 		.ascii	"xCentroidMultiplier\000"
+ 1783      74726F69 
+ 1783      644D756C 
+ 1783      7469706C 
+ 1783      69657200 
+ 1784              	.LASF3:
+ 1785 04ce 73686F72 		.ascii	"short unsigned int\000"
+ 1785      7420756E 
+ 1785      7369676E 
+ 1785      65642069 
+ 1785      6E7400
+ 1786              	.LASF56:
+ 1787 04e1 73746174 		.ascii	"status\000"
+ 1787      757300
+ 1788              	.LASF53:
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 40
+
+
+ 1789 04e8 6877436C 		.ascii	"hwClock\000"
+ 1789      6F636B00 
+ 1790              	.LASF70:
+ 1791 04f0 43617053 		.ascii	"CapSense_P2_RAM_STRUCT\000"
+ 1791      656E7365 
+ 1791      5F50325F 
+ 1791      52414D5F 
+ 1791      53545255 
+ 1792              	.LASF50:
+ 1793 0507 43617053 		.ascii	"CapSense_P2_RAM_SNS_LIST_STRUCT\000"
+ 1793      656E7365 
+ 1793      5F50325F 
+ 1793      52414D5F 
+ 1793      534E535F 
+ 1794              	.LASF66:
+ 1795 0527 736E7254 		.ascii	"snrTestScanCounter\000"
+ 1795      65737453 
+ 1795      63616E43 
+ 1795      6F756E74 
+ 1795      657200
+ 1796              	.LASF48:
+ 1797 053a 69646163 		.ascii	"idacComp\000"
+ 1797      436F6D70 
+ 1797      00
+ 1798              	.LASF27:
+ 1799 0543 7265736F 		.ascii	"resolution\000"
+ 1799      6C757469 
+ 1799      6F6E00
+ 1800              	.LASF108:
+ 1801 054e 43617053 		.ascii	"CapSense_P2_Start\000"
+ 1801      656E7365 
+ 1801      5F50325F 
+ 1801      53746172 
+ 1801      7400
+ 1802              	.LASF63:
+ 1803 0560 736E734C 		.ascii	"snsList\000"
+ 1803      69737400 
+ 1804              	.LASF61:
+ 1805 0568 6D6F6443 		.ascii	"modCsdClk\000"
+ 1805      7364436C 
+ 1805      6B00
+ 1806              	.LASF55:
+ 1807 0572 7363616E 		.ascii	"scanCounter\000"
+ 1807      436F756E 
+ 1807      74657200 
+ 1808              	.LASF30:
+ 1809 057e 6E4E6F69 		.ascii	"nNoiseTh\000"
+ 1809      73655468 
+ 1809      00
+ 1810              	.LASF95:
+ 1811 0587 696E7465 		.ascii	"interruptState\000"
+ 1811      72727570 
+ 1811      74537461 
+ 1811      746500
+ 1812              	.LASF49:
+ 1813 0596 43617053 		.ascii	"CapSense_P2_RAM_SNS_STRUCT\000"
+ 1813      656E7365 
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 41
+
+
+ 1813      5F50325F 
+ 1813      52414D5F 
+ 1813      534E535F 
+ 1814              	.LASF39:
+ 1815 05b1 73696750 		.ascii	"sigPFC\000"
+ 1815      464300
+ 1816              	.LASF11:
+ 1817 05b8 75696E74 		.ascii	"uint32\000"
+ 1817      333200
+ 1818              	.LASF68:
+ 1819 05bf 7363616E 		.ascii	"scanCsdISC\000"
+ 1819      43736449 
+ 1819      534300
+ 1820              	.LASF103:
+ 1821 05ca 74756E65 		.ascii	"tunerFsm\000"
+ 1821      7246736D 
+ 1821      00
+ 1822              	.LASF13:
+ 1823 05d3 646F7562 		.ascii	"double\000"
+ 1823      6C6500
+ 1824              	.LASF45:
+ 1825 05da 62736C6E 		.ascii	"bslnExt\000"
+ 1825      45787400 
+ 1826              	.LASF101:
+ 1827 05e2 70747244 		.ascii	"ptrDsRam\000"
+ 1827      7352616D 
+ 1827      00
+ 1828              	.LASF47:
+ 1829 05eb 6E656742 		.ascii	"negBslnRstCnt\000"
+ 1829      736C6E52 
+ 1829      7374436E 
+ 1829      7400
+ 1830              	.LASF98:
+ 1831 05f9 75706461 		.ascii	"updateFlag\000"
+ 1831      7465466C 
+ 1831      616700
+ 1832              	.LASF80:
+ 1833 0604 78526573 		.ascii	"xResolution\000"
+ 1833      6F6C7574 
+ 1833      696F6E00 
+ 1834              	.LASF73:
+ 1835 0610 70747232 		.ascii	"ptr2SnsRam\000"
+ 1835      536E7352 
+ 1835      616D00
+ 1836              	.LASF71:
+ 1837 061b 70747232 		.ascii	"ptr2SnsFlash\000"
+ 1837      536E7346 
+ 1837      6C617368 
+ 1837      00
+ 1838              	.LASF113:
+ 1839 0628 43617053 		.ascii	"CapSense_P2_RunTuner\000"
+ 1839      656E7365 
+ 1839      5F50325F 
+ 1839      52756E54 
+ 1839      756E6572 
+ 1840              	.LASF74:
+ 1841 063d 70747232 		.ascii	"ptr2FltrHistory\000"
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 42
+
+
+ 1841      466C7472 
+ 1841      48697374 
+ 1841      6F727900 
+ 1842              	.LASF85:
+ 1843 064d 77646774 		.ascii	"wdgtArray\000"
+ 1843      41727261 
+ 1843      7900
+ 1844              	.LASF38:
+ 1845 0657 66696E67 		.ascii	"fingerCap\000"
+ 1845      65724361 
+ 1845      7000
+ 1846              	.LASF42:
+ 1847 0661 6C696E65 		.ascii	"linearslider0\000"
+ 1847      6172736C 
+ 1847      69646572 
+ 1847      3000
+ 1848              	.LASF40:
+ 1849 066f 706F7369 		.ascii	"position\000"
+ 1849      74696F6E 
+ 1849      00
+ 1850              	.LASF105:
+ 1851 0678 43617053 		.ascii	"CapSense_P2_dsFlash\000"
+ 1851      656E7365 
+ 1851      5F50325F 
+ 1851      6473466C 
+ 1851      61736800 
+ 1852              	.LASF64:
+ 1853 068c 736E7254 		.ascii	"snrTestWidgetId\000"
+ 1853      65737457 
+ 1853      69646765 
+ 1853      74496400 
+ 1854              	.LASF26:
+ 1855 069c 534D4152 		.ascii	"SMARTSENSE_CSD_NOISE_ENVELOPE_STRUCT\000"
+ 1855      5453454E 
+ 1855      53455F43 
+ 1855      53445F4E 
+ 1855      4F495345 
+ 1856              	.LASF100:
+ 1857 06c1 74756E65 		.ascii	"tunerStatus\000"
+ 1857      72537461 
+ 1857      74757300 
+ 1858              	.LASF59:
+ 1859 06cd 736E7353 		.ascii	"snsStatus\000"
+ 1859      74617475 
+ 1859      7300
+ 1860              	.LASF99:
+ 1861 06d7 636F6D6D 		.ascii	"command\000"
+ 1861      616E6400 
+ 1862              	.LASF111:
+ 1863 06df 433A5C55 		.ascii	"C:\\Users\\Petro\\Documents\\PSoC Creator\\CapSense"
+ 1863      73657273 
+ 1863      5C506574 
+ 1863      726F5C44 
+ 1863      6F63756D 
+ 1864 070d 5F546173 		.ascii	"_Tasks\\Task_1.cydsn\000"
+ 1864      6B735C54 
+ 1864      61736B5F 
+ARM GAS  C:\Users\Petro\AppData\Local\Temp\ccsvHiFB.s 			page 43
+
+
+ 1864      312E6379 
+ 1864      64736E00 
+ 1865              	.LASF46:
+ 1866 0721 64696666 		.ascii	"diff\000"
+ 1866      00
+ 1867              	.LASF82:
+ 1868 0726 70747232 		.ascii	"ptr2NoiseEnvlp\000"
+ 1868      4E6F6973 
+ 1868      65456E76 
+ 1868      6C7000
+ 1869              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
