@@ -16,3 +16,8 @@ How to Play
 - If the correct button is pressed in time, the reaction is counted.
 - If not — the error LED blinks, and stats are printed via UART.
 - Press the user button again to restart the game.
+
+To build and run this project, you will need the following:
+- PSoC 4000S Prototyping Kit (e.g., CY8CKIT-145-40XX)
+- PSoC Creator
+- Serial terminal software such as: PuTTY or TeraTerm
