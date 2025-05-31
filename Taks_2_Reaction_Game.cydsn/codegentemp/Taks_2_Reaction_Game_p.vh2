@@ -1,5 +1,5 @@
 -- Project:   Taks_2_Reaction_Game
--- Generated: 05/24/2025 13:34:49
+-- Generated: 05/31/2025 23:46:47
 -- PSoC Creator  4.4
 
 ENTITY Taks_2_Reaction_Game IS
@@ -10,7 +10,7 @@ ENTITY Taks_2_Reaction_Game IS
         LED_CapSense_Button_1(0)_PAD : OUT std_ulogic;
         LED_CapSense_Button_2(0)_PAD : OUT std_ulogic;
         LED_User_status(0)_PAD : OUT std_ulogic;
-        User_Button(0)_PAD : IN std_ulogic);
+        User_button_pin(0)_PAD : IN std_ulogic);
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD_2 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
@@ -33,8 +33,9 @@ ARCHITECTURE __DEFAULT__ OF Taks_2_Reaction_Game IS
     SIGNAL LED_User_status(0)__PA : bit;
     SIGNAL Net_15 : bit;
     SIGNAL Net_24 : bit;
+    SIGNAL Net_54 : bit;
     SIGNAL Net_6 : bit;
-    SIGNAL User_Button(0)__PA : bit;
+    SIGNAL User_button_pin(0)__PA : bit;
     SIGNAL \\\CapSense:Cmod(0)\\__PA\ : bit;
     SIGNAL \CapSense:Net_120\ : bit;
     SIGNAL \CapSense:Net_1423_ff2\ : bit;
@@ -99,7 +100,7 @@ ARCHITECTURE __DEFAULT__ OF Taks_2_Reaction_Game IS
     ATTRIBUTE Location OF LED_CapSense_Button_1(0) : LABEL IS "P3[5]";
     ATTRIBUTE Location OF LED_CapSense_Button_2(0) : LABEL IS "P3[6]";
     ATTRIBUTE Location OF LED_User_status(0) : LABEL IS "P2[5]";
-    ATTRIBUTE Location OF User_Button(0) : LABEL IS "P0[7]";
+    ATTRIBUTE Location OF User_button_pin(0) : LABEL IS "P0[7]";
     ATTRIBUTE Location OF \CapSense:CSD\ : LABEL IS "F(CSD,0)";
     ATTRIBUTE Location OF \CapSense:IDACMod\ : LABEL IS "F(CSIDAC7,0)";
     ATTRIBUTE Location OF \CapSense:IDACComp\ : LABEL IS "F(CSIDAC7,1)";
@@ -1100,9 +1101,9 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    User_Button:logicalport
+    User_button_pin:logicalport
         GENERIC MAP(
-            drive_mode => "001",
+            drive_mode => "010",
             ibuf_enabled => "1",
             id => "77715107-f8d5-47e5-a629-0fb83101ac6b",
             init_dr_st => "0",
@@ -1110,7 +1111,7 @@ BEGIN
             input_clk_en => 0,
             input_sync => "0",
             input_sync_mode => "0",
-            intr_mode => "00",
+            intr_mode => "10",
             invert_in_clock => 0,
             invert_in_clock_en => 0,
             invert_in_reset => 0,
@@ -1169,20 +1170,21 @@ BEGIN
             in_clock_en => open,
             in_reset => open,
             out_clock_en => open,
-            out_reset => open);
+            out_reset => open,
+            interrupt => Net_54);
 
-    User_Button(0):iocell
+    User_button_pin(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "User_Button",
+            logicalport => "User_button_pin",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000001000000000000000000000000000000000001")
         PORT MAP(
-            pa_out => User_Button(0)__PA,
+            pa_out => User_button_pin(0)__PA,
             oe => open,
-            pad_in => User_Button(0)_PAD,
+            pad_in => User_button_pin(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -1290,5 +1292,13 @@ BEGIN
             sclk_s => open,
             tr_tx_req => Net_24,
             tr_rx_req => Net_15);
+
+    isr_UserReset:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_54,
+            clock => ClockBlock_HFClk);
 
 END __DEFAULT__;

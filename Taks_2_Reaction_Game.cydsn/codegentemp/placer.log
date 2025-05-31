@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     May 24 2025 13:34:49
+#File Generated:     May 31 2025 23:46:47
 
 #Purpose:            
 
@@ -14,7 +14,7 @@
 
 #***************************************************************************
 
-Executing : D:\Psoc\PSoC Creator\4.4\PSoC Creator\bin/sjplacer.exe --proj-name Taks_2_Reaction_Game --netlist-vh2 Taks_2_Reaction_Game_p.vh2 --arch p4_udb0x0 --arch-file D:\Psoc\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi_0x0.cydata --ip-file D:\Psoc\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/ip_blocks.cydata --rrg-file D:\Psoc\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/route_arch-rrg.cydata --irq-file D:\Psoc\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/irqconn.cydata --drq-file D:\Psoc\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/triggerconn.cydata --dsi-conn-file D:\Psoc\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/dsiconn.cydata --pins-file pins_48-TQFP.xml --io-pcf Taks_2_Reaction_Game.pci --outdir .
+Executing : F:\psoccreator\PSoC Creator\4.4\PSoC Creator\bin/sjplacer.exe --proj-name Taks_2_Reaction_Game --netlist-vh2 Taks_2_Reaction_Game_p.vh2 --arch p4_udb0x0 --arch-file F:\psoccreator\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi_0x0.cydata --ip-file F:\psoccreator\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/ip_blocks.cydata --rrg-file F:\psoccreator\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/route_arch-rrg.cydata --irq-file F:\psoccreator\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/irqconn.cydata --drq-file F:\psoccreator\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/triggerconn.cydata --dsi-conn-file F:\psoccreator\PSoC Creator\4.4\PSoC Creator\dev\psoc4/9/dsiconn.cydata --pins-file pins_48-TQFP.xml --io-pcf Taks_2_Reaction_Game.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
@@ -23,7 +23,7 @@ Build Date : Sep  9 2019	11:45:12
 D2004: Option and Settings Summary
 =============================================================
 Netlist vh2 file          - Taks_2_Reaction_Game_p.vh2
-Architecture file         - D:\Psoc\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi_0x0.cydata
+Architecture file         - F:\psoccreator\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi_0x0.cydata
 Package                   - 
 Defparam file             - 
 SDC file                  - 
@@ -34,7 +34,7 @@ IO Placement file         - Taks_2_Reaction_Game.pci
 D2050: Starting reading inputs for placer
 =============================================================
 D2065: Reading netlist file : "Taks_2_Reaction_Game_p.vh2"
-D2065: Reading arch file : "D:\Psoc\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi_0x0.cydata"
+D2065: Reading arch file : "F:\psoccreator\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi_0x0.cydata"
 D2051: Reading of inputs for placer completed successfully
 
 D2053: Starting placement of the design

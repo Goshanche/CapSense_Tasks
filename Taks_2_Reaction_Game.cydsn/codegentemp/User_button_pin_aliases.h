@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: User_Button.h  
+* File Name: User_button_pin.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_User_Button_ALIASES_H) /* Pins User_Button_ALIASES_H */
-#define CY_PINS_User_Button_ALIASES_H
+#if !defined(CY_PINS_User_button_pin_ALIASES_H) /* Pins User_button_pin_ALIASES_H */
+#define CY_PINS_User_button_pin_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,17 +26,17 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define User_Button_0			(User_Button__0__PC)
-#define User_Button_0_PS		(User_Button__0__PS)
-#define User_Button_0_PC		(User_Button__0__PC)
-#define User_Button_0_DR		(User_Button__0__DR)
-#define User_Button_0_SHIFT	(User_Button__0__SHIFT)
-#define User_Button_0_INTR	((uint16)((uint16)0x0003u << (User_Button__0__SHIFT*2u)))
+#define User_button_pin_0			(User_button_pin__0__PC)
+#define User_button_pin_0_PS		(User_button_pin__0__PS)
+#define User_button_pin_0_PC		(User_button_pin__0__PC)
+#define User_button_pin_0_DR		(User_button_pin__0__DR)
+#define User_button_pin_0_SHIFT	(User_button_pin__0__SHIFT)
+#define User_button_pin_0_INTR	((uint16)((uint16)0x0003u << (User_button_pin__0__SHIFT*2u)))
 
-#define User_Button_INTR_ALL	 ((uint16)(User_Button_0_INTR))
+#define User_button_pin_INTR_ALL	 ((uint16)(User_button_pin_0_INTR))
 
 
-#endif /* End Pins User_Button_ALIASES_H */
+#endif /* End Pins User_button_pin_ALIASES_H */
 
 
 /* [] END OF FILE */

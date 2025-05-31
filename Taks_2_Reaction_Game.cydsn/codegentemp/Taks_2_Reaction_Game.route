@@ -2,7 +2,15 @@ net ClockBlock_HFClk
 	term   ":m0s8clockblockcell.hfclk"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_10.clock"
 	term   ":interrupt_10.clock"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_0.clock"
+	term   ":interrupt_0.clock"
 end ClockBlock_HFClk
+net Net_54
+	term   ":logicalport_0.interrupt"
+	switch ":logicalport_0.interrupt==>:interrupt_idmux_0.in_0"
+	switch ":interrupt_idmux_0.interrupt_idmux_0__out==>:interrupt_0.interrupt"
+	term   ":interrupt_0.interrupt"
+end Net_54
 net \CapSense:Net_120\
 	term   ":p4csdcell.irq"
 	switch ":p4csdcell.irq==>:interrupt_idmux_10.in_0"

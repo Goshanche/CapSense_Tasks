@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: User_Button.c  
+* File Name: User_button_pin.c  
 * Version 2.20
 *
 * Description:
@@ -15,13 +15,13 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "User_Button.h"
+#include "User_button_pin.h"
 
-static User_Button_BACKUP_STRUCT  User_Button_backup = {0u, 0u, 0u};
+static User_button_pin_BACKUP_STRUCT  User_button_pin_backup = {0u, 0u, 0u};
 
 
 /*******************************************************************************
-* Function Name: User_Button_Sleep
+* Function Name: User_button_pin_Sleep
 ****************************************************************************//**
 *
 * \brief Stores the pin configuration and prepares the pin for entering chip 
@@ -39,30 +39,30 @@ static User_Button_BACKUP_STRUCT  User_Button_backup = {0u, 0u, 0u};
 *  deep-sleep/hibernate modes.
 *
 * \funcusage
-*  \snippet User_Button_SUT.c usage_User_Button_Sleep_Wakeup
+*  \snippet User_button_pin_SUT.c usage_User_button_pin_Sleep_Wakeup
 *******************************************************************************/
-void User_Button_Sleep(void)
+void User_button_pin_Sleep(void)
 {
-    #if defined(User_Button__PC)
-        User_Button_backup.pcState = User_Button_PC;
+    #if defined(User_button_pin__PC)
+        User_button_pin_backup.pcState = User_button_pin_PC;
     #else
         #if (CY_PSOC4_4200L)
             /* Save the regulator state and put the PHY into suspend mode */
-            User_Button_backup.usbState = User_Button_CR1_REG;
-            User_Button_USB_POWER_REG |= User_Button_USBIO_ENTER_SLEEP;
-            User_Button_CR1_REG &= User_Button_USBIO_CR1_OFF;
+            User_button_pin_backup.usbState = User_button_pin_CR1_REG;
+            User_button_pin_USB_POWER_REG |= User_button_pin_USBIO_ENTER_SLEEP;
+            User_button_pin_CR1_REG &= User_button_pin_USBIO_CR1_OFF;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(User_Button__SIO)
-        User_Button_backup.sioState = User_Button_SIO_REG;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(User_button_pin__SIO)
+        User_button_pin_backup.sioState = User_button_pin_SIO_REG;
         /* SIO requires unregulated output buffer and single ended input buffer */
-        User_Button_SIO_REG &= (uint32)(~User_Button_SIO_LPM_MASK);
+        User_button_pin_SIO_REG &= (uint32)(~User_button_pin_SIO_LPM_MASK);
     #endif  
 }
 
 
 /*******************************************************************************
-* Function Name: User_Button_Wakeup
+* Function Name: User_button_pin_Wakeup
 ****************************************************************************//**
 *
 * \brief Restores the pin configuration that was saved during Pin_Sleep(). This 
@@ -77,22 +77,22 @@ void User_Button_Sleep(void)
 *  None
 *  
 * \funcusage
-*  Refer to User_Button_Sleep() for an example usage.
+*  Refer to User_button_pin_Sleep() for an example usage.
 *******************************************************************************/
-void User_Button_Wakeup(void)
+void User_button_pin_Wakeup(void)
 {
-    #if defined(User_Button__PC)
-        User_Button_PC = User_Button_backup.pcState;
+    #if defined(User_button_pin__PC)
+        User_button_pin_PC = User_button_pin_backup.pcState;
     #else
         #if (CY_PSOC4_4200L)
             /* Restore the regulator state and come out of suspend mode */
-            User_Button_USB_POWER_REG &= User_Button_USBIO_EXIT_SLEEP_PH1;
-            User_Button_CR1_REG = User_Button_backup.usbState;
-            User_Button_USB_POWER_REG &= User_Button_USBIO_EXIT_SLEEP_PH2;
+            User_button_pin_USB_POWER_REG &= User_button_pin_USBIO_EXIT_SLEEP_PH1;
+            User_button_pin_CR1_REG = User_button_pin_backup.usbState;
+            User_button_pin_USB_POWER_REG &= User_button_pin_USBIO_EXIT_SLEEP_PH2;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(User_Button__SIO)
-        User_Button_SIO_REG = User_Button_backup.sioState;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(User_button_pin__SIO)
+        User_button_pin_SIO_REG = User_button_pin_backup.sioState;
     #endif
 }
 
