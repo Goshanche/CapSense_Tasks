@@ -1,8 +1,7 @@
-C:\Users\Petro\Documents\PSoC Creator\CapSense_Tasks\Task_1.cydsn\Task_1.cyprj|3425e551-b2df-4b58-b0a5-3ed6b59fc52c
-D:\Psoc\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|0586059b-f568-45c7-866d-cc7e447e759a
-C:\Users\Petro\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|f17cb290-6cf9-4263-9de6-b9a0ad1913af
-D:\Psoc\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c7d0e6fc-57a3-4971-84b0-bb53012b4561
-D:\Psoc\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e4aad0c5-2c12-42cb-8b99-eed92d628fe9
-D:\Psoc\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3d163b49-b62a-42f0-8962-4b2274ceb761
-C:\Users\Petro\Documents\PSoC Creator\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\Taks_2_Reaction_Game.cyprj|93dc01d0-07fc-4cde-ad5e-d2c25a40072c
-C:\Users\Petro\Documents\PSoC Creator\CapSense_Tasks\Design01.cydsn\Design01.cyprj|4db8185b-1df7-42a4-aa05-f4e2c62dcf21
+F:\CapSense_Tasks\Task_1.cydsn\Task_1.cyprj|4c58b523-392d-4a87-827f-eedb066de3f4
+F:\psoccreator\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|ff18a953-8dbb-4a63-86c7-8538ebf4be67
+A:\Users\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|7200b310-3ae4-4312-b671-dde33327dfc4
+F:\psoccreator\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|297262e7-d624-47a0-8f71-a5ab6b2234c2
+F:\psoccreator\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|c3e5d1e7-fb2c-4a91-a4c8-638240297424
+F:\psoccreator\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4433dcac-5f80-47ed-af9d-b4d8a1d45e54
+F:\CapSense_Tasks\Task_2.cydsn\Task_2.cyprj|995f2d63-13cd-4472-b53a-b93f4ef358ae

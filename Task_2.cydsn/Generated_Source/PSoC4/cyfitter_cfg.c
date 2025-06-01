@@ -190,7 +190,6 @@ static void ClockSetup(void)
 	CY_SET_REG32((void *)(CYREG_PERI_PCLK_CTL0), 0x00000041u);
 
 	CY_SET_REG32((void *)(CYREG_WDT_MATCH), 0x00011000u);
-	CY_SET_REG32((void *)(CYREG_WDT_DISABLE_KEY), 0x00000000u);
 	/* Set Flash Cycles based on newly configured 24.00MHz HFCLK. */
 	CY_SET_REG32((void CYXDATA *)(CYREG_CPUSS_FLASH_CTL), (0x0011u));
 }

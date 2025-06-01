@@ -89,173 +89,174 @@ int main(void)
     UART_Start();
     CapSense_Start();
 
-    // Initial scan to initialize CapSense status
+    // Initial CapSense scan
     CapSense_ScanAllWidgets();
     while (CapSense_IsBusy());
     CapSense_ProcessAllWidgets();
 
-    // Start interrupt for user button
+    // Start User Button interrupt
     User_button_isr_StartEx(UserButtonISR);
 
     LED_User_status_Write(1);
     UART_UartPutString("Game Ready. Press User Button (SW2) to Start.\r\n");
 
     for (;;)
-{
-    if (resetRequested)
     {
-        CyDelay(50); // debounce
-        if (User_button_pin_Read() == 0)
+        if (resetRequested)
         {
-            while (User_button_pin_Read() == 0);
-            CyDelay(50);
-            lastActivityTime = CySysTickGetValue();
-            srand(CySysWdtGetCount());
-            UART_UartPutString("Game Started\n");
-            LED_User_status_Write(1);
-            roundCount = 0;
-            totalReactionTime = 0;
-            resetRequested = 0;
-
-            while (1) // Game loop
+            CyDelay(50); // Debounce
+            if (User_button_pin_Read() == 0)
             {
-                if (resetRequested) {
-                    UART_UartPutString("Game Restarted by Button\r\n");
-                    resetRequested = 0;
-                    break;
-                }
+                while (User_button_pin_Read() == 0); // Wait for release
+                CyDelay(50);
 
-                // Activity check
-                if ((CySysTickGetValue() - lastActivityTime) / 1000 > IDLE_TIMEOUT_MS) {
-                    EnterLowPowerMode();
-                    lastActivityTime = CySysTickGetValue(); // reset after wake
-                    break;
-                }
+                lastActivityTime = CySysTickGetValue();
+                srand(CySysWdtGetCount());
 
-                CapSense_ScanAllWidgets();
-                while (CapSense_IsBusy());
-                CapSense_ProcessAllWidgets();
+                UART_UartPutString("Game Started\r\n");
+                LED_User_status_Write(1);
+                roundCount = 0;
+                totalReactionTime = 0;
+                resetRequested = 0;
 
-                TurnOffAllLEDs();
-
-                // Wait for all buttons to be released
-                uint32_t releaseTimeout = 2000;
-                uint32_t releaseStart = CySysTickGetValue();
-                uint8_t allReleased = 0;
-
-                while ((CySysTickGetValue() - releaseStart) < releaseTimeout * 1000) {
-                    if (resetRequested) break;
-
-                    CapSense_ScanAllWidgets();
-                    while (CapSense_IsBusy());
-                    CapSense_ProcessAllWidgets();
-
-                    if (!CapSense_IsWidgetActive(CapSense_BUTTON0_WDGT_ID) &&
-                        !CapSense_IsWidgetActive(CapSense_BUTTON1_WDGT_ID) &&
-                        !CapSense_IsWidgetActive(CapSense_BUTTON2_WDGT_ID)) {
-                        allReleased = 1;
-                        break;
-                    }
-
-                    CyDelay(10);
-                }
-
-                if (!allReleased) {
-                    UART_UartPutString("Buttons held too long, skipping round...\r\n");
-                    BlinkUserLED();
-                    continue;
-                }
-
-                CyDelay(500);
-                lastActivityTime = CySysTickGetValue(); // reset activity
-
-                uint8_t target = rand() % 3;
-
-                switch (target)
-                {
-                    case 0: LED_CapSense_Button_0_Write(0); break;
-                    case 1: LED_CapSense_Button_1_Write(0); break;
-                    case 2: LED_CapSense_Button_2_Write(0); break;
-                }
-
-                uint32_t startTime = CySysTickGetValue();
-                uint32_t timeoutStart = CySysTickGetValue();
-                uint8_t hit = 0;
-
-                while ((CySysTickGetValue() - timeoutStart) < IDLE_MS * 1000)
+                while (1) // Game loop
                 {
                     if (resetRequested) {
                         UART_UartPutString("Game Restarted by Button\r\n");
                         resetRequested = 0;
-                        hit = 0;
-                        goto end_of_round;
-                    }
-
-                    CapSense_ScanAllWidgets();
-                    while (CapSense_IsBusy());
-                    CapSense_ProcessAllWidgets();
-
-                    uint8_t pressed = 255;
-
-                    if (CapSense_IsWidgetActive(CapSense_BUTTON0_WDGT_ID)) {
-                        pressed = 0;
-                    }
-                    else if (CapSense_IsWidgetActive(CapSense_BUTTON1_WDGT_ID)) {
-                        pressed = 1;
-                    }
-                    else if (CapSense_IsWidgetActive(CapSense_BUTTON2_WDGT_ID)) {
-                        pressed = 2;
-                    }
-
-                    if (pressed != 255)
-                    {
-                        uint32_t reactionTime = (CySysTickGetValue() - startTime) / 1000;
-
-                        char msg[64];
-                        sprintf(msg, "Pressed: %d, Expected: %d, Time: %lu ms\r\n",
-                            pressed, target, (unsigned long)reactionTime);
-                        UART_UartPutString(msg);
-
-                        if (pressed == target && reactionTime <= TIMEOUT_MS)
-                        {
-                            roundCount++;
-                            totalReactionTime += reactionTime;
-                        }
-                        else
-                        {
-                            UART_UartPutString("Incorrect or Late Press!\r\n");
-                            BlinkUserLED();
-                            OutputStats();
-                        }
-
-                        hit = 1;
-                        lastActivityTime = CySysTickGetValue(); // activity detected
                         break;
                     }
 
-                    CyDelay(10);
+                    // Idle timeout check
+                    if ((CySysTickGetValue() - lastActivityTime) / 1000 > IDLE_TIMEOUT_MS) {
+                        EnterLowPowerMode();
+                        lastActivityTime = CySysTickGetValue();
+                        break;
+                    }
+
+                repeat_round:
+
+                    TurnOffAllLEDs();
+
+                    // Wait for all buttons to be released
+                    uint32_t releaseTimeout = 2000;
+                    uint32_t releaseStart = CySysTickGetValue();
+                    uint8_t allReleased = 0;
+
+                    while ((CySysTickGetValue() - releaseStart) < releaseTimeout * 1000) {
+                        if (resetRequested) break;
+
+                        CapSense_ScanAllWidgets();
+                        while (CapSense_IsBusy());
+                        CapSense_ProcessAllWidgets();
+
+                        if (!CapSense_IsWidgetActive(CapSense_BUTTON0_WDGT_ID) &&
+                            !CapSense_IsWidgetActive(CapSense_BUTTON1_WDGT_ID) &&
+                            !CapSense_IsWidgetActive(CapSense_BUTTON2_WDGT_ID)) {
+                            allReleased = 1;
+                            break;
+                        }
+
+                        CyDelay(10);
+                    }
+
+                    if (!allReleased) {
+                        UART_UartPutString("Buttons held too long, skipping round...\r\n");
+                        BlinkUserLED();
+                        goto repeat_round;
+                    }
+
+                    CyDelay(500);
+                    lastActivityTime = CySysTickGetValue();
+
+                    // Select random target
+                    uint8_t target = rand() % 3;
+
+                    switch (target)
+                    {
+                        case 0: LED_CapSense_Button_0_Write(0); break;
+                        case 1: LED_CapSense_Button_1_Write(0); break;
+                        case 2: LED_CapSense_Button_2_Write(0); break;
+                    }
+
+                    uint32_t startTime = CySysTickGetValue();
+                    uint32_t timeoutStart = CySysTickGetValue();
+                    uint8_t hit = 0;
+
+                    while ((CySysTickGetValue() - timeoutStart) < IDLE_MS * 1000)
+                    {
+                        if (resetRequested) {
+                            UART_UartPutString("Game Restarted by Button\r\n");
+                            resetRequested = 0;
+                            hit = 0;
+                            goto end_of_round;
+                        }
+
+                        CapSense_ScanAllWidgets();
+                        while (CapSense_IsBusy());
+                        CapSense_ProcessAllWidgets();
+
+                        uint8_t pressed = 255;
+
+                        if (CapSense_IsWidgetActive(CapSense_BUTTON0_WDGT_ID)) {
+                            pressed = 0;
+                        }
+                        else if (CapSense_IsWidgetActive(CapSense_BUTTON1_WDGT_ID)) {
+                            pressed = 1;
+                        }
+                        else if (CapSense_IsWidgetActive(CapSense_BUTTON2_WDGT_ID)) {
+                            pressed = 2;
+                        }
+
+                        if (pressed != 255)
+                        {
+                            uint32_t reactionTime = (CySysTickGetValue() - startTime) / 1000;
+
+                            char msg[64];
+                            sprintf(msg, "Pressed: %d, Expected: %d, Time: %lu ms\r\n",
+                                pressed, target, (unsigned long)reactionTime);
+                            UART_UartPutString(msg);
+
+                            if (pressed == target && reactionTime <= TIMEOUT_MS)
+                            {
+                                roundCount++;
+                                totalReactionTime += reactionTime;
+                            }
+                            else
+                            {
+                                UART_UartPutString("Incorrect or Late Press!\r\n");
+                                BlinkUserLED();
+                                OutputStats();
+                            }
+
+                            hit = 1;
+                            lastActivityTime = CySysTickGetValue(); // activity
+                            break;
+                        }
+
+                        CyDelay(10);
+                    }
+
+                end_of_round:
+                    TurnOffAllLEDs();
+
+                    if (!hit)
+                    {
+                        UART_UartPutString("Miss or Timeout! Repeating round...\r\n");
+                        BlinkUserLED();
+                        OutputStats();
+                        goto repeat_round;
+                    }
+
+                    CyDelay(500);
                 }
-
-            end_of_round:
-                TurnOffAllLEDs();
-
-                if (!hit)
-                {
-                    UART_UartPutString("Miss or Timeout!\r\n");
-                    BlinkUserLED();
-                    OutputStats();
-                    continue;
-                }
-
-                CyDelay(500);
             }
         }
-    }
 
-    // Global idle timeout fallback
-    if ((CySysTickGetValue() - lastActivityTime) / 1000 > IDLE_TIMEOUT_MS) {
-        EnterLowPowerMode();
-        lastActivityTime = CySysTickGetValue();
+        // Fallback idle timeout
+        if ((CySysTickGetValue() - lastActivityTime) / 1000 > IDLE_TIMEOUT_MS) {
+            EnterLowPowerMode();
+            lastActivityTime = CySysTickGetValue();
         }
     }
 }

@@ -919,7 +919,7 @@
         <Data key="minus_tolerance" value="0" />
         <Data key="name" value="Timer (WDT)" />
         <Data key="netlist_name" value="Timer (WDT)" />
-        <Data key="operation_mode" value="3" />
+        <Data key="operation_mode" value="0" />
         <Data key="plus_tolerance" value="0" />
         <Data key="scope" value="BUILTIN" />
         <Data key="sourceClk_minus_acuracy_name" value="50" />
