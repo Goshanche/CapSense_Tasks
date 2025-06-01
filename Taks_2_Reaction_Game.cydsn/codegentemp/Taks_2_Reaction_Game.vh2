@@ -2,7 +2,7 @@
 --	Conversion of Taks_2_Reaction_Game.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sat May 31 23:46:47 2025
+--	Sun Jun 01 11:10:49 2025
 --
 
 USE cypress.cypress.all;
@@ -158,7 +158,7 @@ SIGNAL tmpOE__User_button_pin_net_0 : bit;
 SIGNAL tmpFB_0__User_button_pin_net_0 : bit;
 SIGNAL tmpIO_0__User_button_pin_net_0 : bit;
 TERMINAL tmpSIOVREF__User_button_pin_net_0 : bit;
-SIGNAL Net_54 : bit;
+SIGNAL tmpINTERRUPT_0__User_button_pin_net_0 : bit;
 BEGIN
 
 zero <=  ('0') ;
@@ -851,7 +851,7 @@ User_button_pin:cy_psoc3_pins_v1_10
 		input_sync=>"0",
 		input_clk_en=>'0',
 		input_sync_mode=>"0",
-		intr_mode=>"10",
+		intr_mode=>"00",
 		invert_in_clock=>'0',
 		invert_in_clock_en=>'0',
 		invert_in_reset=>'0',
@@ -912,10 +912,6 @@ User_button_pin:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>Net_54);
-isr_UserReset:cy_isr_v1_0
-	GENERIC MAP(int_type=>"10",
-		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_54);
+		interrupt=>tmpINTERRUPT_0__User_button_pin_net_0);
 
 END R_T_L;

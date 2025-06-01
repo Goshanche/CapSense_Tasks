@@ -65,8 +65,6 @@
   <file name="F:\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\codegentemp\User_button_pin.h" value="HEADER;;;;;User_button_pin" />
   <file name="F:\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\codegentemp\User_button_pin_aliases.h" value="HEADER;;;;;User_button_pin" />
   <file name="F:\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\codegentemp\User_button_pin_PM.c" value="SOURCE_C;CortexM0p;;;;User_button_pin" />
-  <file name="F:\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\codegentemp\isr_UserReset.c" value="SOURCE_C;CortexM0p;;;;isr_UserReset" />
-  <file name="F:\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\codegentemp\isr_UserReset.h" value="HEADER;;;;;isr_UserReset" />
   <file name="F:\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\codegentemp\CapSense_ISR.c" value="SOURCE_C;CortexM0p;;;;CapSense_ISR" />
   <file name="F:\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\codegentemp\CapSense_ISR.h" value="HEADER;;;;;CapSense_ISR" />
   <file name="F:\CapSense_Tasks\Taks_2_Reaction_Game.cydsn\codegentemp\UART_SCBCLK.c" value="SOURCE_C;CortexM0p;;;;UART_SCBCLK" />

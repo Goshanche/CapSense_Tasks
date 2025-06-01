@@ -392,15 +392,6 @@
 #define CapSense_Sns__PC2 CYREG_GPIO_PRT1_PC2
 #define CapSense_Sns__PORT 1u
 #define CapSense_Sns__PS CYREG_GPIO_PRT1_PS
-#define isr_UserReset__INTC_CLR_EN_REG CYREG_CM0P_ICER
-#define isr_UserReset__INTC_CLR_PD_REG CYREG_CM0P_ICPR
-#define isr_UserReset__INTC_MASK 0x01u
-#define isr_UserReset__INTC_NUMBER 0u
-#define isr_UserReset__INTC_PRIOR_MASK 0xC0u
-#define isr_UserReset__INTC_PRIOR_NUM 3u
-#define isr_UserReset__INTC_PRIOR_REG CYREG_CM0P_IPR0
-#define isr_UserReset__INTC_SET_EN_REG CYREG_CM0P_ISER
-#define isr_UserReset__INTC_SET_PD_REG CYREG_CM0P_ISPR
 #define LED_User_status__0__DR CYREG_GPIO_PRT2_DR
 #define LED_User_status__0__DR_CLR CYREG_GPIO_PRT2_DR_CLR
 #define LED_User_status__0__DR_INV CYREG_GPIO_PRT2_DR_INV
@@ -463,7 +454,6 @@
 #define User_button_pin__PORT 0u
 #define User_button_pin__PS CYREG_GPIO_PRT0_PS
 #define User_button_pin__SHIFT 7u
-#define User_button_pin__SNAP CYREG_GPIO_PRT0_INTR
 #define LED_CapSense_Button_0__0__DR CYREG_GPIO_PRT3_DR
 #define LED_CapSense_Button_0__0__DR_CLR CYREG_GPIO_PRT3_DR_CLR
 #define LED_CapSense_Button_0__0__DR_INV CYREG_GPIO_PRT3_DR_INV

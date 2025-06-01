@@ -1,5 +1,5 @@
 -- Project:   Taks_2_Reaction_Game
--- Generated: 05/31/2025 23:46:47
+-- Generated: 06/01/2025 11:10:50
 -- PSoC Creator  4.4
 
 ENTITY Taks_2_Reaction_Game IS
@@ -33,7 +33,6 @@ ARCHITECTURE __DEFAULT__ OF Taks_2_Reaction_Game IS
     SIGNAL LED_User_status(0)__PA : bit;
     SIGNAL Net_15 : bit;
     SIGNAL Net_24 : bit;
-    SIGNAL Net_54 : bit;
     SIGNAL Net_6 : bit;
     SIGNAL User_button_pin(0)__PA : bit;
     SIGNAL \\\CapSense:Cmod(0)\\__PA\ : bit;
@@ -1111,7 +1110,7 @@ BEGIN
             input_clk_en => 0,
             input_sync => "0",
             input_sync_mode => "0",
-            intr_mode => "10",
+            intr_mode => "00",
             invert_in_clock => 0,
             invert_in_clock_en => 0,
             invert_in_reset => 0,
@@ -1170,8 +1169,7 @@ BEGIN
             in_clock_en => open,
             in_reset => open,
             out_clock_en => open,
-            out_reset => open,
-            interrupt => Net_54);
+            out_reset => open);
 
     User_button_pin(0):iocell
         GENERIC MAP(
@@ -1180,7 +1178,7 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "User_button_pin",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000001000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => User_button_pin(0)__PA,
             oe => open,
@@ -1292,13 +1290,5 @@ BEGIN
             sclk_s => open,
             tr_tx_req => Net_24,
             tr_rx_req => Net_15);
-
-    isr_UserReset:interrupt
-        GENERIC MAP(
-            int_type => "10",
-            is_nmi => 0)
-        PORT MAP(
-            interrupt => Net_54,
-            clock => ClockBlock_HFClk);
 
 END __DEFAULT__;

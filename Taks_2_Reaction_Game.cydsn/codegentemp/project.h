@@ -45,7 +45,6 @@
 #include "LED_User_status_aliases.h"
 #include "User_button_pin.h"
 #include "User_button_pin_aliases.h"
-#include "isr_UserReset.h"
 #include "CapSense_ISR.h"
 #include "UART_SCBCLK.h"
 #include "UART_tx.h"

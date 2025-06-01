@@ -392,15 +392,6 @@
 .set CapSense_Sns__PC2, CYREG_GPIO_PRT1_PC2
 .set CapSense_Sns__PORT, 1
 .set CapSense_Sns__PS, CYREG_GPIO_PRT1_PS
-.set isr_UserReset__INTC_CLR_EN_REG, CYREG_CM0P_ICER
-.set isr_UserReset__INTC_CLR_PD_REG, CYREG_CM0P_ICPR
-.set isr_UserReset__INTC_MASK, 0x01
-.set isr_UserReset__INTC_NUMBER, 0
-.set isr_UserReset__INTC_PRIOR_MASK, 0xC0
-.set isr_UserReset__INTC_PRIOR_NUM, 3
-.set isr_UserReset__INTC_PRIOR_REG, CYREG_CM0P_IPR0
-.set isr_UserReset__INTC_SET_EN_REG, CYREG_CM0P_ISER
-.set isr_UserReset__INTC_SET_PD_REG, CYREG_CM0P_ISPR
 .set LED_User_status__0__DR, CYREG_GPIO_PRT2_DR
 .set LED_User_status__0__DR_CLR, CYREG_GPIO_PRT2_DR_CLR
 .set LED_User_status__0__DR_INV, CYREG_GPIO_PRT2_DR_INV
@@ -463,7 +454,6 @@
 .set User_button_pin__PORT, 0
 .set User_button_pin__PS, CYREG_GPIO_PRT0_PS
 .set User_button_pin__SHIFT, 7
-.set User_button_pin__SNAP, CYREG_GPIO_PRT0_INTR
 .set LED_CapSense_Button_0__0__DR, CYREG_GPIO_PRT3_DR
 .set LED_CapSense_Button_0__0__DR_CLR, CYREG_GPIO_PRT3_DR_CLR
 .set LED_CapSense_Button_0__0__DR_INV, CYREG_GPIO_PRT3_DR_INV

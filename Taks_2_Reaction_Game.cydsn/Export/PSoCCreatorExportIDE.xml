@@ -145,8 +145,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_User_status.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_User_status_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_User_status_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\isr_UserReset.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\isr_UserReset.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\User_button_pin.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\User_button_pin.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\User_button_pin_aliases.h</File>

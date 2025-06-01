@@ -1,6 +1,6 @@
 // ======================================================================
 // Taks_2_Reaction_Game.v generated from TopDesign.cysch
-// 05/31/2025 at 23:46
+// 06/01/2025 at 11:10
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -836,7 +836,6 @@ module top ;
           wire  Net_6;
           wire  Net_5;
           wire  Net_4;
-          wire  Net_54;
 
     CapSense_P4_v7_0_0 CapSense ();
 
@@ -1167,6 +1166,7 @@ module top ;
 	wire [0:0] tmpOE__User_button_pin_net;
 	wire [0:0] tmpFB_0__User_button_pin_net;
 	wire [0:0] tmpIO_0__User_button_pin_net;
+	wire [0:0] tmpINTERRUPT_0__User_button_pin_net;
 	electrical [0:0] tmpSIOVREF__User_button_pin_net;
 
 	cy_psoc3_pins_v1_10
@@ -1177,7 +1177,7 @@ module top ;
 		  .input_clk_en(0),
 		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
-		  .intr_mode(2'b10),
+		  .intr_mode(2'b00),
 		  .invert_in_clock(0),
 		  .invert_in_clock_en(0),
 		  .invert_in_reset(0),
@@ -1228,7 +1228,7 @@ module top ;
 		  .fb({tmpFB_0__User_button_pin_net[0:0]}),
 		  .io({tmpIO_0__User_button_pin_net[0:0]}),
 		  .siovref(tmpSIOVREF__User_button_pin_net),
-		  .interrupt({Net_54}),
+		  .interrupt({tmpINTERRUPT_0__User_button_pin_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -1237,13 +1237,6 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__User_button_pin_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		isr_UserReset
-		 (.int_signal(Net_54));
-
 
 
 

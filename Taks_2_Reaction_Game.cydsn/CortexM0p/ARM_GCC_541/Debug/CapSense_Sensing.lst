@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
   28:Generated_Source\PSoC4/CapSense_Sensing.c **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
   29:Generated_Source\PSoC4/CapSense_Sensing.c **** * Cypress reserves the right to make changes without further notice to the
   30:Generated_Source\PSoC4/CapSense_Sensing.c **** * materials described herein. Cypress does not assume any liability arising out
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 2
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 2
 
 
   31:Generated_Source\PSoC4/CapSense_Sensing.c **** * of the application or use of any product or circuit described herein. Cypress
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
   85:Generated_Source\PSoC4/CapSense_Sensing.c ****     #define CapSense_CSD_SNS_FREQ_KHZ_MAX               (6000u)
   86:Generated_Source\PSoC4/CapSense_Sensing.c **** #else
   87:Generated_Source\PSoC4/CapSense_Sensing.c ****     #define CapSense_CSD_SNS_FREQ_KHZ_MAX               (12600u)
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 3
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 3
 
 
   88:Generated_Source\PSoC4/CapSense_Sensing.c **** #endif /* (CapSense_ENABLE == CapSense_CSDV2) */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  142:Generated_Source\PSoC4/CapSense_Sensing.c ****     static void CapSense_SsDisableCSXMode(void);
  143:Generated_Source\PSoC4/CapSense_Sensing.c **** #endif /* (CapSense_ENABLE == CapSense_CSX_EN) */
  144:Generated_Source\PSoC4/CapSense_Sensing.c **** #if (CapSense_ENABLE == CapSense_ISX_EN)
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 4
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 4
 
 
  145:Generated_Source\PSoC4/CapSense_Sensing.c ****     static void CapSense_SsDisableISXMode(void);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  199:Generated_Source\PSoC4/CapSense_Sensing.c ****     CapSense_FLASH_WD_STRUCT const *CapSense_curFlashWdgtPtr = 0u;
  200:Generated_Source\PSoC4/CapSense_Sensing.c **** #endif
  201:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 5
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 5
 
 
  202:Generated_Source\PSoC4/CapSense_Sensing.c **** #if (CapSense_ENABLE == CapSense_CSD_GANGED_SNS_EN)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  256:Generated_Source\PSoC4/CapSense_Sensing.c **** *    3. Disconnect all previously connected electrodes, if the electrodes
  257:Generated_Source\PSoC4/CapSense_Sensing.c **** *       connected by the lower level SetupWidgetExt() or ConnectSns() functions
  258:Generated_Source\PSoC4/CapSense_Sensing.c ****         and not disconnected.
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 6
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 6
 
 
  259:Generated_Source\PSoC4/CapSense_Sensing.c **** *
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  313:Generated_Source\PSoC4/CapSense_Sensing.c ****         switch (CapSense_GET_SENSE_METHOD(&CapSense_dsFlash.wdgtArray[widgetId]))
  314:Generated_Source\PSoC4/CapSense_Sensing.c ****         {
  315:Generated_Source\PSoC4/CapSense_Sensing.c ****         #if (CapSense_ENABLE == CapSense_CSX_EN)
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 7
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 7
 
 
  316:Generated_Source\PSoC4/CapSense_Sensing.c ****             case CapSense_SENSE_METHOD_CSX_E:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  370:Generated_Source\PSoC4/CapSense_Sensing.c ****     {
  371:Generated_Source\PSoC4/CapSense_Sensing.c ****         /* Previous widget is being scanned. Return error. */
  372:Generated_Source\PSoC4/CapSense_Sensing.c ****         scanStatus = CYRET_INVALID_STATE;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 8
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 8
 
 
  373:Generated_Source\PSoC4/CapSense_Sensing.c ****     }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  427:Generated_Source\PSoC4/CapSense_Sensing.c **** cystatus CapSense_ScanAllWidgets(void)
  428:Generated_Source\PSoC4/CapSense_Sensing.c **** {
  429:Generated_Source\PSoC4/CapSense_Sensing.c ****     cystatus scanStatus = CYRET_UNKNOWN;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 9
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 9
 
 
  430:Generated_Source\PSoC4/CapSense_Sensing.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  484:Generated_Source\PSoC4/CapSense_Sensing.c **** /*******************************************************************************
  485:Generated_Source\PSoC4/CapSense_Sensing.c **** * Function Name: CapSense_SetupWidgetExt
  486:Generated_Source\PSoC4/CapSense_Sensing.c **** ****************************************************************************//**
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 10
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 10
 
 
  487:Generated_Source\PSoC4/CapSense_Sensing.c **** *
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  541:Generated_Source\PSoC4/CapSense_Sensing.c ****         /* Previous widget is being scanned. Return error. */
  542:Generated_Source\PSoC4/CapSense_Sensing.c ****         widgetStatus = CYRET_INVALID_STATE;
  543:Generated_Source\PSoC4/CapSense_Sensing.c ****     }
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 11
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 11
 
 
  544:Generated_Source\PSoC4/CapSense_Sensing.c ****     /*
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  598:Generated_Source\PSoC4/CapSense_Sensing.c **** * Function Name: CapSense_ScanExt
  599:Generated_Source\PSoC4/CapSense_Sensing.c **** ****************************************************************************//**
  600:Generated_Source\PSoC4/CapSense_Sensing.c **** *
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 12
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 12
 
 
  601:Generated_Source\PSoC4/CapSense_Sensing.c **** * \brief
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  655:Generated_Source\PSoC4/CapSense_Sensing.c ****             case CapSense_SENSE_METHOD_CSX_E:
  656:Generated_Source\PSoC4/CapSense_Sensing.c ****                 CapSense_CSXScanExt();
  657:Generated_Source\PSoC4/CapSense_Sensing.c ****                 break;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 13
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 13
 
 
  658:Generated_Source\PSoC4/CapSense_Sensing.c ****         #endif
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  712:Generated_Source\PSoC4/CapSense_Sensing.c ****          (CapSense_MFS_IMO == CapSense_MFS_METHOD))
  713:Generated_Source\PSoC4/CapSense_Sensing.c ****         uint8 centerFreqTrim;
  714:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 14
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 14
 
 
  715:Generated_Source\PSoC4/CapSense_Sensing.c ****         centerFreqTrim = (uint8)CY_GET_REG32(CY_SYS_CLK_IMO_TRIM1_PTR);
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  769:Generated_Source\PSoC4/CapSense_Sensing.c **** }
  770:Generated_Source\PSoC4/CapSense_Sensing.c **** 
  771:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 15
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 15
 
 
  772:Generated_Source\PSoC4/CapSense_Sensing.c **** /*******************************************************************************
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  826:Generated_Source\PSoC4/CapSense_Sensing.c **** *  Specifies the state of the sensor to be set:
  827:Generated_Source\PSoC4/CapSense_Sensing.c **** *     1. CapSense_GROUND - The pin is connected to the ground.
  828:Generated_Source\PSoC4/CapSense_Sensing.c **** *     2. CapSense_HIGHZ - The drive mode of the pin is set to High-Z
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 16
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 16
 
 
  829:Generated_Source\PSoC4/CapSense_Sensing.c **** *        Analog.
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  883:Generated_Source\PSoC4/CapSense_Sensing.c ****             interruptState = CyEnterCriticalSection();
  884:Generated_Source\PSoC4/CapSense_Sensing.c ****             CY_SET_REG32(ioPtr->pcPtr, CY_GET_REG32(ioPtr->pcPtr) | (CapSense_SNS_GROUND_CONNECT <<
  885:Generated_Source\PSoC4/CapSense_Sensing.c ****             CY_SET_REG32(ioPtr->drPtr, CY_GET_REG32(ioPtr->drPtr) & (uint32)(~(uint32)((uint32)1u <
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 17
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 17
 
 
  886:Generated_Source\PSoC4/CapSense_Sensing.c ****             CyExitCriticalSection(interruptState);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  940:Generated_Source\PSoC4/CapSense_Sensing.c ****     ****************************************************************************//**
  941:Generated_Source\PSoC4/CapSense_Sensing.c ****     *
  942:Generated_Source\PSoC4/CapSense_Sensing.c ****     * \brief
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 18
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 18
 
 
  943:Generated_Source\PSoC4/CapSense_Sensing.c ****     *  This function disables CSD mode.
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  997:Generated_Source\PSoC4/CapSense_Sensing.c ****     *  1. Disconnect CintA and CintB from AMUXBUS-A.
  998:Generated_Source\PSoC4/CapSense_Sensing.c ****     *  2. Disconnect previous CSX electrode if it has been connected.
  999:Generated_Source\PSoC4/CapSense_Sensing.c ****     *
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 19
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 19
 
 
 1000:Generated_Source\PSoC4/CapSense_Sensing.c ****     *******************************************************************************/
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1054:Generated_Source\PSoC4/CapSense_Sensing.c **** *  2. Disconnecting external capacitors.
 1055:Generated_Source\PSoC4/CapSense_Sensing.c **** *  3. Setting new mode.
 1056:Generated_Source\PSoC4/CapSense_Sensing.c **** *  4. Configuring HW to the new sensing mode.
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 20
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 20
 
 
 1057:Generated_Source\PSoC4/CapSense_Sensing.c **** *
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1111:Generated_Source\PSoC4/CapSense_Sensing.c ****             #endif /* (CapSense_ENABLE == CapSense_CSD_EN) */
 1112:Generated_Source\PSoC4/CapSense_Sensing.c ****         }
 1113:Generated_Source\PSoC4/CapSense_Sensing.c ****         else if (CapSense_SENSE_METHOD_CSX_E == mode)
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 21
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 21
 
 
 1114:Generated_Source\PSoC4/CapSense_Sensing.c ****         {
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1168:Generated_Source\PSoC4/CapSense_Sensing.c ****     uint8  interruptState;
 1169:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 1170:Generated_Source\PSoC4/CapSense_Sensing.c ****     uint32 loopIndex;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 22
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 22
 
 
 1171:Generated_Source\PSoC4/CapSense_Sensing.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1225:Generated_Source\PSoC4/CapSense_Sensing.c ****         snsIoPtr++;
 1226:Generated_Source\PSoC4/CapSense_Sensing.c ****     }
 1227:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 23
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 23
 
 
 1228:Generated_Source\PSoC4/CapSense_Sensing.c ****     #if ((CapSense_ENABLE == CapSense_CSD_EN) &&\
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1282:Generated_Source\PSoC4/CapSense_Sensing.c ****             CapSense_SsCSDDisableMode();
 1283:Generated_Source\PSoC4/CapSense_Sensing.c ****         #endif /* (CapSense_ENABLE == CapSense_CSD_EN) */
 1284:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 24
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 24
 
 
 1285:Generated_Source\PSoC4/CapSense_Sensing.c ****         #if (CapSense_ENABLE == CapSense_SELF_TEST_EN)
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1339:Generated_Source\PSoC4/CapSense_Sensing.c ****                 (void)CapSense_Scan();
 1340:Generated_Source\PSoC4/CapSense_Sensing.c ****             }
 1341:Generated_Source\PSoC4/CapSense_Sensing.c ****             else if((CapSense_TOTAL_WIDGETS - 1u) == CapSense_widgetIndex)
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 25
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 25
 
 
 1342:Generated_Source\PSoC4/CapSense_Sensing.c ****             {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1396:Generated_Source\PSoC4/CapSense_Sensing.c **** }
 1397:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 1398:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 26
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 26
 
 
 1399:Generated_Source\PSoC4/CapSense_Sensing.c **** /*******************************************************************************
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1453:Generated_Source\PSoC4/CapSense_Sensing.c ****      * 1u is subtracted from modClk because Divider register value has range (0-65535).
 1454:Generated_Source\PSoC4/CapSense_Sensing.c ****      */
 1455:Generated_Source\PSoC4/CapSense_Sensing.c ****     newRegValue = CY_GET_REG32(CapSense_MODCLK_DIV_PTR) & (uint32)(~(uint32)CapSense_ModClk__DIVIDE
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 27
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 27
 
 
 1456:Generated_Source\PSoC4/CapSense_Sensing.c ****     newRegValue |= (modClk - 1u);
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1510:Generated_Source\PSoC4/CapSense_Sensing.c ****          */
 1511:Generated_Source\PSoC4/CapSense_Sensing.c ****         CY_SET_REG32(CapSense_SNSCLK_DIV_PTR, ((snsClk - 1u) << 8u));
 1512:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 28
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 28
 
 
 1513:Generated_Source\PSoC4/CapSense_Sensing.c ****         /* Check whether previous sense clock start command has finished. */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1567:Generated_Source\PSoC4/CapSense_Sensing.c **** *******************************************************************************/
 1568:Generated_Source\PSoC4/CapSense_Sensing.c **** void CapSense_SsSetClockDividers(uint32 snsClk, uint32 modClk)
 1569:Generated_Source\PSoC4/CapSense_Sensing.c **** {
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 29
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 29
 
 
 1570:Generated_Source\PSoC4/CapSense_Sensing.c ****     /* Configure Mod clock */
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1624:Generated_Source\PSoC4/CapSense_Sensing.c ****         do
 1625:Generated_Source\PSoC4/CapSense_Sensing.c ****         {
 1626:Generated_Source\PSoC4/CapSense_Sensing.c ****             if (CapSense_TOTAL_WIDGETS <= widgetId)
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 30
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 30
 
 
 1627:Generated_Source\PSoC4/CapSense_Sensing.c ****             {
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1681:Generated_Source\PSoC4/CapSense_Sensing.c ****                 #endif  /* (CapSense_ENABLE == CapSense_CSD_IDAC_AUTOCAL_EN) */
 1682:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 1683:Generated_Source\PSoC4/CapSense_Sensing.c ****             /* If only CSD is enabled, calibrate CSD sensor */
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 31
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 31
 
 
 1684:Generated_Source\PSoC4/CapSense_Sensing.c ****             #elif (CapSense_ENABLE == CapSense_CSD_EN)
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1738:Generated_Source\PSoC4/CapSense_Sensing.c ****     {
 1739:Generated_Source\PSoC4/CapSense_Sensing.c ****         cystatus calibrateStatus = CYRET_SUCCESS;
 1740:Generated_Source\PSoC4/CapSense_Sensing.c ****         uint32 wdgtIndex;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 32
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 32
 
 
 1741:Generated_Source\PSoC4/CapSense_Sensing.c **** 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1795:Generated_Source\PSoC4/CapSense_Sensing.c ****         #if (CapSense_CSD_MATRIX_WIDGET_EN || CapSense_CSD_TOUCHPAD_WIDGET_EN)
 1796:Generated_Source\PSoC4/CapSense_Sensing.c ****             uint32 maxCpSnsId = 0u;
 1797:Generated_Source\PSoC4/CapSense_Sensing.c ****             uint32 maxCpRowSnsId = 0u;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 33
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 33
 
 
 1798:Generated_Source\PSoC4/CapSense_Sensing.c ****         #endif
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1852:Generated_Source\PSoC4/CapSense_Sensing.c ****         autoTuneConfig.snsClkConstantR = CapSense_CSD_SNSCLK_R_CONST;
 1853:Generated_Source\PSoC4/CapSense_Sensing.c ****         autoTuneConfig.vRef = CapSense_CSD_VREF_MV;
 1854:Generated_Source\PSoC4/CapSense_Sensing.c ****         autoTuneConfig.fingerCap = ptrRamWidget->fingerCap;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 34
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 34
 
 
 1855:Generated_Source\PSoC4/CapSense_Sensing.c ****         autoTuneConfig.sigPFC = &ptrRamWidget->sigPFC;
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1909:Generated_Source\PSoC4/CapSense_Sensing.c ****         /* Find sensor Cp and optimum sense clock value */
 1910:Generated_Source\PSoC4/CapSense_Sensing.c ****         maxCp = SmartSense_TunePrescalers(&autoTuneConfig);
 1911:Generated_Source\PSoC4/CapSense_Sensing.c ****         autoTuneConfig.sensorCap = maxCp;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 35
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 35
 
 
 1912:Generated_Source\PSoC4/CapSense_Sensing.c **** 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1966:Generated_Source\PSoC4/CapSense_Sensing.c ****                     ptrRamWidget->rowSnsClk <<= 1u;
 1967:Generated_Source\PSoC4/CapSense_Sensing.c ****                 }
 1968:Generated_Source\PSoC4/CapSense_Sensing.c ****             }
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 36
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 36
 
 
 1969:Generated_Source\PSoC4/CapSense_Sensing.c ****         #endif /* (CapSense_CSD_MATRIX_WIDGET_EN || CapSense_CSD_TOUCHPAD_WIDGET_EN) */
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2023:Generated_Source\PSoC4/CapSense_Sensing.c ****     }
 2024:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 2025:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 37
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 37
 
 
 2026:Generated_Source\PSoC4/CapSense_Sensing.c ****     /*******************************************************************************
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2080:Generated_Source\PSoC4/CapSense_Sensing.c ****         *  If Compensation IDAC is disabled the function loads trim values for IDAC1 only.
 2081:Generated_Source\PSoC4/CapSense_Sensing.c ****         *
 2082:Generated_Source\PSoC4/CapSense_Sensing.c ****         *******************************************************************************/
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 38
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 38
 
 
 2083:Generated_Source\PSoC4/CapSense_Sensing.c ****         static void CapSense_SsTrimIdacsSinking(void)
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2137:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 2138:Generated_Source\PSoC4/CapSense_Sensing.c ****             /* Update IDAC trim bits for gain control in current source mode */
 2139:Generated_Source\PSoC4/CapSense_Sensing.c ****             CY_SET_REG32(CapSense_TRIM1_PTR, trimValue);
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 39
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 39
 
 
 2140:Generated_Source\PSoC4/CapSense_Sensing.c ****         }
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2194:Generated_Source\PSoC4/CapSense_Sensing.c ****         CY_SET_REG32(CY_SYS_CLK_IMO_TRIM1_PTR, CapSense_immunity[value]);
 2195:Generated_Source\PSoC4/CapSense_Sensing.c ****     }
 2196:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 40
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 40
 
 
 2197:Generated_Source\PSoC4/CapSense_Sensing.c ****     /*******************************************************************************
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2251:Generated_Source\PSoC4/CapSense_Sensing.c ****                         else
 2252:Generated_Source\PSoC4/CapSense_Sensing.c ****                         {
 2253:Generated_Source\PSoC4/CapSense_Sensing.c ****                             snsClkDivider = ptrWdgt->snsClk;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 41
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 41
 
 
 2254:Generated_Source\PSoC4/CapSense_Sensing.c ****                         }
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2308:Generated_Source\PSoC4/CapSense_Sensing.c ****                     default:
 2309:Generated_Source\PSoC4/CapSense_Sensing.c ****                     {
 2310:Generated_Source\PSoC4/CapSense_Sensing.c ****                         break;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 42
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 42
 
 
 2311:Generated_Source\PSoC4/CapSense_Sensing.c ****                     }
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2365:Generated_Source\PSoC4/CapSense_Sensing.c ****                     {
 2366:Generated_Source\PSoC4/CapSense_Sensing.c ****                         snsClkDivider += freqOffset2;
 2367:Generated_Source\PSoC4/CapSense_Sensing.c ****                         break;
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 43
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 43
 
 
 2368:Generated_Source\PSoC4/CapSense_Sensing.c ****                     }
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2422:Generated_Source\PSoC4/CapSense_Sensing.c ****                 CapSense_SsSetWidgetTxClkSrc(wdgtIndex, ptrWdgt);
 2423:Generated_Source\PSoC4/CapSense_Sensing.c ****                 break;
 2424:Generated_Source\PSoC4/CapSense_Sensing.c ****         #endif /* (((CapSense_ENABLE == CapSense_CSX_EN) || (CapSense_ENABLE == CapSense_ISX_EN)) &
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 44
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 44
 
 
 2425:Generated_Source\PSoC4/CapSense_Sensing.c ****         default:
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2479:Generated_Source\PSoC4/CapSense_Sensing.c ****                     * Multiplying of the snsClkDivider by 2 is needed to pass the
 2480:Generated_Source\PSoC4/CapSense_Sensing.c ****                     * average PRS frequency through the argument.
 2481:Generated_Source\PSoC4/CapSense_Sensing.c ****                     */
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 45
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 45
 
 
 2482:Generated_Source\PSoC4/CapSense_Sensing.c ****                     lfsrSize = CapSense_SsCSDCalcPrsSize(snsClkDivider << 1uL, (uint32)ptrWdgt->res
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2536:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 2537:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 2538:Generated_Source\PSoC4/CapSense_Sensing.c **** #if ((CapSense_ENABLE == CapSense_CSX_EN) && (CapSense_ENABLE == CapSense_CSDV2))
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 46
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 46
 
 
 2539:Generated_Source\PSoC4/CapSense_Sensing.c ****     /*******************************************************************************
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2593:Generated_Source\PSoC4/CapSense_Sensing.c ****      (CapSense_CLK_SOURCE_PRSAUTO == CapSense_CSX_TX_CLK_SOURCE)) ||\
 2594:Generated_Source\PSoC4/CapSense_Sensing.c ****     ((CapSense_ENABLE == CapSense_CSD_EN) && \
 2595:Generated_Source\PSoC4/CapSense_Sensing.c ****      (CapSense_ENABLE == CapSense_CSDV2) && \
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 47
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 47
 
 
 2596:Generated_Source\PSoC4/CapSense_Sensing.c ****      (CapSense_CLK_SOURCE_PRSAUTO == CapSense_CSD_SNS_CLK_SOURCE)))
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
   51              	.LVL2:
   52 0012 2800     		movs	r0, r5
   53              	.LVL3:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 48
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 48
 
 
   54 0014 FFF7FEFF 		bl	__aeabi_uidivmod
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2640:Generated_Source\PSoC4/CapSense_Sensing.c ****         lfsrSize = CapSense_CLK_SOURCE_SSC2;
 2641:Generated_Source\PSoC4/CapSense_Sensing.c ****     }
 2642:Generated_Source\PSoC4/CapSense_Sensing.c ****     else if((CapSense_SNSCLK_SSC1_THRESHOLD <= snsClkDivider) &&
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 49
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 49
 
 
   92              		.loc 1 2642 0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2651:Generated_Source\PSoC4/CapSense_Sensing.c ****     }
 2652:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 2653:Generated_Source\PSoC4/CapSense_Sensing.c ****     return (lfsrSize);
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 50
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 50
 
 
 2654:Generated_Source\PSoC4/CapSense_Sensing.c **** }
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2686:Generated_Source\PSoC4/CapSense_Sensing.c **** *          CapSense_CLK_SOURCE_SSC1   The length of LFSR sequence is 3 cycles.
 2687:Generated_Source\PSoC4/CapSense_Sensing.c **** *          CapSense_CLK_SOURCE_SSC2   The length of LFSR sequence is 7 cycles.
 2688:Generated_Source\PSoC4/CapSense_Sensing.c **** *          CapSense_CLK_SOURCE_SSC3   The length of LFSR sequence is 15 cycles.
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 51
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 51
 
 
 2689:Generated_Source\PSoC4/CapSense_Sensing.c **** *          CapSense_CLK_SOURCE_SSC4   The length of LFSR sequence is 31 cycles.
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2725:Generated_Source\PSoC4/CapSense_Sensing.c ****         {
 2726:Generated_Source\PSoC4/CapSense_Sensing.c ****             lfsrRange = 0u;
  173              		.loc 1 2726 0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 52
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 52
 
 
  174 000e 0023     		movs	r3, #0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2745:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 2746:Generated_Source\PSoC4/CapSense_Sensing.c ****         if(lfsrDither > CapSense_LFSR_DITHER_PERCENTAGE)
  209              		.loc 1 2746 0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 53
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 53
 
 
  210 0030 0A28     		cmp	r0, #10
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  251 0004 8020     		movs	r0, #128
  252 0006 1840     		ands	r0, r3
  239:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 54
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 54
 
 
  253              		.loc 1 239 0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  301 0022 0124     		movs	r4, #1
  302 0024 04E0     		b	.L27
  303              	.L29:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 55
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 55
 
 
  289:Generated_Source\PSoC4/CapSense_Sensing.c ****     }
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  351              	.LVL29:
  369:Generated_Source\PSoC4/CapSense_Sensing.c ****     {
  352              		.loc 1 369 0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 56
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 56
 
 
  353 0002 084B     		ldr	r3, .L40
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  399              		.cfi_startproc
  400              		@ args = 0, pretend = 0, frame = 0
  401              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 57
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 57
 
 
  402 0000 10B5     		push	{r4, lr}
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  447 0034 0134     		adds	r4, r4, #1
  448              	.LVL37:
  449              	.L44:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 58
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 58
 
 
  444:Generated_Source\PSoC4/CapSense_Sensing.c ****              wdgtIndex < CapSense_TOTAL_WIDGETS;
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  497 000e 4309     		lsrs	r3, r0, #5
  498 0010 0433     		adds	r3, r3, #4
  499 0012 9B00     		lsls	r3, r3, #2
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 59
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 59
 
 
  500 0014 0D4A     		ldr	r2, .L59
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  544              		@ sp needed
  545              	.LVL43:
  546 004a 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 60
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 60
 
 
  547              	.L60:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  670:Generated_Source\PSoC4/CapSense_Sensing.c ****             break;
  594              		.loc 1 670 0
  595 001e 0120     		movs	r0, #1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 61
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 61
 
 
  596 0020 4042     		rsbs	r0, r0, #0
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  646              	.LVL51:
  647              	.L75:
  874:Generated_Source\PSoC4/CapSense_Sensing.c ****         CY_SET_REG32(ioPtr->hsiomPtr, CY_GET_REG32(ioPtr->hsiomPtr) & ~(CapSense_HSIOM_SEL_MASK << 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 62
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 62
 
 
  648              		.loc 1 874 0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  695 0062 BA40     		lsls	r2, r2, r7
  696 0064 9343     		bics	r3, r2
  697 0066 0B60     		str	r3, [r1]
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 63
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 63
 
 
  886:Generated_Source\PSoC4/CapSense_Sensing.c ****             break;
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  741 0094 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
  742              	.L77:
  743 0096 C046     		.align	2
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 64
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 64
 
 
  744              	.L76:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 1191:Generated_Source\PSoC4/CapSense_Sensing.c ****             newPinHsiomVal = CapSense_HSIOM_SEL_CSD_SHIELD;
  793              		.loc 1 1191 0
  794 001e 0023     		movs	r3, #0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 65
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 65
 
 
  795 0020 9846     		mov	r8, r3
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  837              		.loc 1 1212 0 discriminator 3
  838 004a 4146     		mov	r1, r8
  839 004c B940     		lsls	r1, r1, r7
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 66
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 66
 
 
  840 004e 0A43     		orrs	r2, r1
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  883              	.LVL86:
  884 0074 0CBC     		pop	{r2, r3}
  885 0076 9046     		mov	r8, r2
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 67
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 67
 
 
  886 0078 9946     		mov	r9, r3
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  934 0022 134B     		ldr	r3, .L93
  935 0024 5A70     		strb	r2, [r3, #1]
  936              	.L89:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 68
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 68
 
 
 1339:Generated_Source\PSoC4/CapSense_Sensing.c ****             }
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  982 0064 0306     		lsls	r3, r0, #24
  983 0066 0B43     		orrs	r3, r1
  984 0068 D360     		str	r3, [r2, #12]
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 69
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 69
 
 
  985              	.LVL93:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1034              	CapSense_SsSetModClkClockDivider:
  1035              	.LFB14:
 1417:Generated_Source\PSoC4/CapSense_Sensing.c **** #if (CapSense_ENABLE == CapSense_IS_M0S8PERI_BLOCK)
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 70
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 70
 
 
  1036              		.loc 1 1417 0
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1084              		.loc 1 1485 0
  1085              		.cfi_startproc
  1086              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 71
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 71
 
 
  1087              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1134              		.loc 1 1571 0
  1135 0004 0800     		movs	r0, r1
  1136              	.LVL107:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 72
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 72
 
 
  1137 0006 FFF7FEFF 		bl	CapSense_SsSetModClkClockDivider
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1184 0010 03D1     		bne	.L106
 1685:Generated_Source\PSoC4/CapSense_Sensing.c **** 
  1185              		.loc 1 1685 0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 73
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 73
 
 
  1186 0012 5521     		movs	r1, #85
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1233              	.LVL122:
  1234              	.L109:
 1742:Generated_Source\PSoC4/CapSense_Sensing.c ****         {
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 74
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 74
 
 
  1235              		.loc 1 1742 0 is_stmt 0 discriminator 1
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2791:Generated_Source\PSoC4/CapSense_Sensing.c ****     *******************************************************************************/
 2792:Generated_Source\PSoC4/CapSense_Sensing.c ****     uint32 CapSense_SsCSDGetColSnsClkDivider(uint32 widgetId)
 2793:Generated_Source\PSoC4/CapSense_Sensing.c ****     {
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 75
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 75
 
 
  1255              		.loc 1 2793 0
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2814:Generated_Source\PSoC4/CapSense_Sensing.c ****     #if (CapSense_CSD_MATRIX_WIDGET_EN || CapSense_CSD_TOUCHPAD_WIDGET_EN)
 2815:Generated_Source\PSoC4/CapSense_Sensing.c ****         /*******************************************************************************
 2816:Generated_Source\PSoC4/CapSense_Sensing.c ****         * Function Name: CapSense_SsCSDGetRowSnsClkDivider
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 76
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 76
 
 
 2817:Generated_Source\PSoC4/CapSense_Sensing.c ****         ****************************************************************************//**
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2871:Generated_Source\PSoC4/CapSense_Sensing.c ****         *  - at least one full spread spectrum polynomial should pass during scan time.
 2872:Generated_Source\PSoC4/CapSense_Sensing.c ****         *
 2873:Generated_Source\PSoC4/CapSense_Sensing.c ****         * \param
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 77
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 77
 
 
 2874:Generated_Source\PSoC4/CapSense_Sensing.c ****         *  snsClkDivider The divider value for the sense clock.
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1311 0018 02E0     		b	.L115
  1312              	.LVL131:
  1313              	.L116:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 78
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 78
 
 
 2900:Generated_Source\PSoC4/CapSense_Sensing.c ****             }
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2473:Generated_Source\PSoC4/CapSense_Sensing.c ****                                                                                              CapSen
  1356              		.loc 1 2473 0
  1357 000a 3188     		ldrh	r1, [r6]
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 79
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 79
 
 
  1358 000c 0022     		movs	r2, #0
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1406              		.type	CapSense_SsAutoTuneWidget, %function
  1407              	CapSense_SsAutoTuneWidget:
  1408              	.LFB19:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 80
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 80
 
 
 1781:Generated_Source\PSoC4/CapSense_Sensing.c ****         cystatus autoTuneStatus = CYRET_SUCCESS;
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1457 0028 4549     		ldr	r1, .L130+12
  1458 002a FFF7FEFF 		bl	__aeabi_uidiv
  1459              	.LVL162:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 81
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 81
 
 
 1837:Generated_Source\PSoC4/CapSense_Sensing.c ****         {
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1504 0066 0492     		str	r2, [sp, #16]
 1864:Generated_Source\PSoC4/CapSense_Sensing.c **** 
  1505              		.loc 1 1864 0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 82
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 82
 
 
  1506 0068 0C23     		movs	r3, #12
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1549 009a 0132     		adds	r2, r2, #1
  1550              	.LVL175:
  1551              	.L123:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 83
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 83
 
 
 1878:Generated_Source\PSoC4/CapSense_Sensing.c ****         {
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1597              		.loc 1 1914 0
  1598 00de 01E0     		b	.L126
  1599              	.L127:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 84
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 84
 
 
 1916:Generated_Source\PSoC4/CapSense_Sensing.c ****         }
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1644              	.LVL187:
  1645 0118 2080     		strh	r0, [r4]
 2013:Generated_Source\PSoC4/CapSense_Sensing.c **** 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 85
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 85
 
 
  1646              		.loc 1 2013 0
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1697              		.cfi_offset 5, -12
  1698              		.cfi_offset 6, -8
  1699              		.cfi_offset 14, -4
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 86
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 86
 
 
  1700              	.LVL193:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1746              		.cfi_offset 14, -4
  1747              	.LVL200:
 2409:Generated_Source\PSoC4/CapSense_Sensing.c ****     {
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 87
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 87
 
 
  1748              		.loc 1 2409 0
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2923:Generated_Source\PSoC4/CapSense_Sensing.c ****     *
 2924:Generated_Source\PSoC4/CapSense_Sensing.c ****     * \brief
 2925:Generated_Source\PSoC4/CapSense_Sensing.c ****     *  The internal function discharge available external capacitors.
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 88
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 88
 
 
 2926:Generated_Source\PSoC4/CapSense_Sensing.c ****     *
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2948:Generated_Source\PSoC4/CapSense_Sensing.c ****         drReg = CY_GET_REG32(CapSense_EXT_CAP_DR_PTR) & CapSense_EXT_CAP_DR_MASK;
  1821              		.loc 1 2948 0
  1822 001a 274D     		ldr	r5, .L141+4
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 89
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 89
 
 
  1823 001c 2B68     		ldr	r3, [r5]
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2962:Generated_Source\PSoC4/CapSense_Sensing.c ****         CY_SET_REG32(CapSense_EXT_CAP_DR_PTR, newRegValue);
  1864              		.loc 1 2962 0
  1865 004a 2B60     		str	r3, [r5]
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 90
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 90
 
 
 2963:Generated_Source\PSoC4/CapSense_Sensing.c ****         CyExitCriticalSection(interruptState);
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 2980:Generated_Source\PSoC4/CapSense_Sensing.c ****         newRegValue |= pcReg;
  1903              		.loc 1 2980 0
  1904 0076 5146     		mov	r1, r10
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 91
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 91
 
 
  1905 0078 0B43     		orrs	r3, r1
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  1944              		.loc 1 2995 0
  1945 00a0 2360     		str	r3, [r4]
 2996:Generated_Source\PSoC4/CapSense_Sensing.c ****         CyExitCriticalSection(interruptState);
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 92
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 92
 
 
  1946              		.loc 1 2996 0
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 3020:Generated_Source\PSoC4/CapSense_Sensing.c ****     *******************************************************************************/
 3021:Generated_Source\PSoC4/CapSense_Sensing.c ****     void CapSense_DischargeExtCapacitors(uint32 dischargeTime)
 3022:Generated_Source\PSoC4/CapSense_Sensing.c ****     {
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 93
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 93
 
 
 3023:Generated_Source\PSoC4/CapSense_Sensing.c ****         /* Store the pin configuration, the CMOD capacitor is connected to. */
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 3077:Generated_Source\PSoC4/CapSense_Sensing.c ****             /* Disconnect the CintB capacitor from the AMUXBUS and connect it to GND. */
 3078:Generated_Source\PSoC4/CapSense_Sensing.c ****             CapSense_WriteBitsSafe(CapSense_CintB_HSIOM_PTR, CapSense_EXT_CAP_HSIOM_MASK_CINTB,
 3079:Generated_Source\PSoC4/CapSense_Sensing.c ****                                            CapSense_HSIOM_SEL_GPIO);
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 94
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 94
 
 
 3080:Generated_Source\PSoC4/CapSense_Sensing.c ****             CapSense_WriteBitsSafe(CapSense_CintB_DR_PTR, CapSense_EXT_CAP_DR_MASK_CINTB, 0u);
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 3134:Generated_Source\PSoC4/CapSense_Sensing.c ****     ****************************************************************************//**
 3135:Generated_Source\PSoC4/CapSense_Sensing.c ****     *
 3136:Generated_Source\PSoC4/CapSense_Sensing.c ****     * \brief
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 95
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 95
 
 
 3137:Generated_Source\PSoC4/CapSense_Sensing.c ****     *  The function updates the RAM data structure with the desired state of inactive
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 3191:Generated_Source\PSoC4/CapSense_Sensing.c ****     *           connected to GND or Shield).
 3192:Generated_Source\PSoC4/CapSense_Sensing.c ****     *         - CapSense_SNS_CONNECTION_SHIELD - Inactive sensors are connected to the shield.
 3193:Generated_Source\PSoC4/CapSense_Sensing.c ****     *           This option is available only if the Enable shield electrode check box is set.
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 96
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 96
 
 
 3194:Generated_Source\PSoC4/CapSense_Sensing.c ****     *           At least one dedicated shield electrode is required to use the
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
 3228:Generated_Source\PSoC4/CapSense_Sensing.c ****         #endif
 3229:Generated_Source\PSoC4/CapSense_Sensing.c **** 
 3230:Generated_Source\PSoC4/CapSense_Sensing.c ****         #if((CapSense_ENABLE == CapSense_SELF_TEST_EN) &&\
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 97
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 97
 
 
 3231:Generated_Source\PSoC4/CapSense_Sensing.c ****             (CapSense_ENABLE == CapSense_TST_SNS_CAP_EN) &&\
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2019              		.code	16
  2020              		.thumb_func
  2021              		.type	CapSense_WriteBitsSafe, %function
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 98
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 98
 
 
  2022              	CapSense_WriteBitsSafe:
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2046 0012 5C40     		eors	r4, r3
  2047 0014 2C60     		str	r4, [r5]
 3293:Generated_Source\PSoC4/CapSense_Sensing.c ****     CyExitCriticalSection(interruptState);
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 99
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 99
 
 
  2048              		.loc 1 3293 0
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2094              		@ sp needed
  2095 001a 10BD     		pop	{r4, pc}
  2096              	.L153:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 100
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 100
 
 
  2097              		.align	2
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2144 0022 08E0     		b	.L154
  2145              	.L157:
 1113:Generated_Source\PSoC4/CapSense_Sensing.c ****         {
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 101
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 101
 
 
  2146              		.loc 1 1113 0
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2193              	.LVL264:
  753:Generated_Source\PSoC4/CapSense_Sensing.c **** 
  2194              		.loc 1 753 0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 102
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 102
 
 
  2195 000c 0021     		movs	r1, #0
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2246              	CapSense_scanFreqIndex:
  2247 0030 00       		.space	1
  2248              		.bss
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 103
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 103
 
 
  2249              		.set	.LANCHOR0,. + 0
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2303 0036 82090000 		.4byte	.LASF2
  2304 003a 02       		.uleb128 0x2
  2305 003b 02       		.byte	0x2
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 104
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 104
 
 
  2306 003c 07       		.byte	0x7
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2360 00a8 800B0000 		.4byte	.LASF14
  2361 00ac 02       		.uleb128 0x2
  2362 00ad 08       		.byte	0x8
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 105
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 105
 
 
  2363 00ae 04       		.byte	0x4
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2417 0122 99000000 		.4byte	0x99
  2418 0126 04       		.byte	0x4
  2419 0127 0A       		.uleb128 0xa
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 106
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 106
 
 
  2420 0128 83080000 		.4byte	.LASF24
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2474 0194 07       		.uleb128 0x7
  2475 0195 04       		.byte	0x4
  2476 0196 8D000000 		.4byte	0x8d
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 107
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 107
 
 
  2477 019a 03       		.uleb128 0x3
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2531 0203 FD040000 		.4byte	.LASF41
  2532 0207 06       		.byte	0x6
  2533 0208 93       		.byte	0x93
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 108
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 108
 
 
  2534 0209 A5010000 		.4byte	0x1a5
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2588 0275 C1       		.byte	0xc1
  2589 0276 81000000 		.4byte	0x81
  2590 027a 05       		.byte	0x5
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 109
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 109
 
 
  2591 027b 0A       		.uleb128 0xa
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2645 02e7 00       		.byte	0
  2646 02e8 0D       		.uleb128 0xd
  2647 02e9 81000000 		.4byte	0x81
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 110
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 110
 
 
  2648 02ed F8020000 		.4byte	0x2f8
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2702 035f 07       		.byte	0x7
  2703 0360 0F       		.uleb128 0xf
  2704 0361 CE040000 		.4byte	.LASF54
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 111
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 111
 
 
  2705 0365 07       		.byte	0x7
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2759 03d7 5501     		.2byte	0x155
  2760 03d9 BC030000 		.4byte	0x3bc
  2761 03dd 00       		.byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 112
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 112
 
 
  2762 03de 0F       		.uleb128 0xf
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2816 0450 C5060000 		.4byte	.LASF70
  2817 0454 07       		.byte	0x7
  2818 0455 8501     		.2byte	0x185
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 113
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 113
 
 
  2819 0457 E8020000 		.4byte	0x2e8
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2873 04cb E70E0000 		.4byte	.LASF72
  2874 04cf 07       		.byte	0x7
  2875 04d0 9C01     		.2byte	0x19c
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 114
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 114
 
 
  2876 04d2 89040000 		.4byte	0x489
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2930 0547 0F       		.uleb128 0xf
  2931 0548 26090000 		.4byte	.LASF81
  2932 054c 07       		.byte	0x7
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 115
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 115
 
 
  2933 054d E001     		.2byte	0x1e0
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  2987 05c2 0E02     		.2byte	0x20e
  2988 05c4 81000000 		.4byte	0x81
  2989 05c8 80       		.byte	0x80
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 116
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 116
 
 
  2990 05c9 0F       		.uleb128 0xf
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3044 063f 0C       		.byte	0xc
  3045 0640 0F       		.uleb128 0xf
  3046 0641 DB0C0000 		.4byte	.LASF97
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 117
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 117
 
 
  3047 0645 07       		.byte	0x7
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3101 06b7 0F       		.uleb128 0xf
  3102 06b8 05090000 		.4byte	.LASF105
  3103 06bc 07       		.byte	0x7
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 118
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 118
 
 
  3104 06bd 9102     		.2byte	0x291
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3158 072b 7D040000 		.4byte	0x47d
  3159 072f 07       		.uleb128 0x7
  3160 0730 04       		.byte	0x4
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 119
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 119
 
 
  3161 0731 81000000 		.4byte	0x81
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3215 07a4 03       		.byte	0x3
  3216 07a5 0C       		.uleb128 0xc
  3217 07a6 F9000000 		.4byte	.LASF121
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 120
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 120
 
 
  3218 07aa 04       		.byte	0x4
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3272 0822 01       		.byte	0x1
  3273 0823 3D0A     		.2byte	0xa3d
  3274 0825 81000000 		.4byte	0x81
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 121
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 121
 
 
  3275 0829 58000000 		.4byte	.LLST2
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3329 08b3 01       		.byte	0x1
  3330 08b4 1A01     		.2byte	0x11a
  3331 08b6 BA000000 		.4byte	0xba
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 122
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 122
 
 
  3332 08ba 00000000 		.4byte	.LFB2
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3386 0946 AD01     		.2byte	0x1ad
  3387 0948 BA000000 		.4byte	0xba
  3388 094c BA010000 		.4byte	.LLST11
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 123
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 123
 
 
  3389 0950 16       		.uleb128 0x16
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3443 09d3 CF070000 		.4byte	.LASF143
  3444 09d7 01       		.byte	0x1
  3445 09d8 8102     		.2byte	0x281
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 124
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 124
 
 
  3446 09da BA000000 		.4byte	0xba
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3500 0a65 08030000 		.4byte	.LLST20
  3501 0a69 16       		.uleb128 0x16
  3502 0a6a 14010000 		.4byte	.LASF148
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 125
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 125
 
 
  3503 0a6e 01       		.byte	0x1
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3557 0af2 B30C0000 		.4byte	.LASF145
  3558 0af6 01       		.byte	0x1
  3559 0af7 8E04     		.2byte	0x48e
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 126
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 126
 
 
  3560 0af9 99000000 		.4byte	0x99
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3614 0b8a 2405     		.2byte	0x524
  3615 0b8c 00000000 		.4byte	.LFB12
  3616 0b90 78000000 		.4byte	.LFE12-.LFB12
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 127
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 127
 
 
  3617 0b94 01       		.uleb128 0x1
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3671 0c10 01       		.byte	0x1
  3672 0c11 8805     		.2byte	0x588
  3673 0c13 99000000 		.4byte	0x99
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 128
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 128
 
 
  3674 0c17 B0040000 		.4byte	.LLST33
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3728 0c9b 01       		.uleb128 0x1
  3729 0c9c 51       		.byte	0x51
  3730 0c9d 00       		.byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 129
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 129
 
 
  3731 0c9e 1E       		.uleb128 0x1e
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3785 0d07 C906     		.2byte	0x6c9
  3786 0d09 BA000000 		.4byte	0xba
  3787 0d0d 00000000 		.4byte	.LFB18
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 130
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 130
 
 
  3788 0d11 1A000000 		.4byte	.LFE18-.LFB18
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3842 0d8c 930D0000 		.4byte	0xd93
  3843 0d90 01       		.uleb128 0x1
  3844 0d91 53       		.byte	0x53
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 131
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 131
 
 
  3845 0d92 00       		.byte	0
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3899 0e11 A5060000 		.4byte	.LLST45
  3900 0e15 15       		.uleb128 0x15
  3901 0e16 04020000 		.4byte	.LASF172
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 132
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 132
 
 
  3902 0e1a 01       		.byte	0x1
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  3956 0e91 30       		.byte	0x30
  3957 0e92 00       		.byte	0
  3958 0e93 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 133
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 133
 
 
  3959 0e94 1A000000 		.4byte	.LVL141
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4013 0ef6 99000000 		.4byte	0x99
  4014 0efa 5F070000 		.4byte	.LLST51
  4015 0efe 16       		.uleb128 0x16
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 134
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 134
 
 
  4016 0eff 1A040000 		.4byte	.LASF177
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4070 0f89 D1080000 		.4byte	.LLST59
  4071 0f8d 16       		.uleb128 0x16
  4072 0f8e 33010000 		.4byte	.LASF186
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 135
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 135
 
 
  4073 0f92 01       		.byte	0x1
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4127 0ffe 1B       		.uleb128 0x1b
  4128 0fff 01       		.uleb128 0x1
  4129 1000 51       		.byte	0x51
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 136
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 136
 
 
  4130 1001 02       		.uleb128 0x2
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4184 1055 18       		.uleb128 0x18
  4185 1056 FB050000 		.4byte	.LASF189
  4186 105a 01       		.byte	0x1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 137
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 137
 
 
  4187 105b FF07     		.2byte	0x7ff
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4241 10df 1B       		.uleb128 0x1b
  4242 10e0 01       		.uleb128 0x1
  4243 10e1 50       		.byte	0x50
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 138
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 138
 
 
  4244 10e2 02       		.uleb128 0x2
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4298 1167 40000000 		.4byte	.LVL216
  4299 116b B4140000 		.4byte	0x14b4
  4300 116f 19       		.uleb128 0x19
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 139
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 139
 
 
  4301 1170 44000000 		.4byte	.LVL217
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4355 11fb 75040000 		.4byte	.LASF197
  4356 11ff 01       		.byte	0x1
  4357 1200 840C     		.2byte	0xc84
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 140
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 140
 
 
  4358 1202 AC070000 		.4byte	0x7ac
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4412 1286 DB0C     		.2byte	0xcdb
  4413 1288 81000000 		.4byte	0x81
  4414 128c C70B0000 		.4byte	.LLST79
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 141
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 141
 
 
  4415 1290 19       		.uleb128 0x19
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4469 1305 01       		.uleb128 0x1
  4470 1306 9C       		.byte	0x9c
  4471 1307 2E130000 		.4byte	0x132e
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 142
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 142
 
 
  4472 130b 15       		.uleb128 0x15
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4526 1389 F5120000 		.4byte	0x12f5
  4527 138d 1B       		.uleb128 0x1b
  4528 138e 01       		.uleb128 0x1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 143
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 143
 
 
  4529 138f 50       		.byte	0x50
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4583 1401 00000000 		.4byte	CapSense_requestScanAllWidget
  4584 1405 25       		.uleb128 0x25
  4585 1406 200D0000 		.4byte	.LASF212
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 144
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 144
 
 
  4586 140a 01       		.byte	0x1
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4640 1482 09       		.byte	0x9
  4641 1483 8801     		.2byte	0x188
  4642 1485 26       		.uleb128 0x26
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 145
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 145
 
 
  4643 1486 850C0000 		.4byte	.LASF218
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4697 1504 27       		.uleb128 0x27
  4698 1505 79080000 		.4byte	.LASF229
  4699 1509 79080000 		.4byte	.LASF229
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 146
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 146
 
 
  4700 150d 0A       		.byte	0xa
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4754 0022 0E       		.uleb128 0xe
  4755 0023 3A       		.uleb128 0x3a
  4756 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 147
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 147
 
 
  4757 0025 3B       		.uleb128 0x3b
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4811 005b 13       		.uleb128 0x13
  4812 005c 01       		.byte	0x1
  4813 005d 0B       		.uleb128 0xb
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 148
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 148
 
 
  4814 005e 0B       		.uleb128 0xb
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4868 0094 13       		.uleb128 0x13
  4869 0095 00       		.byte	0
  4870 0096 00       		.byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 149
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 149
 
 
  4871 0097 0E       		.uleb128 0xe
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4925 00cd 00       		.byte	0
  4926 00ce 00       		.byte	0
  4927 00cf 00       		.byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 150
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 150
 
 
  4928 00d0 13       		.uleb128 0x13
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  4982 0107 3B       		.uleb128 0x3b
  4983 0108 05       		.uleb128 0x5
  4984 0109 49       		.uleb128 0x49
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 151
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 151
 
 
  4985 010a 13       		.uleb128 0x13
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5039 0142 13       		.uleb128 0x13
  5040 0143 00       		.byte	0
  5041 0144 00       		.byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 152
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 152
 
 
  5042 0145 19       		.uleb128 0x19
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5096 0183 1D       		.uleb128 0x1d
  5097 0184 34       		.uleb128 0x34
  5098 0185 00       		.byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 153
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 153
 
 
  5099 0186 03       		.uleb128 0x3
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5153 01be 02       		.uleb128 0x2
  5154 01bf 18       		.uleb128 0x18
  5155 01c0 00       		.byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 154
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 154
 
 
  5156 01c1 00       		.byte	0
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5210 01f9 03       		.uleb128 0x3
  5211 01fa 0E       		.uleb128 0xe
  5212 01fb 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 155
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 155
 
 
  5213 01fc 0B       		.uleb128 0xb
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5267 0232 03       		.uleb128 0x3
  5268 0233 0E       		.uleb128 0xe
  5269 0234 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 156
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 156
 
 
  5270 0235 0B       		.uleb128 0xb
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5324 006f 00000000 		.4byte	0
  5325 0073 00000000 		.4byte	0
  5326              	.LLST3:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 157
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 157
 
 
  5327 0077 00000000 		.4byte	.LVL11
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5381 00f6 24000000 		.4byte	.LVL16
  5382 00fa 28000000 		.4byte	.LVL17
  5383 00fe 0200     		.2byte	0x2
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 158
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 158
 
 
  5384 0100 30       		.byte	0x30
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5438 018c 40000000 		.4byte	.LFE2
  5439 0190 0100     		.2byte	0x1
  5440 0192 50       		.byte	0x50
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 159
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 159
 
 
  5441 0193 00000000 		.4byte	0
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5495 021f 47000000 		.4byte	.LVL42-1
  5496 0223 0100     		.2byte	0x1
  5497 0225 50       		.byte	0x50
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 160
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 160
 
 
  5498 0226 47000000 		.4byte	.LVL42-1
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5552 02af F3       		.byte	0xf3
  5553 02b0 01       		.uleb128 0x1
  5554 02b1 50       		.byte	0x50
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 161
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 161
 
 
  5555 02b2 9F       		.byte	0x9f
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5609 033a 0100     		.2byte	0x1
  5610 033c 50       		.byte	0x50
  5611 033d 72000000 		.4byte	.LVL56
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 162
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 162
 
 
  5612 0341 83000000 		.4byte	.LVL57-1
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5666 03cc 58       		.byte	0x58
  5667 03cd 00000000 		.4byte	0
  5668 03d1 00000000 		.4byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 163
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 163
 
 
  5669              	.LLST27:
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5723 0464 50       		.byte	0x50
  5724 0465 54000000 		.4byte	.LVL91
  5725 0469 58000000 		.4byte	.LVL92
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 164
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 164
 
 
  5726 046d 0200     		.2byte	0x2
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5780 04f1 0300     		.2byte	0x3
  5781 04f3 70       		.byte	0x70
  5782 04f4 01       		.sleb128 1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 165
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 165
 
 
  5783 04f5 9F       		.byte	0x9f
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5837 0579 9F       		.byte	0x9f
  5838 057a 00000000 		.4byte	0
  5839 057e 00000000 		.4byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 166
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 166
 
 
  5840              	.LLST38:
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5894 060d 0100     		.2byte	0x1
  5895 060f 50       		.byte	0x50
  5896 0610 00000000 		.4byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 167
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 167
 
 
  5897 0614 00000000 		.4byte	0
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  5951 0696 22000000 		.4byte	.LVL134
  5952 069a 0100     		.2byte	0x1
  5953 069c 50       		.byte	0x50
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 168
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 168
 
 
  5954 069d 00000000 		.4byte	0
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6008 0727 16000000 		.4byte	.LVL140
  6009 072b 0100     		.2byte	0x1
  6010 072d 50       		.byte	0x50
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 169
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 169
 
 
  6011 072e 16000000 		.4byte	.LVL140
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6065 07bd 0200     		.2byte	0x2
  6066 07bf 30       		.byte	0x30
  6067 07c0 9F       		.byte	0x9f
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 170
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 170
 
 
  6068 07c1 8C000000 		.4byte	.LVL170
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6122 0851 2E000000 		.4byte	.LVL162
  6123 0855 0700     		.2byte	0x7
  6124 0857 78       		.byte	0x78
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 171
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 171
 
 
  6125 0858 00       		.sleb128 0
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6179 08dd 8C000000 		.4byte	.LVL170
  6180 08e1 92000000 		.4byte	.LVL171
  6181 08e5 0100     		.2byte	0x1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 172
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 172
 
 
  6182 08e7 51       		.byte	0x51
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6236 0975 08000000 		.4byte	.LVL194
  6237 0979 18000000 		.4byte	.LVL198
  6238 097d 0100     		.2byte	0x1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 173
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 173
 
 
  6239 097f 54       		.byte	0x54
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6293 0a06 26000000 		.4byte	.LVL209
  6294 0a0a 2C000000 		.4byte	.LVL210
  6295 0a0e 0100     		.2byte	0x1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 174
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 174
 
 
  6296 0a10 51       		.byte	0x51
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6350 0aa2 54000000 		.4byte	.LVL221
  6351 0aa6 63000000 		.4byte	.LVL225-1
  6352 0aaa 0100     		.2byte	0x1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 175
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 175
 
 
  6353 0aac 50       		.byte	0x50
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6407 0b30 16000000 		.4byte	.LVL248
  6408 0b34 1C000000 		.4byte	.LFE28
  6409 0b38 0100     		.2byte	0x1
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 176
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 176
 
 
  6410 0b3a 50       		.byte	0x50
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6464 0bbe 9F       		.byte	0x9f
  6465 0bbf 00000000 		.4byte	0
  6466 0bc3 00000000 		.4byte	0
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 177
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 177
 
 
  6467              	.LLST79:
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6521 0058 00000000 		.4byte	.LFB11
  6522 005c 80000000 		.4byte	.LFE11-.LFB11
  6523 0060 00000000 		.4byte	.LFB12
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 178
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 178
 
 
  6524 0064 78000000 		.4byte	.LFE12-.LFB12
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6578 0034 54000000 		.4byte	.LFE5
  6579 0038 00000000 		.4byte	.LFB6
  6580 003c 2C000000 		.4byte	.LFE6
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 179
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 179
 
 
  6581 0040 00000000 		.4byte	.LFB8
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6629      5F537343 
  6629      53444765 
  6629      74436F6C 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 180
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 180
 
 
  6630              	.LASF144:
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6652              	.LASF75:
  6653 00d2 6877436C 		.ascii	"hwClock\000"
  6653      6F636B00 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 181
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 181
 
 
  6654              	.LASF90:
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6677      6500
  6678              	.LASF169:
  6679 0181 43617053 		.ascii	"CapSense_CalibrateAllWidgets\000"
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 182
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 182
 
 
  6679      656E7365 
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6702              	.LASF129:
  6703 024d 43617053 		.ascii	"CapSense_SsCalcLfsrScale\000"
  6703      656E7365 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 183
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 183
 
 
  6703      5F537343 
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6723 0385 43617053 		.ascii	"CapSense_sensorIndex\000"
  6723      656E7365 
  6723      5F73656E 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 184
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 184
 
 
  6723      736F7249 
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6747      656E7365 
  6747      5F52414D 
  6747      5F534E53 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 185
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 185
 
 
  6747      5F535452 
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6773      66737253 
  6774              	.LASF109:
  6775 04f1 746F7461 		.ascii	"totalNumSns\000"
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 186
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 186
 
 
  6775      6C4E756D 
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6797      667400
  6798              	.LASF12:
  6799 05d8 75696E74 		.ascii	"uint16\000"
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 187
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 187
 
 
  6799      313600
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6820              	.LASF196:
  6821 06a2 43617053 		.ascii	"CapSense_SetInactiveElectrodeState\000"
  6821      656E7365 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 188
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 188
 
 
  6821      5F536574 
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6845      656E7365 
  6845      5F536361 
  6845      6E00
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 189
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 189
 
 
  6846              	.LASF198:
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6868              	.LASF106:
  6869 080c 70747232 		.ascii	"ptr2FltrHistory\000"
  6869      466C7472 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 190
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 190
 
 
  6869      48697374 
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6893 08ca 736E7343 		.ascii	"snsClkConstantR\000"
  6893      6C6B436F 
  6893      6E737461 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 191
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 191
 
 
  6893      6E745200 
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6916              	.LASF2:
  6917 0982 73686F72 		.ascii	"short int\000"
  6917      7420696E 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 192
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 192
 
 
  6917      7400
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6943      656E7365 
  6943      5F435344 
  6943      43616C69 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 193
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 193
 
 
  6943      62726174 
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6965 0b10 43617053 		.ascii	"CapSense_currentSenseMethod\000"
  6965      656E7365 
  6965      5F637572 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 194
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 194
 
 
  6965      72656E74 
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  6992              	.LASF61:
  6993 0bc7 43617053 		.ascii	"CapSense_RAM_WD_BUTTON_STRUCT\000"
  6993      656E7365 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 195
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 195
 
 
  6993      5F52414D 
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  7017 0c78 6D696E53 		.ascii	"minSnsClkDiv\000"
  7017      6E73436C 
  7017      6B446976 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 196
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 196
 
 
  7017      00
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  7039      68617200 
  7040              	.LASF214:
  7041 0d42 43617053 		.ascii	"CapSense_scanFreqIndex\000"
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 197
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 197
 
 
  7041      656E7365 
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  7065 0df1 646F7562 		.ascii	"double\000"
  7065      6C6500
  7066              	.LASF69:
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 198
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 198
 
 
  7067 0df8 6E656742 		.ascii	"negBslnRstCnt\000"
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 1
  7094              	.LASF211:
  7095 0e8e 43617053 		.ascii	"CapSense_requestScanAllWidget\000"
  7095      656E7365 
-ARM GAS  C:\Users\adm\AppData\Local\Temp\cct8kSKm.s 			page 199
+ARM GAS  C:\Users\adm\AppData\Local\Temp\ccMcx6zd.s 			page 199
 
 
  7095      5F726571 
