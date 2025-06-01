@@ -237,6 +237,54 @@
 <VisibleNodeIds>
 <v>CapSense_Tasks</v>
 <v>CapSense_Tasks\Task_1</v>
+<v>CapSense_Tasks\Task_1\CortexM0p</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Centroid_LL.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Control.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Filter.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_INT.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_ISR.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Processing.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Sensing.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_SensingCSD_LL.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Structure.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Tuner.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\Cm0plusStart.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_1.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_1_PM.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_2.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_2_PM.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_3.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_3_PM.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_4.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_4_PM.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_5.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\LED_Slider_5_PM.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_tx.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
+<v>CapSense_Tasks\Task_1\CortexM0p\ARM_GCC_541\Debug\Task_1.elf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
